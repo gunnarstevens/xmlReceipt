@@ -1,5 +1,6 @@
 # xmlReceipt
 Specification of the data format for digial, interactive sales slips that are more informative than the current paper based one 
+<<<<<<< HEAD
 
 The xmlReceipt
 A sales receipt documents the payment of a purchase (e.g. a grocery store) or service (e.g. catering).  A sales receipt is subject of fewer requirements than e.g. an invoice complaint to with § 14 UStG. For instance, a receipt usually does not include personalized information of the buyer (name and address) and an invoice. Up to a value of 150 euros of receipts is considered low value invoice (Kleinbetragsrechnung), if it confirms to the request of § 33 of the UStG implementing regulation (name, address, date and description of goods).
@@ -62,3 +63,5 @@ The following give an example of a xmlReceipt record for an ordinary supermarket
   </itemlist>
 </xmlreceipt>
 
+=======
+>>>>>>> origin/master
