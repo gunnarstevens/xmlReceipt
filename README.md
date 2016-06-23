@@ -77,6 +77,35 @@ The overall structure of a xmlReceipt is that first all seller information is gi
 | -----------|---------|----------------------------------------------------------------------------------|
 | xmlreceipt | node    | The xmlreceipt is the top-level node that holds all purchase information         |
 | seller     | node    | The seller node holds all information about the seller where the goods were buy. |
-| itemlist     | node  | The itemlist node holds all information about the purchase goods. The child nodes represent a purchased item. Information that relates to the purchased items in total (like the total price of the purchase) are either stored as an attribute the itemlist or as in an direct child node of the itemlist. |
+| itemlist   | node    | The itemlist node holds all information about the purchase goods. The child nodes represent a purchased item. Information that relates to the purchased items in total (like the total price of the purchase) are either stored as an attribute the itemlist or as in an direct child node of the itemlist. |
 
 
+#Appendix
+
+| Code       | International code list    | Description                                                   |
+| -----------|--------------|----------------------------------------------------------------------------------|
+| Country    | ISO 3166-1   | __TODO__                                                   |
+| Currency   | ISO 4217     | __TODO__                                                    |
+| Language   | ISO 639      | __TODO__                                                    |
+| Delivery terms   | UN/EDIFACT No 5   | __TODO__                                                    |
+| Unit of Measure   | UN/ECE N°20   | __TODO__                                                    |
+
+
+| Commodity class       | Reference    | Description                                                   |
+| ----------------------|--------------|--------------------------------------------------------------------------------|
+| UNSPSC                | __TODO__   | __TODO__                                                    |
+| CPV                   | __TODO__   | __TODO__                                                    |
+| eCl@ss                | eclass.eu   | eCl@ss is a industry standard for the classification and description of products and services   |
+
+
+
+
+
+
+
+
+
+
+
+
+Table 1 International code lists used in the model
