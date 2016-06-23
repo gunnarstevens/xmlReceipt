@@ -25,7 +25,6 @@
                                                     <xs:element name="gtin" type="xs:integer"/>
                                                     <xs:element name="ean" type="xs:integer"/>
                                                     <xs:element name="sellerItemID" type="xs:string"/>
-                                                    <xs:any/>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
@@ -33,7 +32,10 @@
                                             <xs:complexType>
                                                 <xs:sequence>
                                                     <xs:element name="bestbefore" type="xs:dateTime"/>
-                                                    <xs:element name="expiration" type="xs:dateTime"/>
+                                                    <xs:element name="expirationdate"
+                                                                type="xs:dateTime"/>
+                                                    <xs:element name="productiondate"
+                                                                type="xs:dateTime"/>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
@@ -58,11 +60,17 @@
                                         <xs:element name="itemgroup">
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="category">
+                                                    <xs:element name="eclasscategory">
                                                         <xs:complexType>
-                                                            <xs:attribute name="name" type="xs:string"/>
+                                                            <xs:sequence>
+                                                                <xs:element name="classificationid"
+                                                                            type="xs:integer"/>
+                                                                <xs:element name="name" type="xs:integer"/>
+                                                            </xs:sequence>
                                                         </xs:complexType>
+
                                                     </xs:element>
+                                                    <xs:element name="sellercategory"/>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
