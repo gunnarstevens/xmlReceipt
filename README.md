@@ -144,7 +144,7 @@ The seller also could provide a seller id as well as a seller url, which costume
 | __TODO__  | __TODO__     | __TODO__         |
 
 
-## Item sheet 
+## Item sheet and aspects
 ~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ~~
 
 | Item       | Type    | Description                                                                      |
@@ -152,12 +152,6 @@ The seller also could provide a seller id as well as a seller url, which costume
 | __TODO__  | __TODO__     | __TODO__         |
 
 
-## Item sheet 
-~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ~~
-
-| Item       | Type    | Description                                                                      |
-| -----------|---------|----------------------------------------------------------------------------------|
-| __TODO__  | __TODO__     | __TODO__         |
 
 #Referred Standards
 
