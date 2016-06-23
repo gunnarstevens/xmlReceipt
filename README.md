@@ -1,8 +1,6 @@
 # xmlReceipt
 Specification of the data format for digial, interactive sales slips that are more informative than the current paper based one 
 
-
-
 ## Introduction
 A sales receipt documents the payment of a purchase (e.g. a grocery store) or service (e.g. catering).  A sales receipt is subject of fewer requirements than e.g. an invoice complaint to with § 14 UStG. For instance, a receipt usually does not include personalized information of the buyer (name and address) and an invoice. Up to a value of 150 euros of receipts is considered low value invoice (Kleinbetragsrechnung), if it confirms to the request of § 33 of the UStG implementing regulation (name, address, date and description of goods).
 
@@ -73,7 +71,7 @@ The following give an example of a xmlReceipt record for an ordinary supermarket
 
 The xmlreceipt is an xml record that conforms to the XML scheme defined by the xmlreceipt.xsd file. The diagram above shows the general structure of XML scheme and every element that it can contain. Each element, along with all of its attributes, is documented in full below. 
 
-## Top nodes 
+## Root nodes 
 The overall structure of a xmlReceipt is that first all seller information is given followed by the list of the purchased items. The root of a receipt recode is the xmlreceipt node. The node has two children: the seller node, which hold all information about the seller and the itemlist node, which holds all information about the purchased goods.
 
 | Item       | Type    | Description                                                                      |
@@ -105,9 +103,61 @@ The seller also could provide a seller id as well as a seller url, which costume
 | price   | node    |  __TODO__ |
 | quantity   | node    |  __TODO__ |
 | itemgroup   | node    |  __TODO__ |
-| infogroup   | node    |  __TODO__ |
+| infosheet   | node    |  __TODO__ |
 | aspect   | node    |  __TODO__ |
 
+
+## Item identifier 
+~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ~~
+
+| Item       | Type    | Description                                                                      |
+| -----------|---------|----------------------------------------------------------------------------------|
+| __TODO__  | __TODO__     | __TODO__         |
+
+
+## Item dates 
+~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ~~
+
+| Item       | Type    | Description                                                                      |
+| -----------|---------|----------------------------------------------------------------------------------|
+| __TODO__  | __TODO__     | __TODO__         |
+
+## Item prices 
+~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ~~
+
+| Item       | Type    | Description                                                                      |
+| -----------|---------|----------------------------------------------------------------------------------|
+| __TODO__  | __TODO__     | __TODO__         |
+
+## Item quantities 
+~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ~~
+
+| Item       | Type    | Description                                                                      |
+| -----------|---------|----------------------------------------------------------------------------------|
+| __TODO__  | __TODO__     | __TODO__         |
+
+## Item group 
+~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ~~
+
+| Item       | Type    | Description                                                                      |
+| -----------|---------|----------------------------------------------------------------------------------|
+| __TODO__  | __TODO__     | __TODO__         |
+
+
+## Item sheet 
+~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ~~
+
+| Item       | Type    | Description                                                                      |
+| -----------|---------|----------------------------------------------------------------------------------|
+| __TODO__  | __TODO__     | __TODO__         |
+
+
+## Item sheet 
+~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ~~
+
+| Item       | Type    | Description                                                                      |
+| -----------|---------|----------------------------------------------------------------------------------|
+| __TODO__  | __TODO__     | __TODO__         |
 
 #Referred Standards
 
@@ -138,7 +188,7 @@ The seller also could provide a seller id as well as a seller url, which costume
 | CPV     | __TODO__   | __TODO__                                                                                       |
 | eClass  | eclass.eu   | eCl@ss is a industry standard for the classification and description of products and services |
 
-## Item Quanity information
+## Aspect
 | Code             | International code list    | Description                                        |
 | -----------------|------------------|--------------------------------------------------------------|
 | Delivery terms   | UN/EDIFACT No 5  | __TODO__                                                     |
