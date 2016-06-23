@@ -83,22 +83,30 @@ The overall structure of a xmlReceipt is that first all seller information is gi
 | itemlist   | node    | The itemlist node holds all information about the purchase goods. The child nodes represent a purchased item. Information that relates to the purchased items in total (like the total price of the purchase) are either stored as an attribute the itemlist or as in an direct child node of the itemlist. |
 
 # Seller information
+The seller node holds all information about the seller where the goods are brought. 
+The main entry is the sellername, which is present the common human-readable name of the seller like LIDL, ALDI, REWE.
+The seller also could provide a seller id as well as a seller url, which costumer value services could use to request additional information (like logo, ratings, etc.) and show it the costumer in an appropriate way  
+
+| Item       | Type    | Description                                                                      |
+| -----------|---------|----------------------------------------------------------------------------------|
+| sellername | Xs:string    | The human readable, common name of the seller         |
+| sellerid   | Xs:string    | A unique identifier of the seller like the DUNS or CRI (see Appendix) |
+| sellerurl   | xs:anyURI   | An url provided by the seller to request further information |
+| selleraddress   | Xs:string    |  The address of the seller |
+
+# Item information
 ~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ~~
 
 | Item       | Type    | Description                                                                      |
 | -----------|---------|----------------------------------------------------------------------------------|
-| sellername | Xs:string    | __TODO__         |
-| sellerid   | Xs:string    |  __TODO__ |
-| selleraddress   | Xs:string    |  __TODO__ |
-
-# Seller information
-~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ~~
-
-| Item       | Type    | Description                                                                      |
-| -----------|---------|----------------------------------------------------------------------------------|
-| sellername | Xs:string    | __TODO__         |
-| sellerid   | Xs:string    |  __TODO__ |
-| selleraddress   | Xs:string    |  __TODO__ |
+| itemname | Xs:string    | __TODO__         |
+| itemid   | node    |  __TODO__ |
+| dates   | node    |  __TODO__ |
+| price   | node    |  __TODO__ |
+| quantity   | node    |  __TODO__ |
+| itemgroup   | node    |  __TODO__ |
+| infogroup   | node    |  __TODO__ |
+| aspect   | node    |  __TODO__ |
 
 
 #Referred Standards
