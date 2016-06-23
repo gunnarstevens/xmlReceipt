@@ -91,17 +91,23 @@ The overall structure of a xmlReceipt is that first all seller information is gi
 | Language   | ISO 639      | __TODO__                                                     |
 
 ## Seller identifier information
-| Name       | Referred code list    | Description                                    |
+| Name       | Referred code list    | Description                                         |
 | -----------|--------------|--------------------------------------------------------------|
 | DUNS       |  __TODO__   | "Data Universal Numbering System." It is a unique nine-digit numbering system that is used to identify a business|
 | CRI       |  __TODO__   |  Customer Reference Identifier: Unique company registration identifier |
 
- ## Item identifier information
+## Item identifier information
 | Name       | Referred code list    | Description                                    |
 | -----------|--------------|--------------------------------------------------------------|
 | GTIN       |  __TODO__   | The GTIN (Global Trade Item Number) is the foundation for the EAN.UCC System for uniquely identifying trade item (products and services)|
 | EAN       |  ean-int.org   |  Family of industry standards for the identification of items, trade and logistic units, services and locations. Among others, the family covers product identification, especially bar code specifications|
-
+ 
+##Item category
+| Code       | Reference    | Description                                                                               |
+| ----------------------|--------------|--------------------------------------------------------------------------------|
+| UNSPSC  | __TODO__   | __TODO__                                                                                       |
+| CPV     | __TODO__   | __TODO__                                                                                       |
+| eClass  | eclass.eu   | eCl@ss is a industry standard for the classification and description of products and services |
 
 ## Item Quanity information
 | Code             | International code list    | Description                                        |
@@ -109,13 +115,6 @@ The overall structure of a xmlReceipt is that first all seller information is gi
 | Delivery terms   | UN/EDIFACT No 5  | __TODO__                                                     |
 | Unit of Measure  | UN/ECE N°20     | __TODO__                                                      |
 
-
-##Item category
-| Code       | Reference    | Description                                                                               |
-| ----------------------|--------------|--------------------------------------------------------------------------------|
-| UNSPSC  | __TODO__   | __TODO__                                                                                       |
-| CPV     | __TODO__   | __TODO__                                                                                       |
-| eClass  | eclass.eu   | eCl@ss is a industry standard for the classification and description of products and services |
 
 
 
