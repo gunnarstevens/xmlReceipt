@@ -1,5 +1,4 @@
 # xmlReceipt
-~~tildes around the words~~.
 Specification of the data format for digial, interactive sales slips that are more informative than the current paper based one 
 
 ## Introduction
@@ -94,7 +93,7 @@ The seller also could provide a seller id as well as a seller url, which costume
 | selleraddress   | Xs:string    |  The address of the seller |
 
 # Item information
-~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ~~
+~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
 
 | Item       | Type    | Description                                                                      |
 | -----------|---------|----------------------------------------------------------------------------------|
@@ -109,7 +108,7 @@ The seller also could provide a seller id as well as a seller url, which costume
 
 
 ## Item identifier 
-~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ~~
+~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
 
 | Item       | Type    | Description                                                                      |
 | -----------|---------|----------------------------------------------------------------------------------|
@@ -117,14 +116,14 @@ The seller also could provide a seller id as well as a seller url, which costume
 
 
 ## Item dates 
-~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ~~
+~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
 
 | Item       | Type    | Description                                                                      |
 | -----------|---------|----------------------------------------------------------------------------------|
 | __TODO__  | __TODO__     | __TODO__         |
 
 ## Item prices 
-~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ~~
+~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
 
 | Item       | Type    | Description                                                                      |
 | -----------|---------|----------------------------------------------------------------------------------|
@@ -138,7 +137,7 @@ The seller also could provide a seller id as well as a seller url, which costume
 | __TODO__  | __TODO__     | __TODO__         |
 
 ## Item group 
-~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ~~
+~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
 
 | Item       | Type    | Description                                                                      |
 | -----------|---------|----------------------------------------------------------------------------------|
@@ -146,7 +145,7 @@ The seller also could provide a seller id as well as a seller url, which costume
 
 
 ## Item sheet and aspects
-~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ~~
+~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
 
 | Item       | Type    | Description                                                                      |
 | -----------|---------|----------------------------------------------------------------------------------|
