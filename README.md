@@ -80,32 +80,42 @@ The overall structure of a xmlReceipt is that first all seller information is gi
 | itemlist   | node    | The itemlist node holds all information about the purchase goods. The child nodes represent a purchased item. Information that relates to the purchased items in total (like the total price of the purchase) are either stored as an attribute the itemlist or as in an direct child node of the itemlist. |
 
 
-#Appendix
+#Referred Standards
 
-| Code       | International code list    | Description                                                   |
-| -----------|--------------|----------------------------------------------------------------------------------|
-| Country    | ISO 3166-1   | __TODO__                                                   |
-| Currency   | ISO 4217     | __TODO__                                                    |
-| Language   | ISO 639      | __TODO__                                                    |
-| Delivery terms   | UN/EDIFACT No 5   | __TODO__                                                    |
-| Unit of Measure   | UN/ECE N°20   | __TODO__                                                    |
+##Country dependent information
+
+| Name       | Referred code list    | Description                                    |
+| -----------|--------------|--------------------------------------------------------------|
+| Country    | ISO 3166-1   | __TODO__                                                     |
+| Currency   | ISO 4217     | __TODO__                                                     |
+| Language   | ISO 639      | __TODO__                                                     |
+
+## Seller identifier information
+| Name       | Referred code list    | Description                                    |
+| -----------|--------------|--------------------------------------------------------------|
+| DUNS       |  __TODO__   | "Data Universal Numbering System." It is a unique nine-digit numbering system that is used to identify a business|
+| CRI       |  __TODO__   |  Customer Reference Identifier: Unique company registration identifier |
+
+ ## Item identifier information
+| Name       | Referred code list    | Description                                    |
+| -----------|--------------|--------------------------------------------------------------|
+| GTIN       |  __TODO__   | The GTIN (Global Trade Item Number) is the foundation for the EAN.UCC System for uniquely identifying trade item (products and services)|
+| EAN       |  ean-int.org   |  Family of industry standards for the identification of items, trade and logistic units, services and locations. Among others, the family covers product identification, especially bar code specifications|
 
 
-| Commodity class       | Reference    | Description                                                   |
+## Item Quanity information
+| Code             | International code list    | Description                                        |
+| -----------------|------------------|--------------------------------------------------------------|
+| Delivery terms   | UN/EDIFACT No 5  | __TODO__                                                     |
+| Unit of Measure  | UN/ECE N°20     | __TODO__                                                      |
+
+
+##Item category
+| Code       | Reference    | Description                                                                               |
 | ----------------------|--------------|--------------------------------------------------------------------------------|
-| UNSPSC                | __TODO__   | __TODO__                                                    |
-| CPV                   | __TODO__   | __TODO__                                                    |
-| eCl@ss                | eclass.eu   | eCl@ss is a industry standard for the classification and description of products and services   |
+| UNSPSC  | __TODO__   | __TODO__                                                                                       |
+| CPV     | __TODO__   | __TODO__                                                                                       |
+| eClass  | eclass.eu   | eCl@ss is a industry standard for the classification and description of products and services |
 
 
 
-
-
-
-
-
-
-
-
-
-Table 1 International code lists used in the model
