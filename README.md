@@ -114,7 +114,7 @@ The overall structure of a xmlReceipt is that first all seller information is gi
 ## Seller identifier information
 | Name       | Referred code list    | Description                                         |
 | -----------|--------------|--------------------------------------------------------------|
-| DUNS       |  __TODO__   | "Data Universal Numbering System." It is a unique nine-digit numbering system that is used to identify a business|
+| DUNS       |  dnb.com/duns-number.html   | DUNS (Data Universal Numbering System) is a unique nine-digit numbering system that is used to identify a business|
 | CRI       |  __TODO__   |  Customer Reference Identifier: Unique company registration identifier |
 
 ## Item identifier information
