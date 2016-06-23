@@ -1,6 +1,8 @@
 # xmlReceipt
 Specification of the data format for digial, interactive sales slips that are more informative than the current paper based one 
 
+
+
 ## Introduction
 A sales receipt documents the payment of a purchase (e.g. a grocery store) or service (e.g. catering).  A sales receipt is subject of fewer requirements than e.g. an invoice complaint to with § 14 UStG. For instance, a receipt usually does not include personalized information of the buyer (name and address) and an invoice. Up to a value of 150 euros of receipts is considered low value invoice (Kleinbetragsrechnung), if it confirms to the request of § 33 of the UStG implementing regulation (name, address, date and description of goods).
 
@@ -65,7 +67,7 @@ The following give an example of a xmlReceipt record for an ordinary supermarket
 ```
 # Specification
 
-![xmlreceipt scheme](http://www.altova.com/images/screenshots/xml-schema-editor.png "Basic structure of the xml scheme") 
+![xmlreceipt scheme](scheme.png "Basic structure of the xml scheme") 
 
 *Figure 1 xmlReceipt XML scheme*
 
@@ -89,7 +91,14 @@ The overall structure of a xmlReceipt is that first all seller information is gi
 | sellerid   | Xs:string    |  __TODO__ |
 | selleraddress   | Xs:string    |  __TODO__ |
 
+# Seller information
+~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ~~
 
+| Item       | Type    | Description                                                                      |
+| -----------|---------|----------------------------------------------------------------------------------|
+| sellername | Xs:string    | __TODO__         |
+| sellerid   | Xs:string    |  __TODO__ |
+| selleraddress   | Xs:string    |  __TODO__ |
 
 
 #Referred Standards
@@ -125,7 +134,7 @@ The overall structure of a xmlReceipt is that first all seller information is gi
 | Code             | International code list    | Description                                        |
 | -----------------|------------------|--------------------------------------------------------------|
 | Delivery terms   | UN/EDIFACT No 5  | __TODO__                                                     |
-| Unit of Measure  | UN/ECE N°20     | __TODO__                                                      |
+| Unit of Measure  | UN/ECE N°20      | __TODO__                                                     |
 
 
 
