@@ -71,6 +71,7 @@ The following give an example of a xmlReceipt record for an ordinary supermarket
 
 The xmlreceipt is an xml record that conforms to the XML scheme defined by the xmlreceipt.xsd file. The diagram above shows the general structure of XML scheme and every element that it can contain. Each element, along with all of its attributes, is documented in full below. 
 
+## Top nodes 
 The overall structure of a xmlReceipt is that first all seller information is given followed by the list of the purchased items. The root of a receipt recode is the xmlreceipt node. The node has two children: the seller node, which hold all information about the seller and the itemlist node, which holds all information about the purchased goods.
 
 | Item       | Type    | Description                                                                      |
@@ -78,6 +79,17 @@ The overall structure of a xmlReceipt is that first all seller information is gi
 | xmlreceipt | node    | The xmlreceipt is the top-level node that holds all purchase information         |
 | seller     | node    | The seller node holds all information about the seller where the goods were buy. |
 | itemlist   | node    | The itemlist node holds all information about the purchase goods. The child nodes represent a purchased item. Information that relates to the purchased items in total (like the total price of the purchase) are either stored as an attribute the itemlist or as in an direct child node of the itemlist. |
+
+# Seller information
+~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ~~
+
+| Item       | Type    | Description                                                                      |
+| -----------|---------|----------------------------------------------------------------------------------|
+| sellername | Xs:string    | __TODO__         |
+| sellerid   | Xs:string    |  __TODO__ |
+| selleraddress   | Xs:string    |  __TODO__ |
+
+
 
 
 #Referred Standards
