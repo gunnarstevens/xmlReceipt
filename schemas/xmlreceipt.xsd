@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="xmlreceipt">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="seller">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="sellername" type="xs:string"/>
+                            <xs:element name="sellerid" type="xs:string"/>
+                            <xs:element name="selleraddress" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="itemlist">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="item">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="itemName" type="xs:string"/>
+                                        <xs:element name="itemid">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="gtin" type="xs:integer"/>
+                                                    <xs:element name="ean" type="xs:integer"/>
+                                                    <xs:element name="sellerItemID" type="xs:string"/>
+                                                    <xs:any/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="dates">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="bestbefore" type="xs:dateTime"/>
+                                                    <xs:element name="expiration" type="xs:dateTime"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="price">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="currency" type="xs:string"/>
+                                                    <xs:element name="brutto" type="xs:float"/>
+                                                    <xs:element name="netto" type="xs:float"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="quantity">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="litre" type="xs:float"/>
+                                                    <xs:element name="gramm" type="xs:float"/>
+                                                    <xs:element name="units" type="xs:float"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="itemgroup">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="category">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="name" type="xs:string"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="infosheet">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="uri" type="xs:anyURI"/>
+                                                    <xs:element name="xmlproductinfo"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="aspect">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="aspectName"/>
+                                                    <xs:element name="aspectValue"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
