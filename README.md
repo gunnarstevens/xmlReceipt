@@ -1,5 +1,5 @@
 # xmlReceipt
-<span style="color:red; font-family:Georgia; font-size:2em;">red.</span>
+<span style="color:red">red</span>color red [markdown| Stuff |]
 Specification of the data format for digial, interactive sales slips that are more informative than the current paper based one 
 
 ## Introduction
