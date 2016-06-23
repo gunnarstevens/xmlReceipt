@@ -1,7 +1,6 @@
 # xmlReceipt
 Specification of the data format for digial, interactive sales slips that are more informative than the current paper based one 
 
-
 ## Introduction
 A sales receipt documents the payment of a purchase (e.g. a grocery store) or service (e.g. catering).  A sales receipt is subject of fewer requirements than e.g. an invoice complaint to with § 14 UStG. For instance, a receipt usually does not include personalized information of the buyer (name and address) and an invoice. Up to a value of 150 euros of receipts is considered low value invoice (Kleinbetragsrechnung), if it confirms to the request of § 33 of the UStG implementing regulation (name, address, date and description of goods).
 
@@ -64,3 +63,20 @@ The following give an example of a xmlReceipt record for an ordinary supermarket
   </itemlist>
 </xmlreceipt>
 ```
+# Specification
+
+![xmlreceipt scheme](http://www.altova.com/images/screenshots/xml-schema-editor.png "Basic structure of the xml scheme") 
+
+*Figure 1 xmlReceipt XML scheme*
+
+The xmlreceipt is an xml record that conforms to the XML scheme defined by the xmlreceipt.xsd file. The diagram above shows the general structure of XML scheme and every element that it can contain. Each element, along with all of its attributes, is documented in full below. 
+
+The overall structure of a xmlReceipt is that first all seller information is given followed by the list of the purchased items. The root of a receipt recode is the xmlreceipt node. The node has two children: the seller node, which hold all information about the seller and the itemlist node, which holds all information about the purchased goods.
+
+| Item       | Type    | Description                                                                      |
+| -----------|---------|----------------------------------------------------------------------------------|
+| xmlreceipt | node    | The xmlreceipt is the top-level node that holds all purchase information         |
+| seller     | node    | The seller node holds all information about the seller where the goods were buy. |
+| itemlist     | node  | The itemlist node holds all information about the purchase goods. The child nodes represent a purchased item. Information that relates to the purchased items in total (like the total price of the purchase) are either stored as an attribute the itemlist or as in an direct child node of the itemlist. |
+
+
