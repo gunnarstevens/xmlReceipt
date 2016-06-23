@@ -1,5 +1,5 @@
 # xmlReceipt
-<span style="color:red">red</span>color red [markdown| Stuff |]
+~~tildes around the words~~.
 Specification of the data format for digial, interactive sales slips that are more informative than the current paper based one 
 
 ## Introduction
