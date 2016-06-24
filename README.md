@@ -96,8 +96,8 @@ could also provide seller url, which costumer value services could use to reques
 ### Seller identifier information
 Item | Type           | Description                                                                      |
 | ---------|-----------|----------------------------------------------------------------------------------|
-| duns     | xs:integer| [DUNS (Data Universal Numbering System](dnb.com/duns-number.html) is a unique nine-digit numbering system that is used to identify a business   |
-| cri      | xs:string | Customer Reference Identifier: Unique company registration identifier                                                                           |
+| duns     | xs:integer| [DUNS (Data Universal Numbering System)](dnb.com/duns-number.html) is a unique nine-digit numbering system that is used to identify a business   |
+| cri      | xs:string | CRS (Customer Reference Identifier): Unique company registration identifier                                                                           |
 | sellerid | xs:string | Propretary, seller dependent identifier                                                                                                         |
 
 
@@ -178,8 +178,7 @@ The most important one are:
 *    [ISBN](http://www.iso.org/iso/catalogue_detail?csnumber=36563) – The International Standard Book Number (ISBN) as a unique international identification system for each product form or edition of a monographic publication published or produced by a specific publisher. Nowadays the  ISBN is compatible with the EAN .
 *    [ASIN](https://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number) – The "Amazon Standard Identification Number (ASIN) is a 10-digit alphanumeric code, which was introduced by Amazon to facilitate the communication between business partners on the Internet and the internal data processing on Amazon.
 
-The general structure of an *identifier element* is:  **\<code name>identifier\</code name>**. For instance \<asin>B00DQDJBGM\</asin> for the "The Macallan Anniversary"-Whiskey
-A seller could also use its own code system, even this is not recommended. In this case, the *identifier element* should look like this **\<sellerid>propritary_identifier\</sellerid>**. For instance, the seller REWE use for the item "ja! Fettarme H-Milch 1,5% 1l" the seller its own article id 6509371. Then the xmlReceipe might include the elemenent \<sellerid>6509371\</sellerid> for the item. 
+The general structure of an *identifier element* is:  **\<code name>identifier\</code name>**. For instance \<asin>B00DQDJBGM\</asin> for the "The Macallan Anniversary"-Whiskey. A seller could also use its own code system, even this is not recommended. In this case, the *identifier element* should look like this **\<sellerid>propritary_identifier\</sellerid>**. For instance, the seller REWE use for the item "ja! Fettarme H-Milch 1,5% 1l" the seller its own article id 6509371. Then the xmlReceipe might include the elemenent \<sellerid>6509371\</sellerid> for the item. 
 It might also provide an additional, own identifier id e.g. a RSIN (REWE Standard Identification Number) **\<rsin>6509371\</rsin>**
 
 | Item | Type           | Description                                                                      |
