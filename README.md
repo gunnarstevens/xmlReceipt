@@ -195,7 +195,6 @@ It might also provide an additional, own identifier id e.g. a RSIN (REWE Standar
 | sellerid | xs:string  | item identifier is encoded by a propritary, seller dependent code system         |
 
 
-
 ## Item dates 
 There are a wide range of products, especially food, for which different dates such as best-before or by-use appear on. The item dates node hold all such date informations. For instance, food that goes off quickly like such as smoked fish, meat products and ready-prepared salads have a "use by" dates. Consumers should not use them after the end of the "use by" date on the label, even if it looks and smells fine as after this date could put your health at risk. In contrast, the best-before indicate minimum  durability to  which food  retains  its expected quality when it comes to flavour and texture, under proper storage and use. So the 'best before' dates are more about quality than safety. However, in both case costumer value service could use this date to reminder to consume short-before-the-date-expired to prevent food wase. 
 
@@ -215,15 +214,19 @@ The item price holds all price related data of the item. The price is given in t
 | itemtax    | xs:integer| The item tax (in the specified currency)     |                                  
 
 ## Item quantities 
-**TODO** ~~Add some general remarks about the element and its purposeAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
+The item quantites holds all unit of measure related data of the item. Historically the code elements for units of measure packaging were specified in this UN/ECE Recommendation. The source of these codes is from UN/ECE Recommendation No. 21 (Codes for types of cargo, packages and packaging materials). For the sake of simplicity, the xmlReceipt only support a subset of measures, namely gramm, litre, and count.
 
-| Item       | Type    | Description                                                                      |
-| -----------|---------|----------------------------------------------------------------------------------|
-| __TODO__  | __TODO__     | __TODO__         |
+
+| Item   | Type     | Description                                                                      |
+| -------|-----------|----------------------------------------------------------------------------------|
+| gramm  | xs:integer| __TODO__         |
+| litre  | xs:integer| __TODO__         |
+| count  | xs:integer| pieces included in the package unit of the item         |
+
+
 
 ## Item group 
-The item group codes (also named product group, category of products, article group, commodity group, goods group or class of goods)  are used to catalog the myriad of items, merge information on the individual items and provide more general description. Furthermore, the item group helps to find subsitutes and compare alternative products within the same group.  The group code also simplifies the mapping of e.g. general information in recipes (for instance, take 200g tomatoes) and the specific product (e.g. REWE Bio Cherry Romatomaten).
+The item group codes (also named product group, category of products, article group, commodity group, goods group or class of goods) are used to catalog the myriad of items, merge information on the individual items and provide more general description. Furthermore, the item group helps to find subsitutes and compare alternative products within the same group.  The group code also simplifies the mapping of e.g. general information in recipes (for instance, take 200g tomatoes) and the specific product (e.g. REWE Bio Cherry Romatomaten).
 
 **TODO** Add some general remarks on the hierarchical structure.
 **TODO** Add some general remarks on the various item group standards.
