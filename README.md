@@ -197,10 +197,7 @@ It might also provide an additional, own identifier id e.g. a RSIN (REWE Standar
 
 
 ## Item dates 
-There are a wide range of products, especially food, for which different dates such as best-before or by-use appear on. The item dates node hold all such date informations.
-For instance, food that goes off quickly like such as smoked fish, meat products and ready-prepared salads have a "use by" dates. Consumers should not use them after the end of the "use by" date on the label, even if it looks and smells fine as after this date could put your health at risk. In contrast, the best-before
-indicate minimum  durability to  which food  retains  its expected quality when it comes to flavour and texture, under proper storage and use. So the 'best before' dates are more about quality than safety
-However, in both case costumer value service could use this date to reminder to consume short-before-the-date-expired to prevent food wase. 
+There are a wide range of products, especially food, for which different dates such as best-before or by-use appear on. The item dates node hold all such date informations. For instance, food that goes off quickly like such as smoked fish, meat products and ready-prepared salads have a "use by" dates. Consumers should not use them after the end of the "use by" date on the label, even if it looks and smells fine as after this date could put your health at risk. In contrast, the best-before indicate minimum  durability to  which food  retains  its expected quality when it comes to flavour and texture, under proper storage and use. So the 'best before' dates are more about quality than safety. However, in both case costumer value service could use this date to reminder to consume short-before-the-date-expired to prevent food wase. 
 
 | Item       | Type         | Description                                                    |
 | ------------|-------------|----------------------------------------------------------------|
@@ -209,8 +206,7 @@ However, in both case costumer value service could use this date to reminder to 
 | productiondate  | xs:dateTime | The date where the item was produced                       |
 
 ## Item prices 
-The item price holds all price related data of the item. The price is given in the currency defined by the currency-element.
-The currency code is specified by the the ISO 4217 standard (e.g. 'EUR' for the Euro). 
+The item price holds all price related data of the item. The price is given in the currency defined by the currency-element. The currency code is specified by the the ISO 4217 standard (e.g. 'EUR' for the Euro). 
 
 | Item       | Type      | Description                                 |
 | -----------|-----------|---------------------------------------------|
@@ -219,7 +215,7 @@ The currency code is specified by the the ISO 4217 standard (e.g. 'EUR' for the 
 | itemtax    | xs:integer| The item tax (in the specified currency)     |                                  
 
 ## Item quantities 
-~~**TODO** Add some general remarks about the element and its purposeAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+**TODO** ~~Add some general remarks about the element and its purposeAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
 
 | Item       | Type    | Description                                                                      |
