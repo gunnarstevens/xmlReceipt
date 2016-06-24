@@ -15,7 +15,7 @@
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="vat" type="xs:string"/>
+                            <xs:element name="vatin" type="xs:string"/>
                             <xs:element name="uri" type="xs:anyURI"/>
                             <xs:element name="selleraddress" type="xs:string"/>
                             <xs:element name="aspect">
@@ -84,8 +84,7 @@
                                             <xs:complexType>
                                                 <xs:sequence>
                                                     <xs:element name="bestbefore" type="xs:dateTime"/>
-                                                    <xs:element name="expirationdate"
-                                                                type="xs:dateTime"/>
+                                                    <xs:element name="useby" type="xs:dateTime"/>
                                                     <xs:element name="productiondate"
                                                                 type="xs:dateTime"/>
                                                 </xs:sequence>

@@ -198,14 +198,16 @@ It might also provide an additional, own identifier id e.g. a RSIN (REWE Standar
 
 
 ## Item dates 
-~~**TODO** Add some general remarks about the element and its purposeAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
+There are a wide range of products, especially food, for which different dates such as best-before or by-use appear on. The item dates node hold all such date informations.
+For instance, food that goes off quickly like such as smoked fish, meat products and ready-prepared salads have a "use by" dates. Consumers should not use them after the end of the "use by" date on the label, even if it looks and smells fine as after this date could put your health at risk. In contrast, the best-before
+indicate minimum  durability to  which food  retains  its expected quality when it comes to flavour and texture, under proper storage and use. So the 'best before' dates are more about quality than safety
+However, in both case costumer value service could use this date to reminder to consume short-before-the-date-expired to prevent food wase. 
 
-
-
-| Item       | Type    | Description                                                                      |
-| -----------|---------|----------------------------------------------------------------------------------|
-| __TODO__  | __TODO__     | __TODO__         |
+| Item       | Type         | Description                                                    |
+| ------------|-------------|----------------------------------------------------------------|
+| bestbefore  | xs:dateTime | the  date up  to  which food  can  be  eaten safely            |
+| useby       | xs:dateTime | the  date up  to  which food  retains  itsexpected quality     |
+| productiondate  | xs:dateTime | The date where the item was produced                       |
 
 ## Item prices 
 The item price holds all price related data of the item. The price is given in the currency defined by the currency-element.
@@ -228,8 +230,8 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 ## Item group 
 The item group codes (also named product group, category of products, article group, commodity group, goods group or class of goods)  are used to catalog the myriad of items, merge information on the individual items and provide more general description. Furthermore, the item group helps to find subsitutes and compare alternative products within the same group.  The group code also simplifies the mapping of e.g. general information in recipes (for instance, take 200g tomatoes) and the specific product (e.g. REWE Bio Cherry Romatomaten).
 
-~~**TODO** Add some general remarks on the hierarchical structure.~~
-~~**TODO** Add some general remarks on the .~~
+**TODO** Add some general remarks on the hierarchical structure.
+**TODO** Add some general remarks on the various item group standards.
 
 The most important one are:
 *    [eClass](http://www.eclass.eu) –  The eClass is a industry standard for the classification and description of products and services
