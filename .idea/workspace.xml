@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4ea659f-c708-4912-b021-677dc05be826" name="Default" comment="elaborate schema and add documentation to the individual nods">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/scheme.png" afterPath="$PROJECT_DIR$/scheme2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="xmlReceipt.iws" />
@@ -33,38 +34,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xmlreceipt.xsd" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/schemas/xmlreceipt.xsd">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding>
-                <marker date="1466765869000" expanded="true" signature="8642:8788" ph="..." />
-                <marker date="1466765869000" expanded="true" signature="8642:8850" ph="..." />
-                <marker date="1466765869000" expanded="true" signature="8642:8904" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
-          <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="1440">
+              <first_editor relative-caret-position="-649">
                 <caret line="154" column="109" selection-start-line="154" selection-start-column="109" selection-end-line="154" selection-end-column="109" />
                 <folding />
               </first_editor>
               <second_editor />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="MarkdownFxPreviewEditor">
+          <provider editor-type-id="MarkdownFxPreviewEditor">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scheme.png" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scheme.png">
+      <file leaf-file-name="scheme2.png" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scheme2.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
@@ -469,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1466765918753</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="elaborate schema and add documentation to the individual nods">
+      <created>1466766030062</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1466766030062</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -573,11 +567,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <marker date="1466765869000" expanded="true" signature="8642:8788" ph="..." />
-            <marker date="1466765869000" expanded="true" signature="8642:8850" ph="..." />
-            <marker date="1466765869000" expanded="true" signature="8642:8904" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -595,6 +585,14 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/schemas/xmlreceipt.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/slipsamples/testreceipt1.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -603,29 +601,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/schemas/xmlreceipt.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <marker date="1466765869000" expanded="true" signature="8642:8788" ph="..." />
-            <marker date="1466765869000" expanded="true" signature="8642:8850" ph="..." />
-            <marker date="1466765869000" expanded="true" signature="8642:8904" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="1440">
+          <first_editor relative-caret-position="-649">
             <caret line="154" column="109" selection-start-line="154" selection-start-column="109" selection-end-line="154" selection-end-column="109" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="MarkdownFxPreviewEditor">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
       </provider>
       <provider editor-type-id="text-editor">
@@ -635,7 +621,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scheme.png">
+    <entry file="file://$PROJECT_DIR$/scheme2.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
