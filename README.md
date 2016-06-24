@@ -263,24 +263,4 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 
 
-#Referred Standards
-
-##Country dependent information
-
-| Name       | Referred code list    | Description                                    |
-| -----------|--------------|--------------------------------------------------------------|
-| Country    | ISO 3166-1   | __TODO__                                                     |
-| Currency   | ISO 4217     | __TODO__                                                     |
-| Language   | ISO 639      | __TODO__                                                     |
-
-
-
-## Aspect
-| Code             | International code list    | Description                                        |
-| -----------------|------------------|--------------------------------------------------------------|
-| Delivery terms   | UN/EDIFACT No 5  | __TODO__                                                     |
-| Unit of Measure  | UN/ECE N°20      | __TODO__                                                     |
-
-
-
 
