@@ -147,7 +147,7 @@ First, list the item twice
 Second, list the item one once, but set the units attribute to express that item was purchase more than one 
 ```xml
 ...
-  <item units="2"><itemid>foobaritemid>...</item>
+  <item units="2"><itemid>foobar</itemid>...</item>
 ...
 ``` 
 
