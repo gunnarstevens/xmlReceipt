@@ -511,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1466766935076</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="elaborate schema and add documentation to the individual nods">
+      <created>1466766961773</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1466766961773</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
