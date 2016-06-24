@@ -82,9 +82,8 @@ The overall structure of a xmlReceipt is that first all seller information is gi
 
 # Seller information
 The seller node holds all information about the seller where the goods are brought. 
-The main entry is the sellername, which is present the common human-readable name of the seller like LIDL, ALDI, REWE.
-The seller also could provide an seller identifier such as the DUNS (e.g. 331411710 for the Lidl in Lampertswalde, Germany)
-In addition he could also provide seller url, which costumer value services could use to request additional information (like logo, ratings, etc.) and show it the costumer in an appropriate way  
+The main entry is the sellername, which is present the common human-readable name of the seller like LIDL, ALDI, REWE. The seller also could provide an seller identifier and 
+could also provide seller url, which costumer value services could use to request additional information (like logo, ratings, etc.) and show it the costumer in an appropriate way  
 
 | Item       | Type      | Description                                                                                    |
 | -----------|-----------|------------------------------------------------------------------------------------------------|
@@ -93,6 +92,19 @@ In addition he could also provide seller url, which costumer value services coul
 | sellervatin| xs:string | The value added tax identification number or VAT identification number (VATIN) of the seller   |
 | sellerurl  | xs:anyURI   | An url provided by the seller to request further information                                 |
 | selleraddress | xs:string|  The address of the seller                                                                   |
+
+### Seller identifier information
+Item | Type           | Description                                                                      |
+| ---------|-----------|----------------------------------------------------------------------------------|
+| duns     | xs:integer| [DUNS (Data Universal Numbering System](dnb.com/duns-number.html) is a unique nine-digit numbering system that is used to identify a business   |
+| cri      | xs:string | Customer Reference Identifier: Unique company registration identifier                                                                           |
+| sellerid | xs:string | Propretary, seller dependent identifier                                                                                                         |
+
+
+The general structure of an *identifier element* is:  **\<code name>identifier\</code name>**. For instance \<duns>331411710\</duns> for the Lidl in Lampertswalde, Germany. 
+A seller could also use its own identifier, even this is not recommended. In this case, the *identifier element* should look like this **\<sellerid>propritary_identifier\</sellerid>**. It is important that the identifier is the same on each xml receipt
+
+
 
 # Total information
 The total node holds all information, which relate to the entire purchasing or all items, respectively. 
@@ -144,7 +156,7 @@ Both expression are allowed. However, the second present the preferred, normaliz
 
 | Item       | Type       | Description                                                                      |
 | -----------|------------|----------------------------------------------------------------------------------|
-| itemname   | Xs:string  | A human readable, expressive name of the item                                    |
+| itemname   | xs:string  | A human readable, expressive name of the item                                    |
 | item:units | xs:integer | attribute of the item elements defining how many of the item was purchased.      |
 | itemid     | node       | A unique identifier of the item                                                  |
 | dates      | node       | Item related dates such as production date, best before date, ...                |
@@ -156,17 +168,40 @@ Both expression are allowed. However, the second present the preferred, normaliz
 
 
 ## Item identifier 
-~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
+The item identifier is provide one or more  identifier of the purchased item. The identifier allows to store and retrieve item information more easily. Moreover, the given identifier(s) primarily serves as a kind of foreign key to link the xmlReceipt with other data sources such as enterprise ressource planing systems, price portals, product information portals, etc.
+Hence, item identifier(s) should provided that based on widespread, well established code systems. Regarding this, various of such code systems exists in the retail market.
 
-| Item       | Type    | Description                                                                      |
-| -----------|---------|----------------------------------------------------------------------------------|
-| __TODO__  | __TODO__     | __TODO__         |
+The most important one are:
+*    [UPC](https://en.wikipedia.org/wiki/Universal_Product_Code) –  The Universal Product Code (UPC) is a 12-digit barcode system hat is widely used in US, Canada, and UK 
+*    [EAN](ean-int.org ) –  The European Article Number (EAN) is widely used in continental Europe. The EAN-13 is based on the UPC and includes the 13 digits (also called EAN-13). To translate a UPC code to a EAN-13 number a leading zero is set. There is a shorter version (also called EAN-8), which consists of 8 digits. 
+*    [GTIN](http://www.gs1.org/gtin) – The Global Trade Item Number (GTIN) code family become more and more the de-facto standard. This hitherto latest code for product identification summarizes all previous markings and uses leading zeros, to continue with the previous 12-, 13-, and 8-digit codes.
+*    [ISBN](http://www.iso.org/iso/catalogue_detail?csnumber=36563) – The International Standard Book Number (ISBN) as a unique international identification system for each product form or edition of a monographic publication published or produced by a specific publisher. Nowadays the  ISBN is compatible with the EAN .
+*    [ASIN](https://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number) – The "Amazon Standard Identification Number (ASIN) is a 10-digit alphanumeric code, which was introduced by Amazon to facilitate the communication between business partners on the Internet and the internal data processing on Amazon.
+
+The general structure of an *identifier element* is:  **\<code name>identifier\</code name>**. For instance \<asin>B00DQDJBGM\</asin> for the "The Macallan Anniversary"-Whiskey
+A seller could also use its own code system, even this is not recommended. In this case, the *identifier element* should look like this **\<sellerid>propritary_identifier\</sellerid>**. For instance, the seller REWE use for the item "ja! Fettarme H-Milch 1,5% 1l" the seller its own article id 6509371. Then the xmlReceipe might include the elemenent \<sellerid>6509371\</sellerid> for the item. 
+It might also provide an additional, own identifier id e.g. a RSIN (REWE Standard Identification Number) **\<rsin>6509371\</rsin>**
+
+| Item | Type           | Description                                                                      |
+| ---------|------------|----------------------------------------------------------------------------------|
+| gtin     | xs:string  | GTIN code of the item                                                            |
+| ean      | xs:integer | EAN code of the item                                                             |
+| ean13    | xs:integer | EAN-13 code of the item                                                          |
+| ean8     | xs:integer | EAN-8 code of the item                                                           |
+| upc      | xs:integer | UPC code of the item                                                             |
+| isbn     | xs:string  | ISBN code of the item                                                            |
+| ismn     | xs:string  | item identifier is encoded by theInternational Standard Music Number (ISO 10957:1993) - typically used for musi	 	           |
+| issn     | xs:string  | item identifier is encoded by the International Standard Serial Number (ISO 3297:1998) - typically used for news papers and magazins|
+| asin     | xs:string  | ASIN code of the item                                                            |
+| sellerid | xs:string  | item identifier is encoded by a propritary, seller dependent code system         |
+
 
 
 ## Item dates 
-~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+~~**TODO** Add some general remarks about the element and its purposeAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
+
+
 
 | Item       | Type    | Description                                                                      |
 | -----------|---------|----------------------------------------------------------------------------------|
@@ -183,7 +218,7 @@ The currency code is specified by the the ISO 4217 standard (e.g. 'EUR' for the 
 | itemtax   | xs:integer| The item tax (in the specified currency)     |                                  
 
 ## Item quantities 
-~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+~~**TODO** Add some general remarks about the element and its purposeAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
 
 | Item       | Type    | Description                                                                      |
@@ -191,16 +226,32 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 | __TODO__  | __TODO__     | __TODO__         |
 
 ## Item group 
-~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+~~**TODO** Add some general remarks about the element and its purpose At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
 
-| Item       | Type    | Description                                                                      |
-| -----------|---------|----------------------------------------------------------------------------------|
-| __TODO__  | __TODO__     | __TODO__         |
+The most important one are:
+*    [eClass](http://www.eclass.eu) –  The eClass is a industry standard for the classification and description of products and services
+*    [UNSPSC](https://www.unspsc.org/) – The United Nations Standard Products and Services Code is an open, global, multi-sector standard for the classification of products and services managed by GS1.
+*    [CPV](http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=URISERV:l22008) – The Common Procurement Vocabulary (CPV) has been developed by the European Union as a single classification system to describe the subject matter of public contracts. It consists of a main entry defining the subject of a contract, and a supplementary vocabulary for adding further qualitative information 
+
+ The general structure of an *group item element* is:  **\<itemgroup codename="identifier"/>**. For instance \<itemgroup eclass="16-08-02-03" name="Hammelfett" language="DE-de"/>
+ A seller could also use its own code system, even this is not recommended. In this case, the *identifier element* should look like this **\ **\<itemgroup sellergroupid="identifier"/>**.  
+
+
+| Item            | Type           | Description                                                                                |
+| ----------------|----------------|------------------------------------------------------------------------------------------------|
+| itemgroup:name  | xs:string      | human readable name of the group category                                              |
+| itemgroup:language  | xs:string  | language of the human readable name given by the ISO 639 language code             |
+| itemgroup:eclass  | xs:string    | [eClass](http://www.eclass.eu) code of the item group                                |
+| itemgroup:unspsc  | xs:string    | [UNSPSC](https://www.unspsc.org/) code of the item group                             |
+| itemgroup:cpv     | xs:string    | [CPV](http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=URISERV:l22008) code of the item group|
+| itemgroup:sellergroupid | xs:string  | category identifier is encoded by a propritary, seller dependent code system         |
+
+
 
 
 ## Item sheet and aspects
-~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+~~**TODO** Add some general remarks about the element and its purposeAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
 
 | Item       | Type    | Description                                                                      |
@@ -219,24 +270,9 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 | Currency   | ISO 4217     | __TODO__                                                     |
 | Language   | ISO 639      | __TODO__                                                     |
 
-## Seller identifier information
-| Name       | Referred code list    | Description                                         |
-| -----------|--------------|--------------------------------------------------------------|
-| DUNS       |  dnb.com/duns-number.html   | DUNS (Data Universal Numbering System) is a unique nine-digit numbering system that is used to identify a business|
-| CRI       |  __TODO__   |  Customer Reference Identifier: Unique company registration identifier |
 
-## Item identifier information
-| Name       | Referred code list    | Description                                    |
-| -----------|--------------|--------------------------------------------------------------|
-| GTIN       |  __TODO__   | The GTIN (Global Trade Item Number) is the foundation for the EAN.UCC System for uniquely identifying trade item (products and services)|
-| EAN       |  ean-int.org   |  Family of industry standards for the identification of items, trade and logistic units, services and locations. Among others, the family covers product identification, especially bar code specifications|
- 
 ##Item category
-| Code       | Reference    | Description                                                                               |
-| ----------------------|--------------|--------------------------------------------------------------------------------|
-| UNSPSC  | __TODO__   | __TODO__                                                                                       |
-| CPV     | __TODO__   | __TODO__                                                                                       |
-| eClass  | eclass.eu   | eCl@ss is a industry standard for the classification and description of products and services |
+
 
 ## Aspect
 | Code             | International code list    | Description                                        |
