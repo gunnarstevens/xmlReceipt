@@ -7,11 +7,63 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="sellername" type="xs:string"/>
-                            <xs:element name="sellerid" type="xs:string"/>
+                            <xs:element name="sellerid">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="duns" type="xs:integer"/>
+                                        <xs:element name="sellerid" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="vat" type="xs:string"/>
+                            <xs:element name="uri" type="xs:anyURI"/>
                             <xs:element name="selleraddress" type="xs:string"/>
+                            <xs:element name="aspect">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="aspectName"/>
+                                        <xs:element name="aspectValue"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
+                <xs:element name="total">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="purchasedate" type="xs:date"/>
+                            <xs:element name="totalquantity">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="totalProducts" type="xs:integer"/>
+                                        <xs:element name="totalUnits" type="xs:integer"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="totalprice">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="currency" type="xs:string"/>
+                                        <xs:element name="totalNetValue" type="xs:float"/>
+                                        <xs:element name="totalTaxes" type="xs:float"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:element name="aspect">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="aspectName"/>
+                                        <xs:element name="aspectValue"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
                 <xs:element name="itemlist">
                     <xs:complexType>
                         <xs:sequence>
@@ -24,7 +76,7 @@
                                                 <xs:sequence>
                                                     <xs:element name="gtin" type="xs:integer"/>
                                                     <xs:element name="ean" type="xs:integer"/>
-                                                    <xs:element name="sellerItemID" type="xs:string"/>
+                                                    <xs:element name="selleritemid" type="xs:string"/>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
@@ -43,8 +95,8 @@
                                             <xs:complexType>
                                                 <xs:sequence>
                                                     <xs:element name="currency" type="xs:string"/>
-                                                    <xs:element name="brutto" type="xs:float"/>
-                                                    <xs:element name="netto" type="xs:float"/>
+                                                    <xs:element name="itemvalue" type="xs:float"/>
+                                                    <xs:element name="itemtax" type="xs:float"/>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
@@ -91,6 +143,7 @@
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
+                                    <xs:attribute name="units" type="xs:integer"/>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>

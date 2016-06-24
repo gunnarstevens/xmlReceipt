@@ -18,7 +18,7 @@ The xmlReceipt (or it’s pet name eSlip) is the electronic equivalent to the pa
 
 # Basic information and structure 
 The xmlReceipt record presents essential information about a purchase, information consumer information systems must have to provide the outlined added value services.  The electronic receive should include following information:
-- Name and address of business -  optional also the name of the seller
+- Name and address of business
 - Tax identification number (VAT ID)
 - Date and Time
 - Product description including item id, item name and item groups
@@ -83,32 +83,81 @@ The overall structure of a xmlReceipt is that first all seller information is gi
 # Seller information
 The seller node holds all information about the seller where the goods are brought. 
 The main entry is the sellername, which is present the common human-readable name of the seller like LIDL, ALDI, REWE.
-The seller also could provide a seller id as well as a seller url, which costumer value services could use to request additional information (like logo, ratings, etc.) and show it the costumer in an appropriate way  
+The seller also could provide an seller identifier such as the DUNS (e.g. 331411710 for the Lidl in Lampertswalde, Germany)
+In addition he could also provide seller url, which costumer value services could use to request additional information (like logo, ratings, etc.) and show it the costumer in an appropriate way  
 
-| Item       | Type    | Description                                                                      |
-| -----------|---------|----------------------------------------------------------------------------------|
-| sellername | Xs:string    | The human readable, common name of the seller         |
-| sellerid   | Xs:string    | A unique identifier of the seller like the DUNS or CRI (see Appendix) |
-| sellerurl   | xs:anyURI   | An url provided by the seller to request further information |
-| selleraddress   | Xs:string    |  The address of the seller |
+| Item       | Type      | Description                                                                                    |
+| -----------|-----------|------------------------------------------------------------------------------------------------|
+| sellername | xs:string | The human readable, common name of the seller                                                  |
+| sellerid   | node      | A unique identifier of the seller like the DUNS or CRI (see Appendix)                          |
+| sellervatin| xs:string | The value added tax identification number or VAT identification number (VATIN) of the seller   |
+| sellerurl  | xs:anyURI   | An url provided by the seller to request further information                                 |
+| selleraddress | xs:string|  The address of the seller                                                                   |
+
+# Total information
+The total node holds all information, which relate to the entire purchasing or all items, respectively. 
+Many elements are redudant, derived information that could be calculated by sum all items in the itemgroup. For instance the total price should be the sum of the item prices   
+
+| Item          | Type    | Description                                                                                    |
+|---------------|---------|------------------------------------------------------------------------------------------------|
+| purchasedate  | xs:date | The date, when the purchase has made                                                           | 
+| totalquantity | node    | Information of total sum of purchased items                                                    |
+| totalprice    | node    | Information of total price of purchased items                                                  |
+| aspect        | node    | Additional, proprietary information about the total purchase provided by the seller  (for the specification of the aspect node see below |
+
+| Item       | Type      | Description                                                                                    |
+| -----------|-----------|------------------------------------------------------------------------------------------------|
+| totalitems | xs:integer | *derived attribute*: The number of the **different**, purchased items                         |
+| totalunits | xs:integer | *derived attribute*: The number of **all** purchased items                                    |
+
+| Item       | Type      | Description                                                                                                                             |
+| -----------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| currency   | xs:string | *derived attribute*: The currency pf the price (in general, it will be the same currency as for the individual items                    |
+| totalprice | xs:integer| *derived attribute*: The total price for the purchase (in general, it will the same as the sum of the price of each item, maybe rounded |
+| totaltax   | xs:integer| *derived attribute*: The total tax for the purchase (in general, it will the same as the sum of the tax of each item, maybe rounded     | 
 
 # Item information
-~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
+The item node holds all information about an brought item (e.g. a good such as a refrigrator or a food product such as an apple).
+The main entry is the itemname, which is present the common human-readable name of item similar to the one printed on a paper-based slip (like 'H-Milch, 1,5 % Fett').
+In addition, item node also includes further information about dates, price, and quanity. Customer value services could retrieve further information by using the unique item identifier provided by the seller. In addition, the seller could also provide additional information like the product group of the item as well as proprietary, seller dependent aspects. Moreover, a whole infosheet could provided - still this is quite verbose.
 
-| Item       | Type    | Description                                                                      |
-| -----------|---------|----------------------------------------------------------------------------------|
-| itemname | Xs:string    | __TODO__         |
-| itemid   | node    |  __TODO__ |
-| dates   | node    |  __TODO__ |
-| price   | node    |  __TODO__ |
-| quantity   | node    |  __TODO__ |
-| itemgroup   | node    |  __TODO__ |
-| infosheet   | node    |  __TODO__ |
-| aspect   | node    |  __TODO__ |
+The item have an attribute *units*, which defines how many of the item was purchased. By the default, the units value is 1 and can be omitted.
+The *units*-attributes allows to group identical items together. This means, when a item *like foobar* is purchased twice than there are two ways to express this information
+
+First, list the item twice
+```xml
+...
+  <item><itemid>foobar</itemid>...</item>
+  <item><itemid>foobar</itemid>...</item>
+...
+``` 
+
+Second, list the item one once, but set the units attribute to express that item was purchase more than one 
+```xml
+...
+  <item units="2"><itemid>foobaritemid>...</item>
+...
+``` 
+
+Both expression are allowed. However, the second present the preferred, normalized version. 
+**As a rule of thumb:** items with the same content should be grouped together and the units attributes should be set respectively.
+
+| Item       | Type       | Description                                                                      |
+| -----------|------------|----------------------------------------------------------------------------------|
+| itemname   | Xs:string  | A human readable, expressive name of the item                                    |
+| item:units | xs:integer | attribute of the item elements defining how many of the item was purchased.      |
+| itemid     | node       | A unique identifier of the item                                                  |
+| dates      | node       | Item related dates such as production date, best before date, ...                |
+| price      | node       | The price and currency of the item                                               |
+| quantity   | node       | Item related quantities such as the size of the package in gramm or litre        |
+| itemgroup  | node       | Informations about the categories the item belongs to                            |
+| infosheet  | node       | A subset or a complete item infosheet following the xmlProductInfo standard. (see: __TODO__) |
+| aspect     | node       | Proprietary, seller dependent information about the item                         |
 
 
 ## Item identifier 
-~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
+~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
 
 | Item       | Type    | Description                                                                      |
 | -----------|---------|----------------------------------------------------------------------------------|
@@ -116,28 +165,34 @@ The seller also could provide a seller id as well as a seller url, which costume
 
 
 ## Item dates 
-~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
+~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
 
 | Item       | Type    | Description                                                                      |
 | -----------|---------|----------------------------------------------------------------------------------|
 | __TODO__  | __TODO__     | __TODO__         |
 
 ## Item prices 
-~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
+The item price holds all price related data of the item. The price is given in the currency defined by the currency-element.
+The currency code is specified by the the ISO 4217 standard (e.g. 'EUR' for the Euro). 
 
-| Item       | Type    | Description                                                                      |
-| -----------|---------|----------------------------------------------------------------------------------|
-| __TODO__  | __TODO__     | __TODO__         |
+| Item       | Type      | Description                                 |
+| -----------|-----------|---------------------------------------------|
+| currency   | xs:string | The name of the price currency.             |
+| itemprice | xs:integer| The item price (in the specified currency)   |
+| itemtax   | xs:integer| The item tax (in the specified currency)     |                                  
 
 ## Item quantities 
-~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ~~
+~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
 
 | Item       | Type    | Description                                                                      |
 | -----------|---------|----------------------------------------------------------------------------------|
 | __TODO__  | __TODO__     | __TODO__         |
 
 ## Item group 
-~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
+~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
 
 | Item       | Type    | Description                                                                      |
 | -----------|---------|----------------------------------------------------------------------------------|
@@ -145,7 +200,8 @@ The seller also could provide a seller id as well as a seller url, which costume
 
 
 ## Item sheet and aspects
-~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
+~~At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
 
 | Item       | Type    | Description                                                                      |
 | -----------|---------|----------------------------------------------------------------------------------|
