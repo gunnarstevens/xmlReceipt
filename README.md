@@ -65,7 +65,7 @@ The following give an example of a xmlReceipt record for an ordinary supermarket
 ```
 # Specification
 
-![xmlreceipt scheme](scheme2.png "Basic structure of the xml scheme") 
+![xmlreceipt scheme](scheme.png "Basic structure of the xml scheme") 
 
 *Figure 1 xmlReceipt XML scheme*
 
