@@ -88,7 +88,7 @@ could also provide seller url, which costumer value services could use to reques
 | Item       | Type      | Description                                                                                    |
 | -----------|-----------|------------------------------------------------------------------------------------------------|
 | sellername | xs:string | The human readable, common name of the seller                                                  |
-| sellerid   | node      | A unique identifier of the seller like the DUNS or CRI (see Appendix)                          |
+| sellerid   | node      | A unique identifier of the seller like the DUNS or CRI                           |
 | sellervatin| xs:string | The value added tax identification number or VAT identification number (VATIN) of the seller   |
 | sellerurl  | xs:anyURI   | An url provided by the seller to request further information                                 |
 | selleraddress | xs:string|  The address of the seller                                                                   |
