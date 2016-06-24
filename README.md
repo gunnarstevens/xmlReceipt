@@ -214,8 +214,8 @@ The currency code is specified by the the ISO 4217 standard (e.g. 'EUR' for the 
 | Item       | Type      | Description                                 |
 | -----------|-----------|---------------------------------------------|
 | currency   | xs:string | The name of the price currency.             |
-| itemprice | xs:integer| The item price (in the specified currency)   |
-| itemtax   | xs:integer| The item tax (in the specified currency)     |                                  
+| itemprice  | xs:integer| The item price (in the specified currency)   |
+| itemtax    | xs:integer| The item tax (in the specified currency)     |                                  
 
 ## Item quantities 
 ~~**TODO** Add some general remarks about the element and its purposeAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
@@ -226,8 +226,10 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 | __TODO__  | __TODO__     | __TODO__         |
 
 ## Item group 
-~~**TODO** Add some general remarks about the element and its purpose At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua~~
+The item group codes (also named product group, category of products, article group, commodity group, goods group or class of goods)  are used to catalog the myriad of items, merge information on the individual items and provide more general description. Furthermore, the item group helps to find subsitutes and compare alternative products within the same group.  The group code also simplifies the mapping of e.g. general information in recipes (for instance, take 200g tomatoes) and the specific product (e.g. REWE Bio Cherry Romatomaten).
+
+~~**TODO** Add some general remarks on the hierarchical structure.~~
+~~**TODO** Add some general remarks on the .~~
 
 The most important one are:
 *    [eClass](http://www.eclass.eu) –  The eClass is a industry standard for the classification and description of products and services
@@ -236,6 +238,7 @@ The most important one are:
 
  The general structure of an *group item element* is:  **\<itemgroup codename="identifier"/>**. For instance \<itemgroup eclass="16-08-02-03" name="Hammelfett" language="DE-de"/>
  A seller could also use its own code system, even this is not recommended. In this case, the *identifier element* should look like this **\ **\<itemgroup sellergroupid="identifier"/>**.  
+**Note:** A point to discuss, is whether the code is encode by an attribute or a child node
 
 
 | Item            | Type           | Description                                                                                |
@@ -270,8 +273,6 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 | Currency   | ISO 4217     | __TODO__                                                     |
 | Language   | ISO 639      | __TODO__                                                     |
 
-
-##Item category
 
 
 ## Aspect
