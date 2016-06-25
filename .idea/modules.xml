@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/tools/java/marshaller/marshaller.iml" filepath="$PROJECT_DIR$/tools/java/marshaller/marshaller.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/xmlReceipt.iml" filepath="$PROJECT_DIR$/.idea/xmlReceipt.iml" />
     </modules>
   </component>
