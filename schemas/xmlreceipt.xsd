@@ -111,17 +111,47 @@
                                         <xs:element name="itemgroup">
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="eclasscategory">
+                                                    <xs:element name="eclass">
                                                         <xs:complexType>
                                                             <xs:sequence>
                                                                 <xs:element name="classificationid"
                                                                             type="xs:integer"/>
-                                                                <xs:element name="name" type="xs:integer"/>
+                                                                <xs:element name="classifactionname" type="xs:string"/>
+                                                                <xs:element name="language" type="xs:string"/>
                                                             </xs:sequence>
                                                         </xs:complexType>
-
                                                     </xs:element>
-                                                    <xs:element name="sellercategory"/>
+                                                    <xs:element name="unspsc">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="classificationid"
+                                                                            type="xs:integer"/>
+                                                                <xs:element name="classifactionname" type="xs:string"/>
+                                                                <xs:element name="language" type="xs:string"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="cpv">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="classificationid"
+                                                                            type="xs:integer"/>
+                                                                <xs:element name="classifactionname" type="xs:string"/>
+                                                                <xs:element name="language" type="xs:string"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+
+                                                    <xs:element name="sellercategory">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="classificationid"
+                                                                            type="xs:integer"/>
+                                                                <xs:element name="classifactionname" type="xs:string"/>
+                                                                <xs:element name="language" type="xs:string"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
