@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="xmlreceipt">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="seller">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="sellername" type="xs:string"/>
+                            <xs:element name="sellerid">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="duns" type="xs:integer"/>
+                                        <xs:element name="sellerid" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="vatin" type="xs:string"/>
+                            <xs:element name="uri" type="xs:anyURI"/>
+                            <xs:element name="selleraddress" type="xs:string"/>
+                            <xs:element name="aspect">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="aspectname" type="xs:string"/>
+                                        <xs:element name="aspectvalue" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="total">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="purchasedate" type="xs:date"/>
+                            <xs:element name="totalquantity">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="totalProducts" type="xs:integer"/>
+                                        <xs:element name="totalUnits" type="xs:integer"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="totalprice">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="currency" type="xs:string"/>
+                                        <xs:element name="totalnetvalue" type="xs:float"/>
+                                        <xs:element name="totaltaxes" type="xs:float"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:element name="aspect">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="aspectname" type="xs:string"/>
+                                        <xs:element name="aspectvalue" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="itemlist">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="item">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="itemname" type="xs:string"/>
+                                        <xs:element name="itemid">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="gtin" type="xs:string"/>
+                                                    <xs:element name="ean" type="xs:integer"/>
+                                                    <xs:element name="ean13" type="xs:integer"/>
+                                                    <xs:element name="ean8" type="xs:integer"/>
+                                                    <xs:element name="upc" type="xs:integer"/>
+                                                    <xs:element name="isbn" type="xs:string"/>
+                                                    <xs:element name="ismn" type="xs:string"/>
+                                                    <xs:element name="issn" type="xs:string"/>
+                                                    <xs:element name="asin" type="xs:string"/>
+                                                    <xs:element name="selleritemid" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="dates">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="bestbefore" type="xs:dateTime"/>
+                                                    <xs:element name="useby" type="xs:dateTime"/>
+                                                    <xs:element name="productiondate"
+                                                                type="xs:dateTime"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="price">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="currency" type="xs:string"/>
+                                                    <xs:element name="itemvalue" type="xs:float"/>
+                                                    <xs:element name="itemtax" type="xs:float"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="quantity">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="litre" type="xs:float"/>
+                                                    <xs:element name="gramm" type="xs:float"/>
+                                                    <xs:element name="units" type="xs:float"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="itemgroup">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="eclass">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="classificationid"
+                                                                            type="xs:integer"/>
+                                                                <xs:element name="classificationname" type="xs:string"/>
+                                                                <xs:element name="language" type="xs:string"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="unspsc">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="classificationid"
+                                                                            type="xs:integer"/>
+                                                                <xs:element name="classificationname" type="xs:string"/>
+                                                                <xs:element name="language" type="xs:string"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="cpv">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="classificationid"
+                                                                            type="xs:integer"/>
+                                                                <xs:element name="classificationname" type="xs:string"/>
+                                                                <xs:element name="language" type="xs:string"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+
+                                                    <xs:element name="sellercategory">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="classificationid"
+                                                                            type="xs:integer"/>
+                                                                <xs:element name="classificationname" type="xs:string"/>
+                                                                <xs:element name="language" type="xs:string"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="infosheet">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="uri" type="xs:anyURI"/>
+                                                    <xs:element name="xmlproductinfo"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="aspect">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="aspectname" type="xs:string"/>
+                                                    <xs:element name="aspectvalue" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="units" type="xs:integer"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
