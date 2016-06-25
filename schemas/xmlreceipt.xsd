@@ -21,8 +21,8 @@
                             <xs:element name="aspect">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="aspectName"/>
-                                        <xs:element name="aspectValue"/>
+                                        <xs:element name="aspectname"/>
+                                        <xs:element name="aspectvalue"/>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
@@ -55,8 +55,8 @@
                             <xs:element name="aspect">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="aspectName"/>
-                                        <xs:element name="aspectValue"/>
+                                        <xs:element name="aspectname"/>
+                                        <xs:element name="aspectvalue"/>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
@@ -166,8 +166,8 @@
                                         <xs:element name="aspect">
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="aspectName"/>
-                                                    <xs:element name="aspectValue"/>
+                                                    <xs:element name="aspectname"/>
+                                                    <xs:element name="aspectvalue"/>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>

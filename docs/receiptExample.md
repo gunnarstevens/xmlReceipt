@@ -6,8 +6,7 @@
   <seller>
     <sellername>REWE Markt GmbH</sellername>
     <sellerid>
-      <duns>100</duns>
-      <sellerid>string</sellerid>
+      <duns>312522838</duns>
     </sellerid>
     <vatin>DE 812 706 034</vatin>
     <uri>https://www.rewe.de/</uri>
@@ -17,8 +16,8 @@
         50668 Köln
     </selleraddress>
     <aspect>
-      <aspectName>newsletter/aspectName>
-      <aspectValue>https://www.rewe.de/service/newsletter/</aspectValue>
+      <aspectname>newsletter/aspectname>
+      <aspectvalue>https://www.rewe.de/service/newsletter/</aspectvalue>
     </aspect>
   </seller>
   
@@ -33,8 +32,8 @@
       <totalNetValue>5.98</totalNetValue>
     </totalprice>
     <aspect>
-      <aspectName>paypackpoints</aspectName>
-      <aspectValue>4</aspectValue>
+      <aspectname>paypackpoints</aspectname>
+      <aspectvalue>4</aspectvalue>
     </aspect>
   </total>
   
@@ -72,8 +71,8 @@
         <uri>https://shop.rewe.de/tiefkuehl/pizza-huehnchen/original-wagner-big-pizza-bbq-chicken-425g/PD2670477?infosheet.php</uri>
       </infosheet>
       <aspect>
-        <aspectName>foodtype</aspectName>
-        <aspectValue>frozenfood</aspectValue>
+        <aspectname>foodtype</aspectname>
+        <aspectvalue>frozenfood</aspectvalue>
       </aspect>
     </item>
   </itemlist>
