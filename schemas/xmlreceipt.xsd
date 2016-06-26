@@ -3,22 +3,22 @@
     <xs:element name="xmlreceipt">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="seller">
+                <xs:element name="seller" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="sellername" type="xs:string"/>
-                            <xs:element name="sellerid">
+                            <xs:element name="sellername" type="xs:string" minOccurs="0"/>
+                            <xs:element name="sellerid" minOccurs="0">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="duns" type="xs:integer"/>
-                                        <xs:element name="sellerid" type="xs:string"/>
+                                        <xs:element name="duns" type="xs:integer" minOccurs="0"/>
+                                        <xs:element name="sellerid" type="xs:string" minOccurs="0"/>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="vatin" type="xs:string"/>
-                            <xs:element name="uri" type="xs:anyURI"/>
-                            <xs:element name="selleraddress" type="xs:string"/>
-                            <xs:element name="aspect">
+                            <xs:element name="vatin" type="xs:string" minOccurs="0"/>
+                            <xs:element name="uri" type="xs:anyURI" minOccurs="0"/>
+                            <xs:element name="selleraddress" type="xs:string" minOccurs="0"/>
+                            <xs:element name="aspect" maxOccurs="unbounded" minOccurs="0">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="aspectname" type="xs:string"/>
@@ -30,29 +30,32 @@
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="total">
+                <xs:element name="total" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="purchasedate" type="xs:date"/>
-                            <xs:element name="totalquantity">
+                            <xs:element name="purchasedate" type="xs:date" minOccurs="0"/>
+                            <xs:element name="totalquantity" minOccurs="0">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="totalProducts" type="xs:integer"/>
-                                        <xs:element name="totalUnits" type="xs:integer"/>
+                                        <xs:element name="totalProducts" type="xs:integer"
+                                                    minOccurs="0"/>
+                                        <xs:element name="totalUnits" type="xs:integer"
+                                                    minOccurs="0"/>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="totalprice">
+                            <xs:element name="totalprice" minOccurs="0">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="currency" type="xs:string"/>
+                                        <xs:element name="currency" type="xs:string" minOccurs="1"/>
                                         <xs:element name="totalnetvalue" type="xs:float"/>
-                                        <xs:element name="totaltaxes" type="xs:float"/>
+                                        <xs:element name="totaltaxes" type="xs:float" minOccurs="0"
+                                        />
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
 
-                            <xs:element name="aspect">
+                            <xs:element name="aspect" maxOccurs="unbounded" minOccurs="0">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="aspectname" type="xs:string"/>
@@ -64,58 +67,77 @@
                     </xs:complexType>
                 </xs:element>
 
-                <xs:element name="itemlist">
+                <xs:element name="itemlist" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="item" minOccurs="0" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="itemname" type="xs:string"/>
-                                        <xs:element name="itemid">
+                                        <xs:element name="itemname" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="itemid" minOccurs="0">
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="gtin" type="xs:string"/>
-                                                    <xs:element name="ean" type="xs:integer"/>
-                                                    <xs:element name="ean13" type="xs:integer"/>
-                                                    <xs:element name="ean8" type="xs:integer"/>
-                                                    <xs:element name="upc" type="xs:integer"/>
-                                                    <xs:element name="isbn" type="xs:string"/>
-                                                    <xs:element name="ismn" type="xs:string"/>
-                                                    <xs:element name="issn" type="xs:string"/>
-                                                    <xs:element name="asin" type="xs:string"/>
-                                                    <xs:element name="selleritemid" type="xs:string"/>
+                                                    <xs:element name="gtin" type="xs:string"
+                                                                minOccurs="0"/>
+                                                    <xs:element name="ean" type="xs:integer"
+                                                                minOccurs="0"/>
+                                                    <xs:element name="ean13" type="xs:integer"
+                                                                minOccurs="0"/>
+                                                    <xs:element name="ean8" type="xs:integer"
+                                                                minOccurs="0"/>
+                                                    <xs:element name="upc" type="xs:integer"
+                                                                minOccurs="0"/>
+                                                    <xs:element name="isbn" type="xs:string"
+                                                                minOccurs="0"/>
+                                                    <xs:element name="ismn" type="xs:string"
+                                                                minOccurs="0"/>
+                                                    <xs:element name="issn" type="xs:string"
+                                                                minOccurs="0"/>
+                                                    <xs:element name="asin" type="xs:string"
+                                                                minOccurs="0"/>
+                                                    <xs:element name="selleritemid" type="xs:string"
+                                                                minOccurs="0"/>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
-                                        <xs:element name="dates">
+                                        <xs:element name="dates" minOccurs="0">
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="bestbefore" type="xs:dateTime"/>
-                                                    <xs:element name="useby" type="xs:dateTime"/>
-                                                    <xs:element name="productiondate"
+                                                    <xs:element name="bestbefore" minOccurs="0"
+                                                                type="xs:dateTime"/>
+                                                    <xs:element name="useby" minOccurs="0"
+                                                                type="xs:dateTime"/>
+                                                    <xs:element name="productiondate" minOccurs="0"
                                                                 type="xs:dateTime"/>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
-                                        <xs:element name="price">
+                                        <xs:element name="price" minOccurs="0">
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="currency" type="xs:string"/>
-                                                    <xs:element name="itemvalue" type="xs:float"/>
-                                                    <xs:element name="itemtax" type="xs:float"/>
+                                                    <xs:element name="currency" minOccurs="0"
+                                                                type="xs:string"/>
+                                                    <xs:element name="itemvalue" minOccurs="0"
+                                                                type="xs:float"/>
+                                                    <xs:element name="itemtax" minOccurs="0"
+                                                                type="xs:float"/>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
-                                        <xs:element name="quantity">
+                                        <xs:element name="quantity" minOccurs="0">
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="litre" type="xs:float"/>
-                                                    <xs:element name="gramm" type="xs:float"/>
-                                                    <xs:element name="units" type="xs:float"/>
+                                                    <xs:element name="litre" minOccurs="0"
+                                                                type="xs:float"/>
+                                                    <xs:element name="gramm" minOccurs="0"
+                                                                type="xs:float"/>
+                                                    <xs:element name="units" minOccurs="0"
+                                                                type="xs:float"/>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
-                                        <xs:element name="itemgroup">
+                                        <xs:element name="itemgroup" maxOccurs="unbounded"
+                                                    minOccurs="0">
                                             <xs:complexType>
                                                 <xs:sequence>
                                                     <xs:element name="eclass">
@@ -123,7 +145,8 @@
                                                             <xs:sequence>
                                                                 <xs:element name="classificationid"
                                                                             type="xs:integer"/>
-                                                                <xs:element name="classificationname" type="xs:string"/>
+                                                                <xs:element name="classificationname"
+                                                                            type="xs:string"/>
                                                                 <xs:element name="language" type="xs:string"/>
                                                             </xs:sequence>
                                                         </xs:complexType>
@@ -133,7 +156,8 @@
                                                             <xs:sequence>
                                                                 <xs:element name="classificationid"
                                                                             type="xs:integer"/>
-                                                                <xs:element name="classificationname" type="xs:string"/>
+                                                                <xs:element name="classificationname"
+                                                                            type="xs:string"/>
                                                                 <xs:element name="language" type="xs:string"/>
                                                             </xs:sequence>
                                                         </xs:complexType>
@@ -143,7 +167,8 @@
                                                             <xs:sequence>
                                                                 <xs:element name="classificationid"
                                                                             type="xs:integer"/>
-                                                                <xs:element name="classificationname" type="xs:string"/>
+                                                                <xs:element name="classificationname"
+                                                                            type="xs:string"/>
                                                                 <xs:element name="language" type="xs:string"/>
                                                             </xs:sequence>
                                                         </xs:complexType>
@@ -154,7 +179,8 @@
                                                             <xs:sequence>
                                                                 <xs:element name="classificationid"
                                                                             type="xs:integer"/>
-                                                                <xs:element name="classificationname" type="xs:string"/>
+                                                                <xs:element name="classificationname"
+                                                                            type="xs:string"/>
                                                                 <xs:element name="language" type="xs:string"/>
                                                             </xs:sequence>
                                                         </xs:complexType>
@@ -162,7 +188,7 @@
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
-                                        <xs:element name="infosheet">
+                                        <xs:element name="infosheet" minOccurs="0">
                                             <xs:complexType>
                                                 <xs:sequence>
                                                     <xs:element name="uri" type="xs:anyURI"/>
@@ -170,7 +196,8 @@
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
-                                        <xs:element name="aspect">
+                                        <xs:element name="aspect" maxOccurs="unbounded"
+                                                    minOccurs="0">
                                             <xs:complexType>
                                                 <xs:sequence>
                                                     <xs:element name="aspectname" type="xs:string"/>

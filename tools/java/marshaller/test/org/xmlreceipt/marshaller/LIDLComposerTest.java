@@ -1,11 +1,18 @@
 package org.xmlreceipt.marshaller;
 
 
+import org.apache.pdfbox.cos.COSDocument;
+import org.apache.pdfbox.io.RandomAccessBuffer;
+import org.apache.pdfbox.pdfparser.PDFParser;
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.text.PDFTextStripper;
 import org.xmlreceipt.composer.AbstractComposer;
 import org.xmlreceipt.composer.LIDLComposer;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
+import java.io.File;
+import java.io.FileInputStream;
 import java.math.BigInteger;
 
 import static org.junit.Assert.assertEquals;
@@ -24,6 +31,28 @@ public class LIDLComposerTest {
 
 
     @org.junit.Test
+    public void getTestReceipt1() throws Exception {
+        File testFile = new File("./test/res/Rechnung.pdf");
+        FileInputStream pdfReceipt;
+        pdfReceipt = new FileInputStream(testFile);
+
+        PDFTextStripper pdfStripper = null;
+        PDDocument pdDoc = null;
+        COSDocument cosDoc = null;
+
+
+        PDFParser parser = new PDFParser(new RandomAccessBuffer(pdfReceipt));
+        parser.parse();
+        cosDoc = parser.getDocument();
+        pdfStripper = new PDFTextStripper();
+        pdDoc = new PDDocument(cosDoc);
+        pdfStripper.setStartPage(1);
+        pdfStripper.setEndPage(5);
+        String parsedText = pdfStripper.getText(pdDoc);
+        System.out.println(parsedText);
+    }
+
+    @org.junit.Test
     public void createItemlist() throws Exception {
         String[] testSell = {
                 "20067397",
@@ -34,7 +63,7 @@ public class LIDLComposerTest {
         AbstractComposer lidlReceipt = new LIDLComposer();
 
         for (String ean : testSell) {
-            Xmlreceipt.Itemlist.Item item = lidlReceipt.addItem(ean);
+            Xmlreceipt.Itemlist.Item item = lidlReceipt.addItem("ean", ean);
         }
 
         Xmlreceipt receipt = lidlReceipt.getXmlReceipt();
@@ -65,7 +94,7 @@ public class LIDLComposerTest {
     @org.junit.Test
     public void createItem() throws Exception {
         LIDLComposer lidlReceipt = new LIDLComposer();
-        Xmlreceipt.Itemlist.Item item = lidlReceipt.createItem(MILK_EAN);
+        Xmlreceipt.Itemlist.Item item = lidlReceipt.createItem("ean", MILK_EAN);
 
         assertEquals("item name", MILK_NAME, item.getItemname());
         assertEquals("ean item id", new BigInteger(MILK_EAN), item.getItemid().getEan());

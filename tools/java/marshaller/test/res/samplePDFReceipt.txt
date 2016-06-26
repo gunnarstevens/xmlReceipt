@@ -1,0 +1,567 @@
+--------
+PDF Receipt provided by REWE Online converted by https://online2pdf.com/de/
+TODO use e.g. pdfbox instead
+-------
+
+Rechnung
+
+- Bitte unbedingt bei der Zahlung angeben -
+
+REWE Markt GmbH, Domstr. 20, 50668 Koeln
+
+<HEADER INFO>
+
+Für Fragen stehen wir Ihnen gerne zur Verfügung.
+
+Lieferadresse:
+
+Bezeichnung
+
+Menge
+
+Einzelpreis
+
+Summe Pos.
+
+MwSt.
+
+REWE Beste Wahl Taschentücher-Box 100
+
+2
+
+0,99 €
+
+1,98 €
+
+A
+
+Zewa Wisch & Weg Küchenrolle
+
+1
+
+2,49 €
+
+2,49 €
+
+A
+
+Head&Shoulders Shampoo Classic Clean
+
+1
+
+6,49 €
+
+6,49 €
+
+A
+
+Nivea Dusche Lemongras Oil
+
+1
+
+1,59 €
+
+1,59 €
+
+A
+
+Colgate Zahncreme Sensation White
+
+1
+
+1,39 €
+
+1,39 €
+
+A
+
+REWE Bio Körniger Frischkäse
+
+1
+
+0,99 €
+
+0,99 €
+
+B
+
+ja! Pfefferbeißer
+
+1
+
+2,29 €
+
+2,29 €
+
+B
+
+REWE Bio Ziegenfrischkäse 40% 150g
+
+1
+
+2,19 €
+
+2,19 €
+
+B
+
+REWE Bio Frischkäse Natur
+
+2
+
+1,29 €
+
+2,58 €
+
+B
+
+Harry Vital & Fit
+
+1
+
+1,29 €
+
+1,29 €
+
+B
+
+REWE Mehrkornbrötchen 8er
+
+1
+
+1,89 €
+
+1,89 €
+
+B
+
+Rhenser Mineralwasser Classic
+
+2
+
+4,99 €
+
+9,98 €
+
+A
+
+PFAND 3,30 EUR
+
+2
+
+3,30 €
+
+6,60 €
+
+A
+
+Granini Die Limo Limette + Zitrone 0,33l
+
+2
+
+0,89 €
+
+1,78 €
+
+A
+
+PFAND 0,25 EURO
+
+2
+
+0,25 €
+
+0,50 €
+
+A
+
+REWE Bio Traubensaft Direktsaft
+
+1
+
+1,99 €
+
+1,99 €
+
+A
+
+REWE Beste Wahl Sauerkirschnektar
+
+1
+
+1,19 €
+
+1,19 €
+
+A
+
+Kühne Gewürzgurken Auslese
+
+1
+
+1,11 €
+
+1,11 €
+
+B
+
+REWE Tafelsalz
+
+1
+
+0,25 €
+
+0,25 €
+
+B
+
+REWE Mangos
+
+1
+
+1,79 €
+
+1,79 €
+
+B
+
+REWE Kokosmilch
+
+1
+
+1,49 €
+
+1,49 €
+
+B
+
+REWE Bio Joghurt 3,8% Erdbeer-Himbeer
+
+2
+
+0,49 €
+
+0,98 €
+
+B
+
+REWE Bio Joghurt 3,8% Stracciatella
+
+2
+
+0,49 €
+
+0,98 €
+
+B
+
+1
+
+von
+
+2
+
+www.rewe.de
+
+Domstr. 20
+
+DE94500604000000141517
+
+IBAN:
+
+
+
+Registergericht:
+
+50668 Koeln
+
+DE 812706034
+
+Konto:
+
+HRB:
+
+Lionel SouquePeter Maly
+
+Ust-Id.-Nr.
+
+Swift/BIC:
+
+Geschäftsführer:
+
+141517
+
+50060400
+
+HRB 66773
+
+GENODEFFXXX
+
+DZ Bank
+
+Sitz:
+
+REWE Markt GmbH
+
+Aufsichtsvorsitzender:
+
+BLZ:
+
+Koeln
+
+Amtsgericht
+
+
+
+
+
+
+
+
+Bezeichnung
+
+Menge
+
+Einzelpreis
+
+Summe Pos.
+
+MwSt.
+
+ja! H-Milch 1,5% Fett
+
+4
+
+0,42 €
+
+1,68 €
+
+B
+
+REWE Bio Joghurt Heidelbeer 3,8%
+
+2
+
+0,49 €
+
+0,98 €
+
+B
+
+REWE Bio Eier Klasse M-L
+
+1
+
+2,15 €
+
+2,15 €
+
+B
+
+REWE Bio Paprika Mix
+
+1
+
+2,29 €
+
+2,29 €
+
+B
+
+REWE Bio Kräuter Kresse in der Schale
+
+1
+
+0,49 €
+
+0,49 €
+
+B
+
+REWE Bio Champignons braun
+
+1
+
+1,99 €
+
+1,99 €
+
+B
+
+Mango essreif
+
+1
+
+2,29 €
+
+2,29 €
+
+B
+
+Wagner Steinofen Pizza Mozzarella
+
+1
+
+1,59 €
+
+1,59 €
+
+B
+
+Wagner Steinofen Elsässer Flammkuchen
+
+1
+
+1,59 €
+
+1,59 €
+
+B
+
+Kraft Oreo Ice Cup
+
+1
+
+1,89 €
+
+1,89 €
+
+B
+
+Wagner Steinofen Pizza Spinat
+
+1
+
+1,59 €
+
+1,59 €
+
+B
+
+Milka Ice Cup
+
+1
+
+1,89 €
+
+1,89 €
+
+B
+
+Wagner Steinofen Pizza Thunfisch
+
+1
+
+1,59 €
+
+1,59 €
+
+B
+
+Pro Planet Kopierpapier DIN A4 weiß
+
+1
+
+4,49 €
+
+4,49 €
+
+A
+
+Servicegebühr Lieferung
+
+1
+
+4,90 €
+
+4,90 €
+
+A
+
+Mehrweg Bügelflasche
+
+-23
+
+0,15 €
+
+-3,45 €
+
+A
+
+Kasten leer
+
+-2
+
+1,50 €
+
+-3,00 €
+
+A
+
+Summe Rabatt Einzelpositionen
+
+1
+
+-2,78 €
+
+-2,78 €
+
+Summe Rabatt Gesamtpositionen
+
+1
+
+-10,56 €
+
+-10,56 €
+
+65,42 €
+
+Summe:
+
+Summe nach Steuersatz
+
+Steuersatz
+
+Nettobetrag
+
+Gesamtbetrag
+
+MwSt. Betrag
+
+A = 19%
+
+33,16 €
+
+27,87 €
+
+5,29 €
+
+B = 7%
+
+32,26 €
+
+30,15 €
+
+2,11 €
+
+Summe:
+
+65,42 €
+
+Zahlungsarten:
+
+Rechnung
+
+65,42 €
+
+Bitte Überweisen Sie diesen Betrag innerhalb der nächsten 14 Tage unter Angabe der RechnungsnummerOL16064800338874 auf das unten angegebene Konto.
+
+Vielen Dank für Ihren Einkauf bei REWE.
+
+2 von 2
+
+<FOOTER>
+
+
+
+

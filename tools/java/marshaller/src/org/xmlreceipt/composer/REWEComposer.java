@@ -1,35 +1,41 @@
 package org.xmlreceipt.composer;
 
+import org.apache.pdfbox.cos.COSDocument;
+import org.apache.pdfbox.io.RandomAccessBuffer;
+import org.apache.pdfbox.pdfparser.PDFParser;
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.text.PDFTextStripper;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.select.Elements;
 import org.xmlreceipt.marshaller.Xmlreceipt;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.math.BigInteger;
-import java.util.StringTokenizer;
 
 
 /**
  * Created by stevens on 26/06/16.
  */
-public class LIDLComposer extends AbstractComposer {
+public class REWEComposer extends AbstractComposer {
 
-    public final static String SELLERNAME = "Lidl Deutschland Einkaufsagentur GmbH & Co. KG";
-    public final static BigInteger DUNS = new BigInteger("551032670");
-    public final static String VATIN = "DE814 838 662";
+    public final static String SELLERNAME = "REWE Markt GmbH";
+    public final static BigInteger DUNS = new BigInteger("326495017");
+    public final static String VATIN = "DE 812706034";
     public final static String CURRENCY = "EUR";
 
-    public final static String ADDRESS = "Lidl Deutschland Einkaufsagentur GmbH & Co. KG\n" +
-            "Stiftsbergstraße 1\n" +
-            "74172 Neckarsulm";
-    public static final String URI = "http://www.lidl.de";
+    public final static String ADDRESS = "REWE Markt GmbH, Domstr. 20, 50668 Koeln";
+    public static final String URI = "www.rewe.de";
 
 
-    public LIDLComposer() {
+    public REWEComposer() {
         super(CURRENCY);
     }
 
+    @Override
+    public Xmlreceipt.Itemlist.Item createItem(String idtype, String id) throws IOException {
+        return null;
+    }
 
     /**
      * @return
@@ -50,22 +56,21 @@ public class LIDLComposer extends AbstractComposer {
     }
 
 
-    @Override
-    public Xmlreceipt.Itemlist.Item createItem(String idtype, String id) throws IOException {
+    /**
+     * Create a  item node about the product selled by REWE given by product name
+     *
+     * @param itemName
+     * @return null if corresponding product info could not retrieved, otherwise the xml node that holds the needed information
+     */
+    public Xmlreceipt.Itemlist.Item createItemByName(String itemName) throws IOException {
         Xmlreceipt.Itemlist.Item item = factory.createXmlreceiptItemlistItem();
 
-        // currently only eans are supported
-        if ("ean".equals(idtype) == false) {
-            return item;
-
-        }
-        Xmlreceipt.Itemlist.Item.Itemid itemid = factory.createXmlreceiptItemlistItemItemid();
-        itemid.setEan(new BigInteger(id));
-        item.setItemid(itemid);
 
         // Unfortunately, we could not scan the content page directly, but we have to retrieve the url of the content page
-        String searchUrl = "http://www.discounter-preisvergleich.de/suche.php?s=" + id + "&d=LIDL";
+        String searchUrl = "https://shop.rewe.de/productList?search=" + itemName;
         Document document = Jsoup.connect(searchUrl).get();
+
+        /*
         Elements preview = document.select(".produktPreview");
         String contentUrl = preview.attr("href");
 
@@ -120,7 +125,39 @@ public class LIDLComposer extends AbstractComposer {
 
         item.setQuantity(quantity);
 
+
+        Xmlreceipt.Itemlist.Item.Itemid itemid = factory.createXmlreceiptItemlistItemItemid();
+        itemid.setSelleritemid("0815");
+        item.setItemid(itemid);
+
+        */
         return item;
     }
 
+    /**
+     * Convert the pdf receipt getting from a online buy into a corresponding xmlReceipt
+     *
+     * @param pdfReceipt
+     * @return
+     */
+    public Xmlreceipt convertPDFReceipt(InputStream pdfReceipt) throws IOException {
+
+        PDFTextStripper pdfStripper = null;
+        PDDocument pdDoc = null;
+        COSDocument cosDoc = null;
+
+        PDFParser parser = new PDFParser(new RandomAccessBuffer(pdfReceipt));
+        parser.parse();
+        cosDoc = parser.getDocument();
+
+        pdfStripper = new PDFTextStripper();
+        pdDoc = new PDDocument(cosDoc);
+        pdfStripper.setStartPage(1);
+        pdfStripper.setEndPage(5);
+
+        String parsedText = pdfStripper.getText(pdDoc);
+        System.out.println(parsedText);
+
+        return null; // TODO
+    }
 }

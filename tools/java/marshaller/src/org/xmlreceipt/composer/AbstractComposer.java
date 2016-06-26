@@ -44,8 +44,8 @@ public abstract class AbstractComposer {
     }
 
 
-    public Xmlreceipt.Itemlist.Item addItem(String ean) throws IOException {
-        Xmlreceipt.Itemlist.Item item = createItem(ean);
+    public Xmlreceipt.Itemlist.Item addItem(String idtype, String id) throws IOException {
+        Xmlreceipt.Itemlist.Item item = createItem(idtype, id);
         xmlReceipt.getItemlist().getItem().add(item);
 
         // adjust total price
@@ -67,12 +67,13 @@ public abstract class AbstractComposer {
 
 
     /**
-     * Create a  item node about the product selled by LIDL given by ean
-     *
-     * @param ean
+     * Create a  item node about the product given by id
+     * @param idtype the type of the id, eg. ean or gtin
+     * @param id
      * @return null if corresponding product info could not retrieved, otherwise the xml node that holds the needed information
+     * @throws IOException
      */
-    abstract public Xmlreceipt.Itemlist.Item createItem(String ean) throws IOException;
+    abstract public Xmlreceipt.Itemlist.Item createItem(String idtype, String id) throws IOException;
 
     /**
      * @return
