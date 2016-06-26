@@ -1,81 +1,101 @@
 # Example
 
 ```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <xmlreceipt>
-
     <seller>
-        <sellername>REWE Markt GmbH</sellername>
+        <sellername>Lidl Deutschland Einkaufsagentur GmbH &amp; Co. KG</sellername>
         <sellerid>
-            <duns>312522838</duns>
+            <duns>551032670</duns>
         </sellerid>
-        <vatin>DE 812 706 034</vatin>
-        <uri>https://www.rewe.de/</uri>
-        <selleraddress>
-            REWE Markt GmbH
-            Domstraße 20
-            50668 Köln
+        <vatin>DE814 838 662</vatin>
+        <uri>http://www.lidl.de</uri>
+        <selleraddress>Lidl Deutschland Einkaufsagentur GmbH &amp; Co. KG
+            Stiftsbergstraße 1
+            74172 Neckarsulm
         </selleraddress>
-        <aspect>
-            <aspectname>newsletter</aspectname>
-            <aspectvalue>https://www.rewe.de/service/newsletter/</aspectvalue>
-        </aspect>
     </seller>
-
     <total>
-        <purchasedate>2016-06-25</purchasedate>
         <totalquantity>
-            <totalProducts>2</totalProducts>
-            <totalUnits>1</totalUnits>
+            <totalProducts>4</totalProducts>
+            <totalUnits>4</totalUnits>
         </totalquantity>
         <totalprice>
             <currency>EUR</currency>
-            <totalNetValue>5.98</totalNetValue>
+            <totalnetvalue>3.3400002</totalnetvalue>
+            <totaltaxes>0.0</totaltaxes>
         </totalprice>
-        <aspect>
-            <aspectname>paypackpoints</aspectname>
-            <aspectvalue>4</aspectvalue>
-        </aspect>
     </total>
-
     <itemlist>
-        <item units="2">
-            <itemName>Original Wagner Big Pizza BBQ-Chicken</itemName>
+        <item>
+            <itemname>Reine Buttermilch</itemname>
             <itemid>
-                <ean>4009233012084</ean>
-                <selleritemid>2670477</selleritemid>
-                <rsin>2670477</rsin>
+                <ean>20067397</ean>
             </itemid>
-            <dates>
-                <bestbefore>2017-09-29T03:49:45</bestbefore>
-            </dates>
             <price>
                 <currency>EUR</currency>
-                <itemvalue>2.99</itemvalue>
+                <itemvalue>0.35</itemvalue>
+                <itemtax>0.0</itemtax>
             </price>
             <quantity>
-                <gramm>425</gramm>
+                <litre>0.0</litre>
+                <gramm>500.0</gramm>
+                <units>0.0</units>
             </quantity>
-            <itemgroup>
-                <eclass>
-                    <classificationid>16-14-90-90</classificationid>
-                    <language>DE-de</language>
-                    <classificationname>Fertiggericht, Halbfertiggericht (Sonstige, nicht spezifiziert)</classificationname>
-                </eclass>
-                <sellercategory>
-                    <classificationid>https://shop.rewe.de/productList?selectedFacets=category%3DTiefk%25C3%25BChl%2FPizza%2520%2526%2520Fertiggerichte%2FPizza%2FPizza%2520H%25C3%25BChnchen</classificationid>
-                    <language>DE-de</language>
-                    <classificationname>Pizza Hühnchen</classificationname>
-                </sellercategory>
-            </itemgroup>
-            <infosheet>
-                <uri>https://shop.rewe.de/tiefkuehl/pizza-huehnchen/original-wagner-big-pizza-bbq-chicken-425g/PD2670477?infosheet.php</uri>
-            </infosheet>
-            <aspect>
-                <aspectname>foodtype</aspectname>
-                <aspectvalue>frozenfood</aspectvalue>
-            </aspect>
+        </item>
+        <item>
+            <itemname>Konfitüre Extra Erdbeere</itemname>
+            <itemid>
+                <ean>20000653</ean>
+            </itemid>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>0.89</itemvalue>
+                <itemtax>0.0</itemtax>
+            </price>
+            <quantity>
+                <litre>0.0</litre>
+                <gramm>450.0</gramm>
+                <units>0.0</units>
+            </quantity>
+        </item>
+        <item>
+            <itemname>Nuss-Nougat-Creme</itemname>
+            <itemid>
+                <ean>20003548</ean>
+            </itemid>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>1.25</itemvalue>
+                <itemtax>0.0</itemtax>
+            </price>
+            <quantity>
+                <litre>0.0</litre>
+                <gramm>400.0</gramm>
+                <units>0.0</units>
+            </quantity>
+        </item>
+        <item>
+            <itemname>American Sandwich "CLASSIC"</itemname>
+            <itemid>
+                <ean>20235130</ean>
+            </itemid>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>0.85</itemvalue>
+                <itemtax>0.0</itemtax>
+            </price>
+            <quantity>
+                <litre>0.0</litre>
+                <gramm>750.0</gramm>
+                <units>0.0</units>
+            </quantity>
         </item>
     </itemlist>
 </xmlreceipt>
+
+    Status API Training Shop Blog About 
+
+
 ```
 
