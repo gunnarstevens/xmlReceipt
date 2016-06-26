@@ -60,13 +60,17 @@
                     <classificationname>Fertiggericht, Halbfertiggericht (Sonstige, nicht spezifiziert)</classificationname>
                 </eclass>
                 <sellercategory>
-                    <classificationid>https://shop.rewe.de/productList?selectedFacets=category%3DTiefk%25C3%25BChl%2FPizza%2520%2526%2520Fertiggerichte%2FPizza%2FPizza%2520H%25C3%25BChnchen</classificationid>
+                    <classificationid>
+                        https://shop.rewe.de/productList?selectedFacets=category%3DTiefk%25C3%25BChl%2FPizza%2520%2526%2520Fertiggerichte%2FPizza%2FPizza%2520H%25C3%25BChnchen
+                    </classificationid>
                     <language>DE-de</language>
                     <classificationname>Pizza Hühnchen</classificationname>
                 </sellercategory>
             </itemgroup>
             <infosheet>
-                <uri>https://shop.rewe.de/tiefkuehl/pizza-huehnchen/original-wagner-big-pizza-bbq-chicken-425g/PD2670477?infosheet.php</uri>
+                <uri>
+                    https://shop.rewe.de/tiefkuehl/pizza-huehnchen/original-wagner-big-pizza-bbq-chicken-425g/PD2670477?infosheet.php
+                </uri>
             </infosheet>
             <aspect>
                 <aspectname>foodtype</aspectname>

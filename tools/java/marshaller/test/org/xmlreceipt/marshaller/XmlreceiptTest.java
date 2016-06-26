@@ -72,7 +72,7 @@ public class XmlreceiptTest {
     public void getItemlist() throws Exception {
         Xmlreceipt xmlreceipt = getTestReceipt1();
         Xmlreceipt.Itemlist ilist = xmlreceipt.getItemlist();
-        Xmlreceipt.Itemlist.Item item = ilist.getItem();
+        Xmlreceipt.Itemlist.Item item = ilist.getItem().get(0);
 
         assertEquals("item name", "Original Wagner Big Pizza BBQ-Chicken", item.getItemname());
         assertEquals("ean item id", new BigInteger("4009233012084"), item.getItemid().getEan());

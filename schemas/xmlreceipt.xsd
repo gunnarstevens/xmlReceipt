@@ -67,7 +67,7 @@
                 <xs:element name="itemlist">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="item">
+                            <xs:element name="item" minOccurs="0" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="itemname" type="xs:string"/>
