@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xmlreceipt>
+    <seller>
+        <sellername>REWE Markt GmbH</sellername>
+        <sellerid>
+            <duns>326495017</duns>
+        </sellerid>
+        <vatin>DE 812706034</vatin>
+        <uri>www.rewe.de</uri>
+        <selleraddress>REWE Markt GmbH, Domstr. 20, 50668 Koeln</selleraddress>
+    </seller>
+    <total>
+        <totalquantity>
+            <totalProducts>0</totalProducts>
+            <totalUnits>0</totalUnits>
+        </totalquantity>
+        <totalprice>
+            <currency>EUR</currency>
+            <totalnetvalue>0.0</totalnetvalue>
+            <totaltaxes>0.0</totaltaxes>
+        </totalprice>
+    </total>
+    <itemlist>
+        <item>
+            <itemname>REWE Beste Wahl Taschentücher-Box 100</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>0.99</itemvalue>
+                <itemtax>0.19</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>Zewa Wisch &amp; Weg Küchenrolle</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>2.49</itemvalue>
+                <itemtax>0.47</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>Head&amp;Shoulders Shampoo Classic Clean</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>6.49</itemvalue>
+                <itemtax>1.23</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>Nivea Dusche Lemongras Oil</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>1.59</itemvalue>
+                <itemtax>0.3</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>Colgate Zahncreme Sensation White</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>1.39</itemvalue>
+                <itemtax>0.26</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>REWE Bio Körniger Frischkäse</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>0.99</itemvalue>
+                <itemtax>0.1</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>ja! Pfefferbeißer</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>2.29</itemvalue>
+                <itemtax>0.07</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>REWE Bio Ziegenfrischkäse 40% 150g</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>2.19</itemvalue>
+                <itemtax>0.16</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>REWE Bio Frischkäse Natur</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>1.29</itemvalue>
+                <itemtax>0.15</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>Harry Vital &amp; Fit</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>1.29</itemvalue>
+                <itemtax>0.09</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>REWE Mehrkornbrötchen 8er</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>1.89</itemvalue>
+                <itemtax>0.09</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>Rhenser Mineralwasser Classic</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>4.99</itemvalue>
+                <itemtax>0.95</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>Granini Die Limo Limette + Zitrone 0,33l</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>0.89</itemvalue>
+                <itemtax>0.17</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>REWE Bio Traubensaft Direktsaft</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>1.99</itemvalue>
+                <itemtax>0.38</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>REWE Beste Wahl Sauerkirschnektar</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>1.19</itemvalue>
+                <itemtax>0.23</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>Kühne Gewürzgurken Auslese</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>1.11</itemvalue>
+                <itemtax>0.08</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>REWE Tafelsalz</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>0.25</itemvalue>
+                <itemtax>0.08</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>REWE Mangos</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>1.79</itemvalue>
+                <itemtax>0.02</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>REWE Kokosmilch</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>1.49</itemvalue>
+                <itemtax>0.13</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>REWE Bio Joghurt 3,8% Erdbeer-Himbeer</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>0.49</itemvalue>
+                <itemtax>0.1</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>REWE Bio Joghurt 3,8% Stracciatella</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>0.49</itemvalue>
+                <itemtax>0.03</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>ja! H-Milch 1,5% Fett</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>0.42</itemvalue>
+                <itemtax>0.03</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>REWE Bio Joghurt Heidelbeer 3,8%</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>0.49</itemvalue>
+                <itemtax>0.03</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>REWE Bio Eier Klasse M-L</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>2.15</itemvalue>
+                <itemtax>0.03</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>REWE Bio Paprika Mix</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>2.29</itemvalue>
+                <itemtax>0.15</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>REWE Bio Kräuter Kresse in der Schale</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>0.49</itemvalue>
+                <itemtax>0.16</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>REWE Bio Champignons braun</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>1.99</itemvalue>
+                <itemtax>0.03</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>Mango essreif</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>2.29</itemvalue>
+                <itemtax>0.14</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>Wagner Steinofen Pizza Mozzarella</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>1.59</itemvalue>
+                <itemtax>0.16</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>Wagner Steinofen Elsässer Flammkuchen</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>1.59</itemvalue>
+                <itemtax>0.11</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>Kraft Oreo Ice Cup</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>1.89</itemvalue>
+                <itemtax>0.11</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>Wagner Steinofen Pizza Spinat</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>1.59</itemvalue>
+                <itemtax>0.13</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>Milka Ice Cup</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>1.89</itemvalue>
+                <itemtax>0.11</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>Wagner Steinofen Pizza Thunfisch</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>1.59</itemvalue>
+                <itemtax>0.13</itemtax>
+            </price>
+        </item>
+        <item>
+            <itemname>Pro Planet Kopierpapier DIN A4 weiß</itemname>
+            <price>
+                <currency>EUR</currency>
+                <itemvalue>4.49</itemvalue>
+                <itemtax>0.85</itemtax>
+            </price>
+        </item>
+    </itemlist>
+</xmlreceipt>

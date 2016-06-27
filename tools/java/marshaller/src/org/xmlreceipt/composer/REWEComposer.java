@@ -1,12 +1,8 @@
 package org.xmlreceipt.composer;
 
-import org.apache.pdfbox.cos.COSDocument;
-import org.apache.pdfbox.io.RandomAccessBuffer;
-import org.apache.pdfbox.pdfparser.PDFParser;
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.text.PDFTextStripper;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
 import org.xmlreceipt.marshaller.Xmlreceipt;
 
 import java.io.IOException;
@@ -23,9 +19,11 @@ public class REWEComposer extends AbstractComposer {
     public final static BigInteger DUNS = new BigInteger("326495017");
     public final static String VATIN = "DE 812706034";
     public final static String CURRENCY = "EUR";
-
     public final static String ADDRESS = "REWE Markt GmbH, Domstr. 20, 50668 Koeln";
     public static final String URI = "www.rewe.de";
+    static int found = 0;
+    static int notFound = 0;
+    static int moreThanOneFound = 0;
 
 
     public REWEComposer() {
@@ -70,79 +68,18 @@ public class REWEComposer extends AbstractComposer {
         String searchUrl = "https://shop.rewe.de/productList?search=" + itemName;
         Document document = Jsoup.connect(searchUrl).get();
 
-        /*
-        Elements preview = document.select(".produktPreview");
-        String contentUrl = preview.attr("href");
-
-        // Now we have the contentUrl to retrieve the needed information
-        document = Jsoup.connect(contentUrl).get();
-
-        // Retrieve name of the product
-        Elements iName = document.select("[itemprop=\"name\"]");
-        String name = iName.get(0).text();
-        item.setItemname(name);
-
-        // Retrieve price of the product
-        Xmlreceipt.Itemlist.Item.Price price = factory.createXmlreceiptItemlistItemPrice();
-
-        Elements iPrice = document.select("[itemprop=\"price\"]");
-        String value = iPrice.get(0).text();
-
-        Elements iCurrency = document.select("[itemprop=\"priceCurrency\"]");
-        String currency = iCurrency.get(0).attr("content");
-
-        price.setCurrency(currency);
-        price.setItemvalue(Float.parseFloat(value));
-
-        item.setPrice(price);
-
-        // Retrieve quantity of the product
-        Xmlreceipt.Itemlist.Item.Quantity quantity = factory.createXmlreceiptItemlistItemQuantity();
-
-        Elements iQuantity = document.select(".produktPreview");
-        String content = iQuantity.get(0).attr("data-content");
-
-        //quantity format "Menge:<WHITESPACE><quant><WHITESPACE><unit>" with unit e.g. l for litre g for gramm and St for a unit
-        StringTokenizer st = new StringTokenizer(content);
-        String prefix = st.nextToken();
-        String quant = st.nextToken();
-        String unit = st.nextToken();
-
-        if ("l".equals(unit)) {
-            float litre = Float.parseFloat(quant);
-            quantity.setLitre(litre);
-        }
-
-        if ("g".equals(unit)) {
-            float gramm = Float.parseFloat(quant);
-            quantity.setGramm(gramm);
-        }
-
-        if ("St".equals(unit)) {
-            float un = Float.parseFloat(quant);
-            quantity.setUnits(un);
-        }
-
-        item.setQuantity(quantity);
-
-
-        Xmlreceipt.Itemlist.Item.Itemid itemid = factory.createXmlreceiptItemlistItemItemid();
-        itemid.setSelleritemid("0815");
-        item.setItemid(itemid);
-
-        */
         return item;
     }
 
     /**
      * Convert the pdf receipt getting from a online buy into a corresponding xmlReceipt
      *
-     * @param pdfReceipt
+     * @param txtReceipt // at the moment the pdf is converted to text manually
      * @return
      */
-    public Xmlreceipt convertPDFReceipt(InputStream pdfReceipt) throws IOException {
+    public Xmlreceipt convertPDFReceipt(InputStream txtReceipt) throws IOException {
 
-        PDFTextStripper pdfStripper = null;
+/*      PDFTextStripper pdfStripper = null;
         PDDocument pdDoc = null;
         COSDocument cosDoc = null;
 
@@ -157,7 +94,111 @@ public class REWEComposer extends AbstractComposer {
 
         String parsedText = pdfStripper.getText(pdDoc);
         System.out.println(parsedText);
+*/
 
-        return null; // TODO
+        REWEReceiptScanner scanner = new REWEReceiptScanner(txtReceipt);
+
+        while (scanner.hasNextItem()) {
+            REWEReceiptScanner.Item item = scanner.nextItem();
+            getXmlReceipt().getItemlist().getItem().add(createItem(item));
+        }
+
+        System.out.println("FOUND: " + found + " MORE THAN ONE FOUND: " + moreThanOneFound + " NOT FOUND: " + notFound);
+        return getXmlReceipt();
+    }
+
+
+    public Xmlreceipt.Itemlist.Item createItem(REWEReceiptScanner.Item input) throws IOException {
+        Xmlreceipt.Itemlist.Item item = factory.createXmlreceiptItemlistItem();
+        //TODO: Set unit
+
+        item.setItemname(input.name);
+
+        Xmlreceipt.Itemlist.Item.Price price = factory.createXmlreceiptItemlistItemPrice();
+        price.setCurrency("EUR");
+        price.setItemvalue(input.priceSingle);
+        price.setItemtax((Math.round(input.priceTaxSingle * 100) / 100.0f));
+        item.setPrice(price);
+
+        try {
+            lookupREWE(input.name);
+        } catch (Exception exp) {
+            // ignore
+            exp.printStackTrace();
+        }
+        return item;
+    }
+
+    public void lookupREWE(String search) throws IOException {
+        String tmp = java.net.URLEncoder.encode(search, "UTF-8");
+        String searchUrl = "https://shop.rewe.de/productList?search=" + tmp;
+
+        Document document = Jsoup.connect(searchUrl).get();
+        Elements preview = document.select(".rs-productlink");
+        // System.out.println("REWE found: " + preview.size() + " : " + search);
+        if (preview != null && preview.size() == 1) {
+            found++;
+        } else if (preview != null && preview.size() > 1) {
+            moreThanOneFound++;
+        } else {
+            lookupREWE2(search);
+        }
+    }
+
+    public void lookupREWE2(String search) throws IOException {
+        String substring = "";
+        for (int i = 0; i < search.length(); i++) {
+            substring += (Character.isAlphabetic(search.charAt(i)) == true ? search.charAt(i) : " ");
+        }
+
+        String tmp = java.net.URLEncoder.encode(substring, "UTF-8");
+        String searchUrl = "https://shop.rewe.de/productList?search=" + tmp;
+
+        Document document = Jsoup.connect(searchUrl).get();
+        Elements preview = document.select(".rs-productlink");
+        // System.out.println("REWE found: " + preview.size() + " : " + search);
+        if (preview != null && preview.size() == 1) {
+            found++;
+        } else if (preview != null && preview.size() > 1) {
+            moreThanOneFound++;
+        } else {
+            lookupCodecheck(search);
+        }
+    }
+
+    public void lookupCodecheck(String search) throws IOException {
+
+        String tmp = java.net.URLEncoder.encode(search, "UTF-8");
+        String searchUrl = "http://www.codecheck.info/product.search?q=" + tmp + "&OK=Suchen";
+
+        Document document = Jsoup.connect(searchUrl).get();
+        Elements preview = document.select(".product-info-item");
+        // System.out.println("CODECHECK found: " + preview.size() + " : " + search);
+        if (preview != null && preview.size() == 1) {
+            found++;
+        } else if (preview != null && preview.size() > 1) {
+            moreThanOneFound++;
+        } else {
+            lookupMyTime(search);
+        }
+    }
+
+
+    public void lookupMyTime(String search) throws IOException {
+        String tmp = java.net.URLEncoder.encode(search, "UTF-8");
+        String searchUrl = "http://www.mytime.de/search_result.php?search_query_keyword=" + tmp;
+
+        Document document = Jsoup.connect(searchUrl).get();
+        Elements preview = document.select(".productTitle");
+        // System.out.println("MYTIME found: " + preview.size() + " : " + search);
+        if (preview != null && preview.size() == 1) {
+            found++;
+        } else if (preview != null && preview.size() > 1) {
+            moreThanOneFound++;
+        } else {
+            notFound++;
+            System.out.println("not found: " + preview.size() + " : " + search);
+        }
+
     }
 }
