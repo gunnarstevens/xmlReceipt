@@ -17,17 +17,23 @@
         <totalprice>
             <currency>EUR</currency>
             <totalnetvalue>0.0</totalnetvalue>
-            <totaltaxes>0.0</totaltaxes>
         </totalprice>
     </total>
     <itemlist>
         <item>
-            <itemname>REWE Beste Wahl Taschentücher-Box 100</itemname>
+            <itemname>REWE Beste Wahl Taschentücher-Box 100 Stück</itemname>
+            <itemid>
+                <selleritemid>1953777</selleritemid>
+            </itemid>
             <price>
                 <currency>EUR</currency>
                 <itemvalue>0.99</itemvalue>
                 <itemtax>0.19</itemtax>
             </price>
+            <aspect>
+                <aspectname>iconurl</aspectname>
+                <aspectvalue>https://d9gkwhfwam31p.cloudfront.net/1953777/24035852_lightbox.png</aspectvalue>
+            </aspect>
         </item>
         <item>
             <itemname>Zewa Wisch &amp; Weg Küchenrolle</itemname>
@@ -46,44 +52,79 @@
             </price>
         </item>
         <item>
-            <itemname>Nivea Dusche Lemongras Oil</itemname>
+            <itemname>Nivea Lemongras Oil Pflegedusche 250ml</itemname>
+            <itemid>
+                <selleritemid>2116134</selleritemid>
+            </itemid>
             <price>
                 <currency>EUR</currency>
                 <itemvalue>1.59</itemvalue>
                 <itemtax>0.3</itemtax>
             </price>
+            <aspect>
+                <aspectname>iconurl</aspectname>
+                <aspectvalue>https://d9gkwhfwam31p.cloudfront.net/2116134/22381134_lightbox.png</aspectvalue>
+            </aspect>
         </item>
         <item>
-            <itemname>Colgate Zahncreme Sensation White</itemname>
+            <itemname>Colgate Zahncreme Sensation White 75ml</itemname>
+            <itemid>
+                <selleritemid>1930761</selleritemid>
+            </itemid>
             <price>
                 <currency>EUR</currency>
                 <itemvalue>1.39</itemvalue>
                 <itemtax>0.26</itemtax>
             </price>
+            <aspect>
+                <aspectname>iconurl</aspectname>
+                <aspectvalue>https://d9gkwhfwam31p.cloudfront.net/1930761/2532560_lightbox.png</aspectvalue>
+            </aspect>
         </item>
         <item>
-            <itemname>REWE Bio Körniger Frischkäse</itemname>
+            <itemname>REWE Bio Körniger Frischkäse 200g</itemname>
+            <itemid>
+                <selleritemid>1906432</selleritemid>
+            </itemid>
             <price>
                 <currency>EUR</currency>
                 <itemvalue>0.99</itemvalue>
                 <itemtax>0.1</itemtax>
             </price>
+            <aspect>
+                <aspectname>iconurl</aspectname>
+                <aspectvalue>https://d9gkwhfwam31p.cloudfront.net/1906432/21232282_lightbox.png</aspectvalue>
+            </aspect>
         </item>
         <item>
-            <itemname>ja! Pfefferbeißer</itemname>
+            <itemname>ja! Pfefferbeißer 300g</itemname>
+            <itemid>
+                <selleritemid>2120334</selleritemid>
+            </itemid>
             <price>
                 <currency>EUR</currency>
                 <itemvalue>2.29</itemvalue>
                 <itemtax>0.07</itemtax>
             </price>
+            <aspect>
+                <aspectname>iconurl</aspectname>
+                <aspectvalue>https://d9gkwhfwam31p.cloudfront.net/2120334/22367783_lightbox.png</aspectvalue>
+            </aspect>
         </item>
         <item>
-            <itemname>REWE Bio Ziegenfrischkäse 40% 150g</itemname>
+            <itemname>REWE Bio Ziegenfrischkäse 150g</itemname>
+            <itemid>
+                <selleritemid>2561874</selleritemid>
+            </itemid>
             <price>
                 <currency>EUR</currency>
                 <itemvalue>2.19</itemvalue>
                 <itemtax>0.16</itemtax>
             </price>
+            <aspect>
+                <aspectname>iconurl</aspectname>
+                <aspectvalue>https://d9gkwhfwam31p.cloudfront.net/2561874/25171739_lightbox.png</aspectvalue>
+            </aspect>
         </item>
         <item>
             <itemname>REWE Bio Frischkäse Natur</itemname>
@@ -110,12 +151,19 @@
             </price>
         </item>
         <item>
-            <itemname>Rhenser Mineralwasser Classic</itemname>
+            <itemname>Rhenser Mineralwasser Classic 12x0,7l</itemname>
+            <itemid>
+                <selleritemid>3697045</selleritemid>
+            </itemid>
             <price>
                 <currency>EUR</currency>
                 <itemvalue>4.99</itemvalue>
                 <itemtax>0.95</itemtax>
             </price>
+            <aspect>
+                <aspectname>iconurl</aspectname>
+                <aspectvalue>https://d9gkwhfwam31p.cloudfront.net/3697045/2528860_lightbox.png</aspectvalue>
+            </aspect>
         </item>
         <item>
             <itemname>Granini Die Limo Limette + Zitrone 0,33l</itemname>
@@ -126,20 +174,34 @@
             </price>
         </item>
         <item>
-            <itemname>REWE Bio Traubensaft Direktsaft</itemname>
+            <itemname>REWE Bio Traubensaft Direktsaft 1l</itemname>
+            <itemid>
+                <selleritemid>877993</selleritemid>
+            </itemid>
             <price>
                 <currency>EUR</currency>
                 <itemvalue>1.99</itemvalue>
                 <itemtax>0.38</itemtax>
             </price>
+            <aspect>
+                <aspectname>iconurl</aspectname>
+                <aspectvalue>https://d9gkwhfwam31p.cloudfront.net/0877993/6057640_lightbox.png</aspectvalue>
+            </aspect>
         </item>
         <item>
-            <itemname>REWE Beste Wahl Sauerkirschnektar</itemname>
+            <itemname>REWE Beste Wahl Sauerkirsch-Nektar 1l</itemname>
+            <itemid>
+                <selleritemid>177494</selleritemid>
+            </itemid>
             <price>
                 <currency>EUR</currency>
                 <itemvalue>1.19</itemvalue>
                 <itemtax>0.23</itemtax>
             </price>
+            <aspect>
+                <aspectname>iconurl</aspectname>
+                <aspectvalue>https://d9gkwhfwam31p.cloudfront.net/0177494/20711961_lightbox.png</aspectvalue>
+            </aspect>
         </item>
         <item>
             <itemname>Kühne Gewürzgurken Auslese</itemname>
@@ -166,44 +228,79 @@
             </price>
         </item>
         <item>
-            <itemname>REWE Kokosmilch</itemname>
+            <itemname>REWE Beste Wahl Kokosmilch 400ml</itemname>
+            <itemid>
+                <selleritemid>792132</selleritemid>
+            </itemid>
             <price>
                 <currency>EUR</currency>
                 <itemvalue>1.49</itemvalue>
                 <itemtax>0.13</itemtax>
             </price>
+            <aspect>
+                <aspectname>iconurl</aspectname>
+                <aspectvalue>https://d9gkwhfwam31p.cloudfront.net/0792132/24260010_lightbox.png</aspectvalue>
+            </aspect>
         </item>
         <item>
-            <itemname>REWE Bio Joghurt 3,8% Erdbeer-Himbeer</itemname>
+            <itemname>REWE Bio Joghurt mild Erdbeer-Himbeer 150g</itemname>
+            <itemid>
+                <selleritemid>784612</selleritemid>
+            </itemid>
             <price>
                 <currency>EUR</currency>
                 <itemvalue>0.49</itemvalue>
                 <itemtax>0.1</itemtax>
             </price>
+            <aspect>
+                <aspectname>iconurl</aspectname>
+                <aspectvalue>https://d9gkwhfwam31p.cloudfront.net/0784612/5300410_lightbox.png</aspectvalue>
+            </aspect>
         </item>
         <item>
-            <itemname>REWE Bio Joghurt 3,8% Stracciatella</itemname>
+            <itemname>REWE Bio Joghurt mild Stracciatella 150g</itemname>
+            <itemid>
+                <selleritemid>784792</selleritemid>
+            </itemid>
             <price>
                 <currency>EUR</currency>
                 <itemvalue>0.49</itemvalue>
                 <itemtax>0.03</itemtax>
             </price>
+            <aspect>
+                <aspectname>iconurl</aspectname>
+                <aspectvalue>https://d9gkwhfwam31p.cloudfront.net/0784792/5300550_lightbox.png</aspectvalue>
+            </aspect>
         </item>
         <item>
-            <itemname>ja! H-Milch 1,5% Fett</itemname>
+            <itemname>ja! Fettarme H-Milch 1,5% 1l</itemname>
+            <itemid>
+                <selleritemid>6509371</selleritemid>
+            </itemid>
             <price>
                 <currency>EUR</currency>
                 <itemvalue>0.42</itemvalue>
                 <itemtax>0.03</itemtax>
             </price>
+            <aspect>
+                <aspectname>iconurl</aspectname>
+                <aspectvalue>https://d9gkwhfwam31p.cloudfront.net/6509371/24942202_lightbox.png</aspectvalue>
+            </aspect>
         </item>
         <item>
-            <itemname>REWE Bio Joghurt Heidelbeer 3,8%</itemname>
+            <itemname>REWE Bio Joghurt mild Heidelbeere 150g</itemname>
+            <itemid>
+                <selleritemid>784809</selleritemid>
+            </itemid>
             <price>
                 <currency>EUR</currency>
                 <itemvalue>0.49</itemvalue>
                 <itemtax>0.03</itemtax>
             </price>
+            <aspect>
+                <aspectname>iconurl</aspectname>
+                <aspectvalue>https://d9gkwhfwam31p.cloudfront.net/0784809/5300610_lightbox.png</aspectvalue>
+            </aspect>
         </item>
         <item>
             <itemname>REWE Bio Eier Klasse M-L</itemname>
@@ -214,12 +311,19 @@
             </price>
         </item>
         <item>
-            <itemname>REWE Bio Paprika Mix</itemname>
+            <itemname>REWE Bio Paprika Mix 400g</itemname>
+            <itemid>
+                <selleritemid>1056856</selleritemid>
+            </itemid>
             <price>
                 <currency>EUR</currency>
                 <itemvalue>2.29</itemvalue>
                 <itemtax>0.15</itemtax>
             </price>
+            <aspect>
+                <aspectname>iconurl</aspectname>
+                <aspectvalue>https://d9gkwhfwam31p.cloudfront.net/1056856/9685530_lightbox.png</aspectvalue>
+            </aspect>
         </item>
         <item>
             <itemname>REWE Bio Kräuter Kresse in der Schale</itemname>
@@ -230,12 +334,19 @@
             </price>
         </item>
         <item>
-            <itemname>REWE Bio Champignons braun</itemname>
+            <itemname>REWE Bio Champignons braun 200g</itemname>
+            <itemid>
+                <selleritemid>2991870</selleritemid>
+            </itemid>
             <price>
                 <currency>EUR</currency>
                 <itemvalue>1.99</itemvalue>
                 <itemtax>0.03</itemtax>
             </price>
+            <aspect>
+                <aspectname>iconurl</aspectname>
+                <aspectvalue>https://d9gkwhfwam31p.cloudfront.net/2991870/11402940_lightbox.png</aspectvalue>
+            </aspect>
         </item>
         <item>
             <itemname>Mango essreif</itemname>
@@ -254,12 +365,19 @@
             </price>
         </item>
         <item>
-            <itemname>Wagner Steinofen Elsässer Flammkuchen</itemname>
+            <itemname>Original Wagner Steinofen Pizzies Elsässer Art 250g</itemname>
+            <itemid>
+                <selleritemid>407721</selleritemid>
+            </itemid>
             <price>
                 <currency>EUR</currency>
                 <itemvalue>1.59</itemvalue>
                 <itemtax>0.11</itemtax>
             </price>
+            <aspect>
+                <aspectname>iconurl</aspectname>
+                <aspectvalue>https://d9gkwhfwam31p.cloudfront.net/0407721/4786460_lightbox.png</aspectvalue>
+            </aspect>
         </item>
         <item>
             <itemname>Kraft Oreo Ice Cup</itemname>
@@ -286,12 +404,19 @@
             </price>
         </item>
         <item>
-            <itemname>Wagner Steinofen Pizza Thunfisch</itemname>
+            <itemname>Original Wagner Steinofen Pizza Thunfisch 360g</itemname>
+            <itemid>
+                <selleritemid>6776531</selleritemid>
+            </itemid>
             <price>
                 <currency>EUR</currency>
                 <itemvalue>1.59</itemvalue>
                 <itemtax>0.13</itemtax>
             </price>
+            <aspect>
+                <aspectname>iconurl</aspectname>
+                <aspectvalue>https://d9gkwhfwam31p.cloudfront.net/6776531/774660_lightbox.png</aspectvalue>
+            </aspect>
         </item>
         <item>
             <itemname>Pro Planet Kopierpapier DIN A4 weiß</itemname>

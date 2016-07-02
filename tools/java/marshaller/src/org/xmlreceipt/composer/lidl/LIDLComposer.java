@@ -1,8 +1,9 @@
-package org.xmlreceipt.composer;
+package org.xmlreceipt.composer.lidl;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
+import org.xmlreceipt.composer.AbstractComposer;
 import org.xmlreceipt.marshaller.Xmlreceipt;
 
 import java.io.IOException;
@@ -50,7 +51,7 @@ public class LIDLComposer extends AbstractComposer {
     }
 
 
-    @Override
+
     public Xmlreceipt.Itemlist.Item createItem(String idtype, String id) throws IOException {
         Xmlreceipt.Itemlist.Item item = factory.createXmlreceiptItemlistItem();
 
@@ -123,4 +124,7 @@ public class LIDLComposer extends AbstractComposer {
         return item;
     }
 
+    public Xmlreceipt.Itemlist.Item addItem(String idtype, String id) throws IOException {
+        return addItem(createItem(idtype, id));
+    }
 }

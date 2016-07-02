@@ -39,8 +39,8 @@ public class XmlreceiptTest {
                 "            Domstraße 20\n" +
                 "            50668 Köln\n" +
                 "        ", seller.getSelleraddress());
-        assertEquals("aspect name", "newsletter", seller.getAspect().getAspectname());
-        assertEquals("aspect value", "https://www.rewe.de/service/newsletter/", seller.getAspect().getAspectvalue());
+        assertEquals("aspect name", "newsletter", seller.getAspect().get(0).getAspectname());
+        assertEquals("aspect value", "https://www.rewe.de/service/newsletter/", seller.getAspect().get(0).getAspectvalue());
 
     }
 
@@ -86,11 +86,11 @@ public class XmlreceiptTest {
 
         assertEquals("quantity gramm", 425.0f, item.getQuantity().getGramm(), 0.0f);
 
-        assertEquals("elass category", "Fertiggericht, Halbfertiggericht (Sonstige, nicht spezifiziert)", item.getItemgroup().getEclass().getClassificationname());
-        assertEquals("elass category langue", "DE-de", item.getItemgroup().getEclass().getLanguage());
+        assertEquals("elass category", "Fertiggericht, Halbfertiggericht (Sonstige, nicht spezifiziert)", item.getItemgroup().get(0).getEclass().getClassificationname());
+        assertEquals("elass category langue", "DE-de", item.getItemgroup().get(0).getEclass().getLanguage());
 
-        assertEquals("seller category", "Pizza Hühnchen", item.getItemgroup().getSellercategory().getClassificationname());
-        assertEquals("seller category langue", "DE-de", item.getItemgroup().getSellercategory().getLanguage());
+        assertEquals("seller category", "Pizza Hühnchen", item.getItemgroup().get(0).getSellercategory().getClassificationname());
+        assertEquals("seller category langue", "DE-de", item.getItemgroup().get(0).getSellercategory().getLanguage());
     }
 
     @org.junit.Test

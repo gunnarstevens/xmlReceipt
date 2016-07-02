@@ -6,8 +6,7 @@ import org.apache.pdfbox.io.RandomAccessBuffer;
 import org.apache.pdfbox.pdfparser.PDFParser;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
-import org.xmlreceipt.composer.AbstractComposer;
-import org.xmlreceipt.composer.LIDLComposer;
+import org.xmlreceipt.composer.lidl.LIDLComposer;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
@@ -60,10 +59,10 @@ public class LIDLComposerTest {
                 "20003548",
                 "20235130"
         };
-        AbstractComposer lidlReceipt = new LIDLComposer();
+        LIDLComposer lidlReceipt = new LIDLComposer();
 
         for (String ean : testSell) {
-            Xmlreceipt.Itemlist.Item item = lidlReceipt.addItem("ean", ean);
+            Xmlreceipt.Itemlist.Item item = lidlReceipt.addItem("gtin", ean);
         }
 
         Xmlreceipt receipt = lidlReceipt.getXmlReceipt();

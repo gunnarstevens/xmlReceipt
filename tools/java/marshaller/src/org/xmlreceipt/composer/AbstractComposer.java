@@ -5,6 +5,7 @@ import org.xmlreceipt.marshaller.Xmlreceipt;
 
 import java.io.IOException;
 import java.math.BigInteger;
+import java.util.List;
 
 
 /**
@@ -13,19 +14,29 @@ import java.math.BigInteger;
 public abstract class AbstractComposer {
 
 
-    private static String currency = "EUR";
+    protected static String currency = "EUR";
 
-    final ObjectFactory factory = new ObjectFactory();
+    final protected ObjectFactory factory = new ObjectFactory();
 
-    final Xmlreceipt xmlReceipt = factory.createXmlreceipt();
+    final protected Xmlreceipt xmlReceipt = factory.createXmlreceipt();
+
+    public AbstractComposer() {
+        AbstractComposer.currency = currency;
+        init();
+    }
 
     public AbstractComposer(String currency) {
         AbstractComposer.currency = currency;
+        init();
+    }
+
+
+    private void init() {
         xmlReceipt.setSeller(createSeller());
         xmlReceipt.setTotal(createTotal());
         xmlReceipt.setItemlist(factory.createXmlreceiptItemlist());
-    }
 
+    }
 
     protected Xmlreceipt.Total createTotal() {
         Xmlreceipt.Total total = factory.createXmlreceiptTotal();
@@ -44,9 +55,9 @@ public abstract class AbstractComposer {
     }
 
 
-    public Xmlreceipt.Itemlist.Item addItem(String idtype, String id) throws IOException {
-        Xmlreceipt.Itemlist.Item item = createItem(idtype, id);
-        xmlReceipt.getItemlist().getItem().add(item);
+    public Xmlreceipt.Itemlist.Item addItem(Xmlreceipt.Itemlist.Item item) throws IOException {
+        List<Xmlreceipt.Itemlist.Item> items = xmlReceipt.getItemlist().getItem();
+        items.add(item);
 
         // adjust total price
         Xmlreceipt.Total.Totalprice totalprice = xmlReceipt.getTotal().getTotalprice();
@@ -66,14 +77,9 @@ public abstract class AbstractComposer {
     }
 
 
-    /**
-     * Create a  item node about the product given by id
-     * @param idtype the type of the id, eg. ean or gtin
-     * @param id
-     * @return null if corresponding product info could not retrieved, otherwise the xml node that holds the needed information
-     * @throws IOException
-     */
-    abstract public Xmlreceipt.Itemlist.Item createItem(String idtype, String id) throws IOException;
+    public Xmlreceipt getXmlReceipt() {
+        return xmlReceipt;
+    }
 
     /**
      * @return
@@ -81,7 +87,4 @@ public abstract class AbstractComposer {
     abstract public Xmlreceipt.Seller createSeller();
 
 
-    public Xmlreceipt getXmlReceipt() {
-        return xmlReceipt;
-    }
 }

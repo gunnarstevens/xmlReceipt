@@ -1,0 +1,280 @@
+{
+  "user": {
+    "id": "0d9e6bcd-c0c9-4d46-aefd-8359da425f75",
+    "status": "logged-in",
+    "type": "privatkunde",
+    "birthyear": "",
+    "gender": "MR",
+    "postcode": "53119",
+    "country": "DE",
+    "nlSubscriber": "",
+    "SC": "nr",
+    "customerStatus": "NEW"
+  },
+  "reweMarket": {
+    "id": "231007",
+    "country": "DE",
+    "state": "48",
+    "city": "Hürth",
+    "postcode": "50354",
+    "street": "Efferener Str. 1",
+    "chosenService": "lieferservice"
+  },
+  "events": {
+    "loginSuccess": "1467476033896"
+  },
+  "page": {
+    "name": "warenkorb",
+    "type": "basket",
+    "channel": "checkout",
+    "hierarchy": [
+      "checkout",
+      "warenkorb"
+    ],
+    "status": "200",
+    "language": "DE"
+  },
+  "products": [
+    {
+      "id": "1114841",
+      "name": "ja! Emmentaler 400g",
+      "category": [
+        "Stückkäse"
+      ],
+      "units": "1",
+      "price": "1.99",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "453459",
+      "name": "Fol Epi Hauchfein Classic  100g",
+      "category": [
+        "Schnittkäse"
+      ],
+      "units": "1",
+      "price": "2.19",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "200323",
+      "name": "REWE Bio Maasdamer 150g",
+      "category": [
+        "Schnittkäse"
+      ],
+      "units": "1",
+      "price": "1.89",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "1318587",
+      "name": "Bergader Bergbauern Scheiben mild-nussig 160g ",
+      "category": [
+        "Schnittkäse"
+      ],
+      "units": "1",
+      "price": "1.99",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "489052",
+      "name": "Wilhelm Brandenburg Schinkenspeck 100g",
+      "category": [
+        "Roher Schinken \u0026 Speck"
+      ],
+      "units": "1",
+      "price": "1.39",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "1371904",
+      "name": "Melitta Filtertüten 1x4 naturbraun Aroma 80 Stück",
+      "category": [
+        "Filtertüten"
+      ],
+      "units": "1",
+      "price": "1.79",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "2591297",
+      "name": "REWE Beste Wahl Brasil ganze Bohne 1000g",
+      "category": [
+        "ganze Bohne"
+      ],
+      "units": "1",
+      "price": "8.99",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "2659136",
+      "name": "Weinhaus Neiss Riesling Grafenstück trocken 0,75l",
+      "category": [
+        "Pfalz"
+      ],
+      "units": "1",
+      "price": "7.50",
+      "savingsPercent": "23.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "782811",
+      "name": "Mühlen Kölsch 20x0,33l",
+      "category": [
+        "Kölsch"
+      ],
+      "units": "1",
+      "price": "14.69",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "6560326",
+      "name": "Baktat Schwarze Oliven mit Stein 200g",
+      "category": [
+        "Oliven"
+      ],
+      "units": "1",
+      "price": "1.69",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "7430140",
+      "name": "ja! H-Vollmilch 3,5% 1l",
+      "category": [
+        "Haltbare Milch"
+      ],
+      "units": "1",
+      "price": "0.46",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "8187819",
+      "name": "ja! Schmand 200g",
+      "category": [
+        "Schmand"
+      ],
+      "units": "2",
+      "price": "0.30",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "112885",
+      "name": "REWE Beste Wahl Deutsche Markenbutter Süßrahm 250g",
+      "category": [
+        "Butter"
+      ],
+      "units": "1",
+      "price": "0.90",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "197892",
+      "name": "REWE Bio Frische Bio-Eier 6 Stück",
+      "category": [
+        "Eier"
+      ],
+      "units": "1",
+      "price": "2.15",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "482404",
+      "name": "Lauchzwiebeln Bund",
+      "category": [
+        "Zwiebeln"
+      ],
+      "units": "1",
+      "price": "0.69",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "1045111",
+      "name": "REWE Beste Wahl Karotten 1kg",
+      "category": [
+        "Möhren"
+      ],
+      "units": "1",
+      "price": "1.29",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "482331",
+      "name": "Blumenkohl weiß",
+      "category": [
+        "Blumenkohl"
+      ],
+      "units": "1",
+      "price": "1.99",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "1045619",
+      "name": "Pfirsiche gelb 1kg Schale",
+      "category": [
+        "Pfirsiche"
+      ],
+      "units": "1",
+      "price": "1.29",
+      "savingsPercent": "23.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "1043421",
+      "name": "REWE Beste Wahl Romana Salatherzen 3 Stück",
+      "category": [
+        "Frischer Salat"
+      ],
+      "units": "1",
+      "price": "1.69",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "151854",
+      "name": "Avocado Hass essreif",
+      "category": [
+        "Avocado"
+      ],
+      "units": "1",
+      "price": "1.49",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    }
+  ],
+  "basket": {
+    "totalProducts": 20,
+    "totalUnits": 21,
+    "totalNetValue": 56.66,
+    "taxes": "",
+    "pfand": 3.1,
+    "totalBasketValue": 59.76
+  },
+  "checkout": {
+    "country": "",
+    "city": "",
+    "postcode": "",
+    "paymentMethod": "",
+    "creditcardType": "",
+    "shipment": "HOME_DELIVERY",
+    "shipmentPrice": "",
+    "newsletter": "false",
+    "vocherCode": "",
+    "voucherValue": "",
+    "orderType": "standard"
+  }
+}
