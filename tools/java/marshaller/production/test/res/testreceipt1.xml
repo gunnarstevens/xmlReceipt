@@ -152,7 +152,8 @@
             </price>
             <aspect>
                 <aspectname>iconurl</aspectname>
-                <aspectvalue>https://img.rewe-static.de/0200397/4997410_digital-image.png?resize=260px:260px</aspectvalue>
+                <aspectvalue>https://img.rewe-static.de/0200397/4997410_digital-image.png?resize=260px:260px
+                </aspectvalue>
             </aspect>
         </item>
         <item>
@@ -182,7 +183,8 @@
             </price>
             <aspect>
                 <aspectname>iconurl</aspectname>
-                <aspectvalue>https://img.rewe-static.de/1079114/24586625_digital-image.png?resize=260px:260px</aspectvalue>
+                <aspectvalue>https://img.rewe-static.de/1079114/24586625_digital-image.png?resize=260px:260px
+                </aspectvalue>
             </aspect>
         </item>
         <item>
@@ -212,7 +214,9 @@
             </price>
             <aspect>
                 <aspectname>iconurl</aspectname>
-                <aspectvalue>http://www.brandlogistics.net/media/catalog/product/cache/3/image/494x494/dd8f3eb03265d590b3a9b7760a3047da/d/i/dielimo_lz.png</aspectvalue>
+                <aspectvalue>
+                    http://www.brandlogistics.net/media/catalog/product/cache/3/image/494x494/dd8f3eb03265d590b3a9b7760a3047da/d/i/dielimo_lz.png
+                </aspectvalue>
             </aspect>
         </item>
         <item>
@@ -256,7 +260,9 @@
             </price>
             <aspect>
                 <aspectname>iconurl</aspectname>
-                <aspectvalue>http://prdimg.affili.net/img/size/180/src/d2jdyzt6tc17s.cloudfront.net/products/images/4502040067_40804651_01.jpg.jpg</aspectvalue>
+                <aspectvalue>
+                    http://prdimg.affili.net/img/size/180/src/d2jdyzt6tc17s.cloudfront.net/products/images/4502040067_40804651_01.jpg.jpg
+                </aspectvalue>
             </aspect>
         </item>
         <item>
@@ -365,7 +371,7 @@
             </aspect>
         </item>
         <item>
-            <itemname>REWE Bio Frische Bio-Eier 6 Stück </itemname>
+            <itemname>REWE Bio Frische Bio-Eier 6 Stück</itemname>
             <itemid>
                 <selleritemid>rewe:197892</selleritemid>
             </itemid>
@@ -376,7 +382,8 @@
             </price>
             <aspect>
                 <aspectname>iconurl</aspectname>
-                <aspectvalue>https://img.rewe-static.de/0197892/4777810_digital-image.png?resize=260px:260px</aspectvalue>
+                <aspectvalue>https://img.rewe-static.de/0197892/4777810_digital-image.png?resize=260px:260px
+                </aspectvalue>
             </aspect>
         </item>
         <item>
@@ -391,7 +398,8 @@
             </price>
             <aspect>
                 <aspectname>iconurl</aspectname>
-                <aspectvalue>https://img.rewe-static.de/1056856/9685530_digital-image.png?resize=260px:260px</aspectvalue>
+                <aspectvalue>https://img.rewe-static.de/1056856/9685530_digital-image.png?resize=260px:260px
+                </aspectvalue>
             </aspect>
         </item>
         <item>
@@ -436,7 +444,8 @@
             </price>
             <aspect>
                 <aspectname>iconurl</aspectname>
-                <aspectvalue>https://img.rewe-static.de/0025267/24569609_digital-image.png?resize=260px:260px</aspectvalue>
+                <aspectvalue>https://img.rewe-static.de/0025267/24569609_digital-image.png?resize=260px:260px
+                </aspectvalue>
             </aspect>
         </item>
         <item>
@@ -489,7 +498,8 @@
             </price>
             <aspect>
                 <aspectname>iconurl</aspectname>
-                <aspectvalue>https://img.rewe-static.de/2120509/23173003_digital-image.png?resize=260px:260px</aspectvalue>
+                <aspectvalue>https://img.rewe-static.de/2120509/23173003_digital-image.png?resize=260px:260px
+                </aspectvalue>
             </aspect>
         </item>
         <item>
@@ -504,7 +514,9 @@
             </price>
             <aspect>
                 <aspectname>iconurl</aspectname>
-                <aspectvalue>http://www.codecheck.info/http://prdimg.affili.net/img/size/180/src/i1.weltbild.de/asset/vgwa/vgw/making-your-own-gourmet-coffee-drinks-072590905.jpg?$af170compact$</aspectvalue>
+                <aspectvalue>
+                    http://www.codecheck.info/http://prdimg.affili.net/img/size/180/src/i1.weltbild.de/asset/vgwa/vgw/making-your-own-gourmet-coffee-drinks-072590905.jpg?$af170compact$
+                </aspectvalue>
             </aspect>
         </item>
         <item>
