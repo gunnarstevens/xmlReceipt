@@ -5,8 +5,8 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.xmlreceipt.composer.AbstractComposer;
 import org.xmlreceipt.lookup.impl.REWELookup;
-import org.xmlreceipt.marshaller.UtilMethods;
-import org.xmlreceipt.marshaller.Xmlreceipt;
+import org.xmlreceipt.marshaller.xmlrecipt.UtilMethods;
+import org.xmlreceipt.marshaller.xmlrecipt.Xmlreceipt;
 
 import javax.xml.datatype.DatatypeConfigurationException;
 import java.io.IOException;

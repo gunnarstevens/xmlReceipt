@@ -1,7 +1,7 @@
 package org.xmlreceipt.lookup;
 
-import org.xmlreceipt.marshaller.ObjectFactory;
-import org.xmlreceipt.marshaller.Xmlreceipt;
+import org.xmlreceipt.marshaller.xmlrecipt.ObjectFactory;
+import org.xmlreceipt.marshaller.xmlrecipt.Xmlreceipt;
 
 import java.io.IOException;
 

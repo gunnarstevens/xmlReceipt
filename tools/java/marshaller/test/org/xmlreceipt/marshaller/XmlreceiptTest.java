@@ -1,5 +1,8 @@
 package org.xmlreceipt.marshaller;
 
+import org.xmlreceipt.marshaller.xmlrecipt.ObjectFactory;
+import org.xmlreceipt.marshaller.xmlrecipt.Xmlreceipt;
+
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;

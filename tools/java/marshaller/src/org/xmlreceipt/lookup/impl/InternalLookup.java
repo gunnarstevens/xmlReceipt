@@ -1,9 +1,9 @@
 package org.xmlreceipt.lookup.impl;
 
 import org.xmlreceipt.lookup.ItemLookup;
-import org.xmlreceipt.marshaller.ObjectFactory;
-import org.xmlreceipt.marshaller.UtilMethods;
-import org.xmlreceipt.marshaller.Xmlreceipt;
+import org.xmlreceipt.marshaller.xmlrecipt.ObjectFactory;
+import org.xmlreceipt.marshaller.xmlrecipt.UtilMethods;
+import org.xmlreceipt.marshaller.xmlrecipt.Xmlreceipt;
 
 import java.io.IOException;
 import java.util.HashMap;

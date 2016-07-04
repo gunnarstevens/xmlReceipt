@@ -5,9 +5,10 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.xmlreceipt.lookup.ItemLookup;
-import org.xmlreceipt.marshaller.ObjectFactory;
-import org.xmlreceipt.marshaller.UtilMethods;
-import org.xmlreceipt.marshaller.Xmlreceipt;
+import org.xmlreceipt.marshaller.xmlfoodlabeling.XmlFoodLabelling;
+import org.xmlreceipt.marshaller.xmlrecipt.ObjectFactory;
+import org.xmlreceipt.marshaller.xmlrecipt.UtilMethods;
+import org.xmlreceipt.marshaller.xmlrecipt.Xmlreceipt;
 
 import java.io.IOException;
 
@@ -91,5 +92,34 @@ public class Codecheck implements ItemLookup {
             }
         }
         return false;
+    }
+
+
+    public XmlFoodLabelling lookupFoodlabeling(org.xmlreceipt.marshaller.xmlfoodlabeling.ObjectFactory factory, String gtin) throws Exception {
+        XmlFoodLabelling xmlFoodLabelling = factory.createXmlFoodLabelling();
+        XmlFoodLabelling.Nutrition nutrition = factory.createXmlFoodLabellingNutrition();
+        XmlFoodLabelling.Energyvalue energyvalue = factory.createXmlFoodLabellingEnergyvalue();
+        xmlFoodLabelling.setEnergyvalue(energyvalue);
+        xmlFoodLabelling.setNutrition(nutrition);
+
+        String tmp = java.net.URLEncoder.encode(gtin, "UTF-8");
+        String searchUrl = "http://www.codecheck.info/product.search?q=" + tmp + "&OK=Suchen";
+        Document document = Jsoup.connect(searchUrl).get();
+
+        Elements nutRows = document.select(".nutrition-facts tr");
+        energyvalue.setKilocalories(9.0d);
+
+        for (int i = 0; i < nutRows.size(); i++) {
+            Element nuRow = nutRows.get(i);
+            Elements cells = nuRow.select("td");
+            String key = cells.get(0).text();
+
+            if ("Energie / Brennwert".equals(key)) {
+                String value = cells.get(1).text();
+                value = null;
+            }
+        }
+        return null;
+
     }
 }

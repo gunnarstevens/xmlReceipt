@@ -6,6 +6,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.xmlreceipt.composer.rewe.REWEJSONComposer;
 import org.xmlreceipt.composer.rewe.REWEPDFComposer;
+import org.xmlreceipt.marshaller.xmlrecipt.Xmlreceipt;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;

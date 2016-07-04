@@ -1,12 +1,8 @@
 package org.xmlreceipt.marshaller;
 
 
-import org.apache.pdfbox.cos.COSDocument;
-import org.apache.pdfbox.io.RandomAccessBuffer;
-import org.apache.pdfbox.pdfparser.PDFParser;
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.text.PDFTextStripper;
 import org.xmlreceipt.composer.lidl.LIDLComposer;
+import org.xmlreceipt.marshaller.xmlrecipt.Xmlreceipt;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
@@ -35,20 +31,20 @@ public class LIDLComposerTest {
         FileInputStream pdfReceipt;
         pdfReceipt = new FileInputStream(testFile);
 
-        PDFTextStripper pdfStripper = null;
-        PDDocument pdDoc = null;
-        COSDocument cosDoc = null;
-
-
-        PDFParser parser = new PDFParser(new RandomAccessBuffer(pdfReceipt));
-        parser.parse();
-        cosDoc = parser.getDocument();
-        pdfStripper = new PDFTextStripper();
-        pdDoc = new PDDocument(cosDoc);
-        pdfStripper.setStartPage(1);
-        pdfStripper.setEndPage(5);
-        String parsedText = pdfStripper.getText(pdDoc);
-        System.out.println(parsedText);
+//        PDFTextStripper pdfStripper = null;
+//        PDDocument pdDoc = null;
+//        COSDocument cosDoc = null;
+//
+//
+//        PDFParser parser = new PDFParser(new RandomAccessBuffer(pdfReceipt));
+//        parser.parse();
+//        cosDoc = parser.getDocument();
+//        pdfStripper = new PDFTextStripper();
+//        pdDoc = new PDDocument(cosDoc);
+//        pdfStripper.setStartPage(1);
+//        pdfStripper.setEndPage(5);
+//        String parsedText = pdfStripper.getText(pdDoc);
+//        System.out.println(parsedText);
     }
 
     @org.junit.Test

@@ -8,7 +8,7 @@ import org.xmlreceipt.lookup.impl.Brandlogistics;
 import org.xmlreceipt.lookup.impl.Codecheck;
 import org.xmlreceipt.lookup.impl.InternalLookup;
 import org.xmlreceipt.lookup.impl.REWELookup;
-import org.xmlreceipt.marshaller.Xmlreceipt;
+import org.xmlreceipt.marshaller.xmlrecipt.Xmlreceipt;
 
 import java.io.IOException;
 import java.io.InputStream;
