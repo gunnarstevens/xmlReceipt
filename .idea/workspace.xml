@@ -1,30 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4ea659f-c708-4912-b021-677dc05be826" name="Default" comment="Composer for REWE JSON Receipt Objects">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Aspect.class" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Aspect.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Dates.class" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Dates.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Infosheet.class" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Infosheet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Itemgroup$Cpv.class" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Itemgroup$Cpv.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Itemgroup$Eclass.class" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Itemgroup$Eclass.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Itemgroup$Sellercategory.class" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Itemgroup$Sellercategory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Itemgroup$Unspsc.class" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Itemgroup$Unspsc.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Itemgroup.class" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Itemgroup.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Itemid.class" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Itemid.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Price.class" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Price.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Quantity.class" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item$Quantity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item.class" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist$Item.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist.class" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Itemlist.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Seller$Aspect.class" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Seller$Aspect.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Seller$Sellerid.class" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Seller$Sellerid.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Seller.class" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Seller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Total$Aspect.class" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Total$Aspect.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Total$Totalprice.class" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Total$Totalprice.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Total$Totalquantity.class" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Total$Totalquantity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Total.class" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt$Total.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt.class" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/marshaller/org/xmlreceipt/marshaller/Xmlreceipt.class" />
+    <list default="true" id="b4ea659f-c708-4912-b021-677dc05be826" name="Default" comment="Lookup Classes to retrieve information from the Website">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/java/marshaller/production/test/res/testreceipt1.xml" afterPath="$PROJECT_DIR$/tools/java/marshaller/production/test/res/testreceipt1.xml" />
     </list>
     <ignored path="xmlReceipt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -920,7 +898,14 @@
       <option name="project" value="LOCAL" />
       <updated>1467645594909</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Lookup Classes to retrieve information from the Website">
+      <created>1467647183003</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1467647183003</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1046,7 +1031,8 @@
     <MESSAGE value="Composer for LIDL" />
     <MESSAGE value="Composer for REWE (tokenizer item)" />
     <MESSAGE value="Composer for REWE JSON Receipt Objects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Composer for REWE JSON Receipt Objects" />
+    <MESSAGE value="Lookup Classes to retrieve information from the Website" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lookup Classes to retrieve information from the Website" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
