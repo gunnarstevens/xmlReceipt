@@ -7,7 +7,6 @@ import org.apache.pdfbox.pdfparser.PDFParser;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 import org.xmlreceipt.composer.lidl.LIDLComposer;
-import org.xmlreceipt.marshaller.xmlreceipt.ObjectFactory;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
@@ -63,13 +62,13 @@ public class LIDLComposerTest {
         LIDLComposer lidlReceipt = new LIDLComposer();
 
         for (String ean : testSell) {
-            ObjectFactory.Xmlreceipt.Itemlist.Item item = lidlReceipt.addItem("gtin", ean);
+            Xmlreceipt.Itemlist.Item item = lidlReceipt.addItem("gtin", ean);
         }
 
-        ObjectFactory.Xmlreceipt receipt = lidlReceipt.getXmlReceipt();
+        Xmlreceipt receipt = lidlReceipt.getXmlReceipt();
 
         // unmarshal a doc
-        JAXBContext jc = JAXBContext.newInstance(ObjectFactory.Xmlreceipt.class);
+        JAXBContext jc = JAXBContext.newInstance(Xmlreceipt.class);
         Marshaller m = jc.createMarshaller();
         m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
         m.marshal(receipt, System.out);
@@ -80,7 +79,7 @@ public class LIDLComposerTest {
     @org.junit.Test
     public void createSeller() throws Exception {
         LIDLComposer lidlReceipt = new LIDLComposer();
-        ObjectFactory.Xmlreceipt.Seller seller = lidlReceipt.createSeller();
+        Xmlreceipt.Seller seller = lidlReceipt.createSeller();
 
         assertEquals("seller name", LIDLComposer.SELLERNAME, seller.getSellername());
         assertEquals("seller id", LIDLComposer.DUNS, seller.getSellerid().getDuns());
@@ -94,7 +93,7 @@ public class LIDLComposerTest {
     @org.junit.Test
     public void createItem() throws Exception {
         LIDLComposer lidlReceipt = new LIDLComposer();
-        ObjectFactory.Xmlreceipt.Itemlist.Item item = lidlReceipt.createItem("ean", MILK_EAN);
+        Xmlreceipt.Itemlist.Item item = lidlReceipt.createItem("ean", MILK_EAN);
 
         assertEquals("item name", MILK_NAME, item.getItemname());
         assertEquals("ean item id", new BigInteger(MILK_EAN), item.getItemid().getEan());

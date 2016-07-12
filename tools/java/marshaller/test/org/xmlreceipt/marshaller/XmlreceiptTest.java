@@ -1,7 +1,5 @@
 package org.xmlreceipt.marshaller;
 
-import org.xmlreceipt.marshaller.xmlreceipt.ObjectFactory;
-
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
@@ -17,20 +15,20 @@ import static org.junit.Assert.assertEquals;
 public class XmlreceiptTest {
 
 
-    ObjectFactory.Xmlreceipt getTestReceipt1() throws JAXBException {
+    Xmlreceipt getTestReceipt1() throws JAXBException {
         File testFile = new File("./test/res/testreceipt1.xml");
 
         // unmarshal a doc
-        JAXBContext jc = JAXBContext.newInstance(ObjectFactory.Xmlreceipt.class);
+        JAXBContext jc = JAXBContext.newInstance(Xmlreceipt.class);
         Unmarshaller u = jc.createUnmarshaller();
-        ObjectFactory.Xmlreceipt testReceipt = (ObjectFactory.Xmlreceipt) u.unmarshal(testFile);
+        Xmlreceipt testReceipt = (Xmlreceipt) u.unmarshal(testFile);
         return testReceipt;
     }
 
     @org.junit.Test
     public void getSeller() throws Exception {
-        ObjectFactory.Xmlreceipt xmlreceipt = getTestReceipt1();
-        ObjectFactory.Xmlreceipt.Seller seller = xmlreceipt.getSeller();
+        Xmlreceipt xmlreceipt = getTestReceipt1();
+        Xmlreceipt.Seller seller = xmlreceipt.getSeller();
         assertEquals("seller name", "REWE Markt GmbH", seller.getSellername());
         assertEquals("seller id", new BigInteger("312522838"), seller.getSellerid().getDuns());
         assertEquals("seller vatin", "DE 812 706 034", seller.getVatin());
@@ -49,9 +47,9 @@ public class XmlreceiptTest {
     @org.junit.Test
     public void setSeller() throws Exception {
         ObjectFactory factory = new ObjectFactory();
-        ObjectFactory.Xmlreceipt xmlreceipt = factory.createXmlreceipt();
-        ObjectFactory.Xmlreceipt.Seller seller = factory.createXmlreceiptSeller();
-        ObjectFactory.Xmlreceipt.Seller.Sellerid sellerid = factory.createXmlreceiptSellerSellerid();
+        Xmlreceipt xmlreceipt = factory.createXmlreceipt();
+        Xmlreceipt.Seller seller = factory.createXmlreceiptSeller();
+        Xmlreceipt.Seller.Sellerid sellerid = factory.createXmlreceiptSellerSellerid();
         seller.setSellername("Name");
         seller.setSelleraddress("Address");
         seller.setSellerid(sellerid);
@@ -64,7 +62,7 @@ public class XmlreceiptTest {
         assertEquals("seller address", "Address", seller.getSelleraddress());
 
         // unmarshal a doc
-        JAXBContext jc = JAXBContext.newInstance(ObjectFactory.Xmlreceipt.class);
+        JAXBContext jc = JAXBContext.newInstance(Xmlreceipt.class);
         Marshaller m = jc.createMarshaller();
         m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
         m.marshal(xmlreceipt, System.out);
@@ -72,9 +70,9 @@ public class XmlreceiptTest {
 
     @org.junit.Test
     public void getItemlist() throws Exception {
-        ObjectFactory.Xmlreceipt xmlreceipt = getTestReceipt1();
-        ObjectFactory.Xmlreceipt.Itemlist ilist = xmlreceipt.getItemlist();
-        ObjectFactory.Xmlreceipt.Itemlist.Item item = ilist.getItem().get(0);
+        Xmlreceipt xmlreceipt = getTestReceipt1();
+        Xmlreceipt.Itemlist ilist = xmlreceipt.getItemlist();
+        Xmlreceipt.Itemlist.Item item = ilist.getItem().get(0);
 
         assertEquals("item name", "Original Wagner Big Pizza BBQ-Chicken", item.getItemname());
         assertEquals("ean item id", new BigInteger("4009233012084"), item.getItemid().getEan());

@@ -1,6 +1,7 @@
 package org.xmlreceipt.composer;
 
-import org.xmlreceipt.marshaller.xmlreceipt.ObjectFactory;
+import org.xmlreceipt.marshaller.ObjectFactory;
+import org.xmlreceipt.marshaller.Xmlreceipt;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -17,7 +18,7 @@ public abstract class AbstractComposer {
 
     final protected ObjectFactory factory = new ObjectFactory();
 
-    final protected ObjectFactory.Xmlreceipt xmlReceipt = factory.createXmlreceipt();
+    final protected Xmlreceipt xmlReceipt = factory.createXmlreceipt();
 
     public AbstractComposer() {
         AbstractComposer.currency = currency;
@@ -37,15 +38,15 @@ public abstract class AbstractComposer {
 
     }
 
-    protected ObjectFactory.Xmlreceipt.Total createTotal() {
-        ObjectFactory.Xmlreceipt.Total total = factory.createXmlreceiptTotal();
+    protected Xmlreceipt.Total createTotal() {
+        Xmlreceipt.Total total = factory.createXmlreceiptTotal();
 
-        ObjectFactory.Xmlreceipt.Total.Totalprice totalprice = factory.createXmlreceiptTotalTotalprice();
+        Xmlreceipt.Total.Totalprice totalprice = factory.createXmlreceiptTotalTotalprice();
         totalprice.setCurrency(currency);
         totalprice.setTotalnetvalue(0.0f);
         total.setTotalprice(totalprice);
 
-        ObjectFactory.Xmlreceipt.Total.Totalquantity totalquantity = factory.createXmlreceiptTotalTotalquantity();
+        Xmlreceipt.Total.Totalquantity totalquantity = factory.createXmlreceiptTotalTotalquantity();
         totalquantity.setTotalProducts(new BigInteger("0"));
         totalquantity.setTotalUnits(new BigInteger("0"));
         total.setTotalquantity(totalquantity);
@@ -54,17 +55,17 @@ public abstract class AbstractComposer {
     }
 
 
-    public ObjectFactory.Xmlreceipt.Itemlist.Item addItem(ObjectFactory.Xmlreceipt.Itemlist.Item item) throws IOException {
-        List<ObjectFactory.Xmlreceipt.Itemlist.Item> items = xmlReceipt.getItemlist().getItem();
+    public Xmlreceipt.Itemlist.Item addItem(Xmlreceipt.Itemlist.Item item) throws IOException {
+        List<Xmlreceipt.Itemlist.Item> items = xmlReceipt.getItemlist().getItem();
         items.add(item);
 
         // adjust total price
-        ObjectFactory.Xmlreceipt.Total.Totalprice totalprice = xmlReceipt.getTotal().getTotalprice();
+        Xmlreceipt.Total.Totalprice totalprice = xmlReceipt.getTotal().getTotalprice();
         float netvalue = totalprice.getTotalnetvalue() + item.getPrice().getItemvalue();
         totalprice.setTotalnetvalue(netvalue);
 
         // adjust total quantity
-        ObjectFactory.Xmlreceipt.Total.Totalquantity totalquantity = xmlReceipt.getTotal().getTotalquantity();
+        Xmlreceipt.Total.Totalquantity totalquantity = xmlReceipt.getTotal().getTotalquantity();
 
         BigInteger tp = new BigInteger("" + (totalquantity.getTotalProducts().intValue() + 1));
         totalquantity.setTotalProducts(tp);
@@ -76,14 +77,14 @@ public abstract class AbstractComposer {
     }
 
 
-    public ObjectFactory.Xmlreceipt getXmlReceipt() {
+    public Xmlreceipt getXmlReceipt() {
         return xmlReceipt;
     }
 
     /**
      * @return
      */
-    abstract public ObjectFactory.Xmlreceipt.Seller createSeller();
+    abstract public Xmlreceipt.Seller createSeller();
 
 
 }

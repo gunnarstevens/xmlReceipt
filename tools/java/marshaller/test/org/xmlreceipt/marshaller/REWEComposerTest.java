@@ -6,7 +6,6 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.xmlreceipt.composer.rewe.REWEJSONComposer;
 import org.xmlreceipt.composer.rewe.REWEPDFComposer;
-import org.xmlreceipt.marshaller.xmlreceipt.ObjectFactory;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
@@ -29,10 +28,10 @@ public class REWEComposerTest {
         File testFile = new File("./test/res/reweBasket2.json");
 
         REWEJSONComposer rewejsonComposer = new REWEJSONComposer();
-        ObjectFactory.Xmlreceipt receipt = rewejsonComposer.getXmlReceipt(new FileInputStream(testFile));
+        Xmlreceipt receipt = rewejsonComposer.getXmlReceipt(new FileInputStream(testFile));
 
         // unmarshal a doc
-        JAXBContext jc = JAXBContext.newInstance(ObjectFactory.Xmlreceipt.class);
+        JAXBContext jc = JAXBContext.newInstance(Xmlreceipt.class);
         Marshaller m = jc.createMarshaller();
         m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
         m.marshal(receipt, System.out);
@@ -63,10 +62,10 @@ public class REWEComposerTest {
         InputStream is = new FileInputStream(testFile);
 
         REWEPDFComposer composer = new REWEPDFComposer();
-        ObjectFactory.Xmlreceipt receipt = composer.getXmlReceipt(is);
+        Xmlreceipt receipt = composer.getXmlReceipt(is);
 
         // unmarshal a doc
-        JAXBContext jc = JAXBContext.newInstance(ObjectFactory.Xmlreceipt.class);
+        JAXBContext jc = JAXBContext.newInstance(Xmlreceipt.class);
         Marshaller m = jc.createMarshaller();
         m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
         m.marshal(receipt, System.out);

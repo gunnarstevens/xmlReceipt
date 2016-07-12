@@ -4,7 +4,8 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 import org.xmlreceipt.lookup.ItemLookup;
-import org.xmlreceipt.marshaller.xmlreceipt.ObjectFactory;
+import org.xmlreceipt.marshaller.ObjectFactory;
+import org.xmlreceipt.marshaller.Xmlreceipt;
 
 import java.io.IOException;
 
@@ -15,7 +16,7 @@ public class MyTimeLookup implements ItemLookup {
 
 
     @Override
-    public boolean lookupByName(ObjectFactory factory, ObjectFactory.Xmlreceipt.Itemlist.Item item, String name) throws IOException {
+    public boolean lookupByName(ObjectFactory factory, Xmlreceipt.Itemlist.Item item, String name) throws IOException {
         String tmp = java.net.URLEncoder.encode(name, "UTF-8");
         String searchUrl = "http://www.mytime.de/search_result.php?search_query_keyword=" + tmp;
 
