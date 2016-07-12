@@ -5,9 +5,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.xmlreceipt.lookup.ItemLookup;
-import org.xmlreceipt.marshaller.ObjectFactory;
 import org.xmlreceipt.marshaller.UtilMethods;
-import org.xmlreceipt.marshaller.Xmlreceipt;
+import org.xmlreceipt.marshaller.xmlreceipt.ObjectFactory;
 
 import java.io.IOException;
 import java.net.URLEncoder;
@@ -65,7 +64,7 @@ public class Brandlogistics implements ItemLookup {
     }
 
     @Override
-    public boolean lookupByName(ObjectFactory factory, Xmlreceipt.Itemlist.Item item, String name) throws IOException {
+    public boolean lookupByName(ObjectFactory factory, ObjectFactory.Xmlreceipt.Itemlist.Item item, String name) throws IOException {
         String tmp = URLEncoder.encode(name, "UTF-8");
         String searchUrl = "http://www.brandlogistics.net/catalogsearch/result/?q=" + tmp;
 

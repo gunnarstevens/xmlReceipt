@@ -5,9 +5,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.xmlreceipt.lookup.ItemLookup;
-import org.xmlreceipt.marshaller.ObjectFactory;
 import org.xmlreceipt.marshaller.UtilMethods;
-import org.xmlreceipt.marshaller.Xmlreceipt;
+import org.xmlreceipt.marshaller.xmlreceipt.ObjectFactory;
 
 import java.io.IOException;
 import java.net.URLEncoder;
@@ -18,7 +17,7 @@ import java.util.Scanner;
  * Created by stevens on 01/07/16.
  */
 class REWELookupHelper {
-    static void lookupREWEItemDetails(ObjectFactory factory, Xmlreceipt.Itemlist.Item item, Element productItem) throws IOException {
+    static void lookupREWEItemDetails(ObjectFactory factory, ObjectFactory.Xmlreceipt.Itemlist.Item item, Element productItem) throws IOException {
 
         Elements preview = productItem.select(".rs-title > .rs-productlink");
 
@@ -43,7 +42,7 @@ class REWELookupHelper {
     }
 
 
-    static boolean compareProductPrice(Element itemElem, Xmlreceipt.Itemlist.Item item) {
+    static boolean compareProductPrice(Element itemElem, ObjectFactory.Xmlreceipt.Itemlist.Item item) {
 
         float itemPrice = item.getPrice().getItemvalue();
         Element predecimal = itemElem.select(".rs-title .rs-price .rs-price__predecimal").first();
@@ -81,7 +80,7 @@ public class REWELookup implements ItemLookup {
     }
 
     @Override
-    public boolean lookupByName(ObjectFactory factory, Xmlreceipt.Itemlist.Item item, String name) throws IOException {
+    public boolean lookupByName(ObjectFactory factory, ObjectFactory.Xmlreceipt.Itemlist.Item item, String name) throws IOException {
         name = (broadSearch ? broadSearch(name) : name);
 
         String searchUrl = "https://shop.rewe.de/productList?search=" + URLEncoder.encode(name, "UTF-8");

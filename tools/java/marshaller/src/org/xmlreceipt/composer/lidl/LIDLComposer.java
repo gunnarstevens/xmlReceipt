@@ -4,7 +4,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 import org.xmlreceipt.composer.AbstractComposer;
-import org.xmlreceipt.marshaller.Xmlreceipt;
+import org.xmlreceipt.marshaller.xmlreceipt.ObjectFactory;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -35,15 +35,15 @@ public class LIDLComposer extends AbstractComposer {
     /**
      * @return
      */
-    public Xmlreceipt.Seller createSeller() {
-        Xmlreceipt.Seller seller = factory.createXmlreceiptSeller();
+    public ObjectFactory.Xmlreceipt.Seller createSeller() {
+        ObjectFactory.Xmlreceipt.Seller seller = factory.createXmlreceiptSeller();
 
         seller.setSellername(SELLERNAME);
         seller.setSelleraddress(ADDRESS);
         seller.setVatin(VATIN);
         seller.setUri(URI);
 
-        Xmlreceipt.Seller.Sellerid sellerid = factory.createXmlreceiptSellerSellerid();
+        ObjectFactory.Xmlreceipt.Seller.Sellerid sellerid = factory.createXmlreceiptSellerSellerid();
         sellerid.setDuns(DUNS);
         seller.setSellerid(sellerid);
 
@@ -51,16 +51,15 @@ public class LIDLComposer extends AbstractComposer {
     }
 
 
-
-    public Xmlreceipt.Itemlist.Item createItem(String idtype, String id) throws IOException {
-        Xmlreceipt.Itemlist.Item item = factory.createXmlreceiptItemlistItem();
+    public ObjectFactory.Xmlreceipt.Itemlist.Item createItem(String idtype, String id) throws IOException {
+        ObjectFactory.Xmlreceipt.Itemlist.Item item = factory.createXmlreceiptItemlistItem();
 
         // currently only eans are supported
         if ("ean".equals(idtype) == false) {
             return item;
 
         }
-        Xmlreceipt.Itemlist.Item.Itemid itemid = factory.createXmlreceiptItemlistItemItemid();
+        ObjectFactory.Xmlreceipt.Itemlist.Item.Itemid itemid = factory.createXmlreceiptItemlistItemItemid();
         itemid.setEan(new BigInteger(id));
         item.setItemid(itemid);
 
@@ -79,7 +78,7 @@ public class LIDLComposer extends AbstractComposer {
         item.setItemname(name);
 
         // Retrieve price of the product
-        Xmlreceipt.Itemlist.Item.Price price = factory.createXmlreceiptItemlistItemPrice();
+        ObjectFactory.Xmlreceipt.Itemlist.Item.Price price = factory.createXmlreceiptItemlistItemPrice();
 
         Elements iPrice = document.select("[itemprop=\"price\"]");
         String value = iPrice.get(0).text();
@@ -93,7 +92,7 @@ public class LIDLComposer extends AbstractComposer {
         item.setPrice(price);
 
         // Retrieve quantity of the product
-        Xmlreceipt.Itemlist.Item.Quantity quantity = factory.createXmlreceiptItemlistItemQuantity();
+        ObjectFactory.Xmlreceipt.Itemlist.Item.Quantity quantity = factory.createXmlreceiptItemlistItemQuantity();
 
         Elements iQuantity = document.select(".produktPreview");
         String content = iQuantity.get(0).attr("data-content");
@@ -124,7 +123,7 @@ public class LIDLComposer extends AbstractComposer {
         return item;
     }
 
-    public Xmlreceipt.Itemlist.Item addItem(String idtype, String id) throws IOException {
+    public ObjectFactory.Xmlreceipt.Itemlist.Item addItem(String idtype, String id) throws IOException {
         return addItem(createItem(idtype, id));
     }
 }

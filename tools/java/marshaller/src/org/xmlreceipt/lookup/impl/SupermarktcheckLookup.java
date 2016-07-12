@@ -4,8 +4,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 import org.xmlreceipt.lookup.ItemLookup;
-import org.xmlreceipt.marshaller.ObjectFactory;
-import org.xmlreceipt.marshaller.Xmlreceipt;
+import org.xmlreceipt.marshaller.xmlreceipt.ObjectFactory;
 
 import java.io.IOException;
 
@@ -16,7 +15,7 @@ public class SupermarktcheckLookup implements ItemLookup {
 
 
     @Override
-    public boolean lookupByName(ObjectFactory factory, Xmlreceipt.Itemlist.Item item, String name) throws IOException {
+    public boolean lookupByName(ObjectFactory factory, ObjectFactory.Xmlreceipt.Itemlist.Item item, String name) throws IOException {
         String tmp = java.net.URLEncoder.encode(name, "UTF-8");
         String searchUrl = "http://www.supermarktcheck.de/lebensmittel/index/?q=" + tmp;
 

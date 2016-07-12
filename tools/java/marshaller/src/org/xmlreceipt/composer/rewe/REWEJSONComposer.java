@@ -6,7 +6,7 @@ import org.json.simple.parser.JSONParser;
 import org.xmlreceipt.composer.AbstractComposer;
 import org.xmlreceipt.lookup.impl.REWELookup;
 import org.xmlreceipt.marshaller.UtilMethods;
-import org.xmlreceipt.marshaller.Xmlreceipt;
+import org.xmlreceipt.marshaller.xmlreceipt.ObjectFactory;
 
 import javax.xml.datatype.DatatypeConfigurationException;
 import java.io.IOException;
@@ -27,7 +27,7 @@ public class REWEJSONComposer extends AbstractComposer {
         super();
     }
 
-    public Xmlreceipt getXmlReceipt(InputStream is) throws Exception {
+    public ObjectFactory.Xmlreceipt getXmlReceipt(InputStream is) throws Exception {
 
         InputStreamReader isr = new InputStreamReader(is);
 
@@ -44,20 +44,20 @@ public class REWEJSONComposer extends AbstractComposer {
     }
 
     @Override
-    public Xmlreceipt.Seller createSeller() {
-        Xmlreceipt.Seller seller = factory.createXmlreceiptSeller();
+    public ObjectFactory.Xmlreceipt.Seller createSeller() {
+        ObjectFactory.Xmlreceipt.Seller seller = factory.createXmlreceiptSeller();
         return seller;
     }
 
     private void createSeller(JSONObject market) {
-        Xmlreceipt.Seller seller = xmlReceipt.getSeller();
+        ObjectFactory.Xmlreceipt.Seller seller = xmlReceipt.getSeller();
 
         seller.setSellername("REWE " + market.get("city"));
         seller.setSelleraddress("REWE " + market.get("city") + "\n"
                 + market.get("street") + "\n" + market.get("postcode") + " " + market.get("city"));
         seller.setUri(URI);
 
-        Xmlreceipt.Seller.Sellerid sellerid = factory.createXmlreceiptSellerSellerid();
+        ObjectFactory.Xmlreceipt.Seller.Sellerid sellerid = factory.createXmlreceiptSellerSellerid();
         sellerid.setSellerid("rewe:" + market.get("id"));
         seller.setSellerid(sellerid);
 
@@ -70,14 +70,14 @@ public class REWEJSONComposer extends AbstractComposer {
         Long tu = (Long) basket.get("totalUnits");
 
 
-        Xmlreceipt.Total total = xmlReceipt.getTotal();
+        ObjectFactory.Xmlreceipt.Total total = xmlReceipt.getTotal();
 
-        Xmlreceipt.Total.Totalprice totalprice = total.getTotalprice();
+        ObjectFactory.Xmlreceipt.Total.Totalprice totalprice = total.getTotalprice();
         totalprice.setCurrency(currency);
         totalprice.setTotalnetvalue(Float.parseFloat(tnv.toString()));
         total.setTotalprice(totalprice);
 
-        Xmlreceipt.Total.Totalquantity totalquantity = total.getTotalquantity();
+        ObjectFactory.Xmlreceipt.Total.Totalquantity totalquantity = total.getTotalquantity();
         totalquantity.setTotalProducts(new BigInteger(tp.toString()));
         totalquantity.setTotalUnits(new BigInteger(tu.toString()));
         total.setTotalquantity(totalquantity);
@@ -101,8 +101,8 @@ public class REWEJSONComposer extends AbstractComposer {
         }
     }
 
-    private Xmlreceipt.Itemlist.Item createItem(JSONObject product) {
-        Xmlreceipt.Itemlist.Item item = factory.createXmlreceiptItemlistItem();
+    private ObjectFactory.Xmlreceipt.Itemlist.Item createItem(JSONObject product) {
+        ObjectFactory.Xmlreceipt.Itemlist.Item item = factory.createXmlreceiptItemlistItem();
 
         BigInteger units = new BigInteger(product.get("units").toString());
         Object sellerid = product.get("id");
@@ -116,11 +116,11 @@ public class REWEJSONComposer extends AbstractComposer {
             item.setUnits(units);
         }
 
-        Xmlreceipt.Itemlist.Item.Itemid xmlID = factory.createXmlreceiptItemlistItemItemid();
+        ObjectFactory.Xmlreceipt.Itemlist.Item.Itemid xmlID = factory.createXmlreceiptItemlistItemItemid();
         xmlID.setSelleritemid("rewe:" + sellerid);
         item.setItemid(xmlID);
 
-        Xmlreceipt.Itemlist.Item.Price xmlPrice = factory.createXmlreceiptItemlistItemPrice();
+        ObjectFactory.Xmlreceipt.Itemlist.Item.Price xmlPrice = factory.createXmlreceiptItemlistItemPrice();
         xmlPrice.setCurrency(currency);
         xmlPrice.setItemvalue(Float.parseFloat(price.toString()));
         item.setPrice(xmlPrice);
@@ -135,15 +135,15 @@ public class REWEJSONComposer extends AbstractComposer {
         return item;
     }
 
-    private void createCategory(Xmlreceipt.Itemlist.Item item, JSONArray cat) {
-        List<Xmlreceipt.Itemlist.Item.Itemgroup> igroups = item.getItemgroup();
+    private void createCategory(ObjectFactory.Xmlreceipt.Itemlist.Item item, JSONArray cat) {
+        List<ObjectFactory.Xmlreceipt.Itemlist.Item.Itemgroup> igroups = item.getItemgroup();
         Iterator it = cat.iterator();
 
         while (it.hasNext()) {
             Object catitem = it.next();
 
-            Xmlreceipt.Itemlist.Item.Itemgroup igroup = factory.createXmlreceiptItemlistItemItemgroup();
-            Xmlreceipt.Itemlist.Item.Itemgroup.Sellercategory selCat = factory.createXmlreceiptItemlistItemItemgroupSellercategory();
+            ObjectFactory.Xmlreceipt.Itemlist.Item.Itemgroup igroup = factory.createXmlreceiptItemlistItemItemgroup();
+            ObjectFactory.Xmlreceipt.Itemlist.Item.Itemgroup.Sellercategory selCat = factory.createXmlreceiptItemlistItemItemgroupSellercategory();
             selCat.setClassificationname(catitem.toString());
             selCat.setLanguage("DE-de");
 

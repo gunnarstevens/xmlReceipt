@@ -1,9 +1,8 @@
 package org.xmlreceipt.lookup.impl;
 
 import org.xmlreceipt.lookup.ItemLookup;
-import org.xmlreceipt.marshaller.ObjectFactory;
 import org.xmlreceipt.marshaller.UtilMethods;
-import org.xmlreceipt.marshaller.Xmlreceipt;
+import org.xmlreceipt.marshaller.xmlreceipt.ObjectFactory;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -91,7 +90,7 @@ public class InternalLookup implements ItemLookup {
     }
 
     @Override
-    public boolean lookupByName(ObjectFactory factory, Xmlreceipt.Itemlist.Item item, String name) throws IOException {
+    public boolean lookupByName(ObjectFactory factory, ObjectFactory.Xmlreceipt.Itemlist.Item item, String name) throws IOException {
         MappingItem mItem = getItem(name);
         if (mItem != null) {
             if (mItem.id.startsWith("gtin:")) {

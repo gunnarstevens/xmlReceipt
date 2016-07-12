@@ -8,7 +8,7 @@ import org.xmlreceipt.lookup.impl.Brandlogistics;
 import org.xmlreceipt.lookup.impl.Codecheck;
 import org.xmlreceipt.lookup.impl.InternalLookup;
 import org.xmlreceipt.lookup.impl.REWELookup;
-import org.xmlreceipt.marshaller.Xmlreceipt;
+import org.xmlreceipt.marshaller.xmlreceipt.ObjectFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -46,15 +46,15 @@ public class REWEPDFComposer extends AbstractComposer {
     /**
      * @return
      */
-    public Xmlreceipt.Seller createSeller() {
-        Xmlreceipt.Seller seller = factory.createXmlreceiptSeller();
+    public ObjectFactory.Xmlreceipt.Seller createSeller() {
+        ObjectFactory.Xmlreceipt.Seller seller = factory.createXmlreceiptSeller();
 
         seller.setSellername(SELLERNAME);
         seller.setSelleraddress(ADDRESS);
         seller.setVatin(VATIN);
         seller.setUri(URI);
 
-        Xmlreceipt.Seller.Sellerid sellerid = factory.createXmlreceiptSellerSellerid();
+        ObjectFactory.Xmlreceipt.Seller.Sellerid sellerid = factory.createXmlreceiptSellerSellerid();
         sellerid.setDuns(DUNS);
         seller.setSellerid(sellerid);
 
@@ -67,8 +67,8 @@ public class REWEPDFComposer extends AbstractComposer {
      * @param itemName
      * @return null if corresponding product info could not retrieved, otherwise the xml node that holds the needed information
      */
-    public Xmlreceipt.Itemlist.Item createItemByName(String itemName) throws IOException {
-        Xmlreceipt.Itemlist.Item item = factory.createXmlreceiptItemlistItem();
+    public ObjectFactory.Xmlreceipt.Itemlist.Item createItemByName(String itemName) throws IOException {
+        ObjectFactory.Xmlreceipt.Itemlist.Item item = factory.createXmlreceiptItemlistItem();
 
         // Unfortunately, we could not scan the content page directly, but we have to retrieve the url of the content page
         String searchUrl = "https://shop.rewe.de/productList?search=" + itemName;
@@ -84,7 +84,7 @@ public class REWEPDFComposer extends AbstractComposer {
      * @param isPDFReceipt // at the moment the pdf is converted to text manually
      * @return
      */
-    public Xmlreceipt getXmlReceipt(InputStream isPDFReceipt) throws IOException {
+    public ObjectFactory.Xmlreceipt getXmlReceipt(InputStream isPDFReceipt) throws IOException {
 
 /*      PDFTextStripper pdfStripper = null;
         PDDocument pdDoc = null;
@@ -113,12 +113,12 @@ public class REWEPDFComposer extends AbstractComposer {
         return getXmlReceipt();
     }
 
-    public Xmlreceipt.Itemlist.Item createItem(REWEReceiptScanner.Item input) throws IOException {
-        Xmlreceipt.Itemlist.Item item = factory.createXmlreceiptItemlistItem();
+    public ObjectFactory.Xmlreceipt.Itemlist.Item createItem(REWEReceiptScanner.Item input) throws IOException {
+        ObjectFactory.Xmlreceipt.Itemlist.Item item = factory.createXmlreceiptItemlistItem();
 
         item.setItemname(input.name);
 
-        Xmlreceipt.Itemlist.Item.Price price = factory.createXmlreceiptItemlistItemPrice();
+        ObjectFactory.Xmlreceipt.Itemlist.Item.Price price = factory.createXmlreceiptItemlistItemPrice();
         price.setCurrency(currency);
         price.setItemvalue(input.priceSingle);
         price.setItemtax((Math.round(input.priceTaxSingle * 100) / 100.0f));

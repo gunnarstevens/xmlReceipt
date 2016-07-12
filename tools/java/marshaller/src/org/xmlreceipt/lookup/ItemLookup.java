@@ -1,7 +1,6 @@
 package org.xmlreceipt.lookup;
 
-import org.xmlreceipt.marshaller.ObjectFactory;
-import org.xmlreceipt.marshaller.Xmlreceipt;
+import org.xmlreceipt.marshaller.xmlreceipt.ObjectFactory;
 
 import java.io.IOException;
 
@@ -20,5 +19,5 @@ public interface ItemLookup {
      * @return true, if the information was found, false otherwise
      * @throws IOException
      */
-    boolean lookupByName(ObjectFactory factory, Xmlreceipt.Itemlist.Item item, String name) throws IOException;
+    boolean lookupByName(ObjectFactory factory, ObjectFactory.Xmlreceipt.Itemlist.Item item, String name) throws IOException;
 }

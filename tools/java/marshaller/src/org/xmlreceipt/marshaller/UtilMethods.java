@@ -1,5 +1,7 @@
 package org.xmlreceipt.marshaller;
 
+import org.xmlreceipt.marshaller.xmlreceipt.ObjectFactory;
+
 import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
@@ -11,21 +13,21 @@ import java.util.GregorianCalendar;
  */
 public class UtilMethods {
 
-    public static void addIconUrl(ObjectFactory factory, Xmlreceipt.Itemlist.Item item, String icon) {
-        Xmlreceipt.Itemlist.Item.Aspect iconUri = factory.createXmlreceiptItemlistItemAspect();
+    public static void addIconUrl(ObjectFactory factory, ObjectFactory.Xmlreceipt.Itemlist.Item item, String icon) {
+        ObjectFactory.Xmlreceipt.Itemlist.Item.Aspect iconUri = factory.createXmlreceiptItemlistItemAspect();
         iconUri.setAspectname("iconurl");
         iconUri.setAspectvalue(icon);
         item.getAspect().add(iconUri);
     }
 
-    public static void setGTIN(ObjectFactory factory, Xmlreceipt.Itemlist.Item item, String gtin) {
-        Xmlreceipt.Itemlist.Item.Itemid itemId = factory.createXmlreceiptItemlistItemItemid();
+    public static void setGTIN(ObjectFactory factory, ObjectFactory.Xmlreceipt.Itemlist.Item item, String gtin) {
+        ObjectFactory.Xmlreceipt.Itemlist.Item.Itemid itemId = factory.createXmlreceiptItemlistItemItemid();
         itemId.setGtin(gtin);
         item.setItemid(itemId);
     }
 
-    public static void setSellerid(ObjectFactory factory, Xmlreceipt.Itemlist.Item item, String id) {
-        Xmlreceipt.Itemlist.Item.Itemid itemId = factory.createXmlreceiptItemlistItemItemid();
+    public static void setSellerid(ObjectFactory factory, ObjectFactory.Xmlreceipt.Itemlist.Item item, String id) {
+        ObjectFactory.Xmlreceipt.Itemlist.Item.Itemid itemId = factory.createXmlreceiptItemlistItemItemid();
         itemId.setSelleritemid(id);
         item.setItemid(itemId);
     }

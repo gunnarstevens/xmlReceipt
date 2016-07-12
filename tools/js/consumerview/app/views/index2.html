@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,100,900' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="../styles/receipt.css" rel="stylesheet"/>
+  <link href="../styles/main2.css" rel="stylesheet"/>
+</head>
+
+<!-- Scrollspy & Affix: Fixed vertical sidenav on scroll
+  Scroll this page to see how the navbar behaves with data-spy="affix" and data-spy="scrollspy".</p>
+  The left menu sticks the page after you have scrolled a specified amount of pixels, and the links
+  in the menu are automatically updated based on scroll position.
+  -->
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="15" ng-app="receiptApp">
+
+<div class="container-fluid" style="height:220px;">
+  <h1>Verbrauchersicht</h1>
+</div>
+
+<div class="container">
+  <div class="row" ng-controller="receiptsCtrl">
+    <nav class="col-sm-2" id="myScrollspy">
+      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+        <!-- TODO $index -->
+        <li ng-repeat="receipt in receipts"><a ng-href="#$index"><span
+          ng-bind="receipt.xmlreceipt.seller.sellername"></span>
+          <span ng-bind="receipt.date"></span></a></li>
+      </ul>
+    </nav>
+    <div class="col-sm-10">
+      <div ng-repeat="receipt in receipts">
+        <div id=#$index" class="col-sm-12">
+          <h1 ng-bind="receipt.xmlreceipt.seller.sellername"></h1>
+          <receiptitem ng-repeat="ritem in receipt.xmlreceipt.itemlist.item" itemdata=ritem></receiptitem>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
+<script src="../lib/xml2json.js"></script>
+<script src="../lib/angular-xml.js"></script>
+
+<!-- our stuff -->
+<script src="../scripts/app.js"></script>
+
+</body>
+</html>
