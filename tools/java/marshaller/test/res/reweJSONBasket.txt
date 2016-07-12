@@ -1,0 +1,345 @@
+{
+  "user": {
+    "id": “0815”,
+    "status": "logged-in",
+    "type": "privatkunde",
+    "birthyear": "",
+    "gender": "MR",
+    "postcode": "50354",
+    "country": "DE",
+    "nlSubscriber": "",
+    "SC": "nr",
+    "customerStatus": "NEW"
+  },
+  "reweMarket": {
+    "id": "231007",
+    "country": "DE",
+    "state": "48",
+    "city": "Hürth",
+    "postcode": "50354",
+    "street": "Efferener Str. 1",
+    "chosenService": "lieferservice"
+  },
+     "loginSuccess": "1467415513969"
+  },
+  "page": {
+    "name": "warenkorb",
+    "type": "basket",
+    "channel": "checkout",
+    "hierarchy": [
+      "checkout",
+      "warenkorb"
+    ],
+    "status": "200",
+    "language": "DE"
+  },
+  "products": [
+    {
+      "id": "200323",
+      "name": "REWE Bio Maasdamer 150g",
+      "category": [
+        "Schnittkäse"
+      ],
+      "units": "1",
+      "price": "1.89",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "9342478",
+      "name": "Fol Epi Classic Scheiben 150g",
+      "category": [
+        "Schnittkäse"
+      ],
+      "units": "1",
+      "price": "2.19",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "1176238",
+      "name": "Notos Schafskäse 200g",
+      "category": [
+        "Feta \u0026 Hirtenkäse"
+      ],
+      "units": "1",
+      "price": "1.99",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "2591297",
+      "name": "REWE Beste Wahl Brasil ganze Bohne 1000g",
+      "category": [
+        "ganze Bohne"
+      ],
+      "units": "1",
+      "price": "8.99",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "4922506",
+      "name": "Harry Vollkorn-Toast 500g",
+      "category": [
+        "Toast, Weißbrot \u0026 Co"
+      ],
+      "units": "1",
+      "price": "1.19",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "199017",
+      "name": "REWE Bio Weizenvollkornbrot 375g",
+      "category": [
+        "Toast, Weißbrot \u0026 Co"
+      ],
+      "units": "1",
+      "price": "1.55",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "1371904",
+      "name": "Melitta Filtertüten 1x4 naturbraun Aroma 80 Stück",
+      "category": [
+        "Filtertüten"
+      ],
+      "units": "1",
+      "price": "1.79",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "1908384",
+      "name": "Knorr Salat-Mayonnaise 475ml",
+      "category": [
+        "Mayonnaise \u0026 Salatcreme"
+      ],
+      "units": "1",
+      "price": "1.89",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "197892",
+      "name": "REWE Bio Frische Bio-Eier 6 Stück",
+      "category": [
+        "Eier"
+      ],
+      "units": "1",
+      "price": "2.15",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "194185",
+      "name": "REWE Bio Schlagsahne  200g",
+      "category": [
+        "Süße Sahne"
+      ],
+      "units": "1",
+      "price": "0.75",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "2258850",
+      "name": "Milena Irische Butter 250g",
+      "category": [
+        "Butter"
+      ],
+      "units": "1",
+      "price": "1.29",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "475299",
+      "name": "ja! Frische Vollmilch 3,5% 1l",
+      "category": [
+        "Frische Milch"
+      ],
+      "units": "3",
+      "price": "0.46",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "2058036",
+      "name": "Arla Frische Bio Weidemilch 3,8% 1l",
+      "category": [
+        "Frische Milch"
+      ],
+      "units": "1",
+      "price": "1.35",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "8311846",
+      "name": "Porree",
+      "category": [
+        "Wurzelgemüse"
+      ],
+      "units": "1",
+      "price": "0.69",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "7589883",
+      "name": "REWE Bio Zitrone 500g",
+      "category": [
+        "Zitronen"
+      ],
+      "units": "1",
+      "price": "2.79",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "475963",
+      "name": "Süßkartoffel",
+      "category": [
+        "Süßkartoffeln"
+      ],
+      "units": "3",
+      "price": "1.20",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "2588140",
+      "name": "Bio Speisemöhren 1kg",
+      "category": [
+        "Möhren"
+      ],
+      "units": "1",
+      "price": "1.99",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "482595",
+      "name": "Eisbergsalat",
+      "category": [
+        "Frischer Salat"
+      ],
+      "units": "1",
+      "price": "0.69",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "1040657",
+      "name": "REWE Beste Wahl Paprika Mix 500g",
+      "category": [
+        "Paprika"
+      ],
+      "units": "1",
+      "price": "1.79",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "1041181",
+      "name": "REWE Bio Rispentomaten",
+      "category": [
+        "Tomaten"
+      ],
+      "units": "1",
+      "price": "1.79",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "482161",
+      "name": "Zucchini grün",
+      "category": [
+        "Zucchini"
+      ],
+      "units": "2",
+      "price": "0.39",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "1096218",
+      "name": "Nektarinen gelb 1kg",
+      "category": [
+        "Nektarinen"
+      ],
+      "units": "1",
+      "price": "1.19",
+      "savingsPercent": "33.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "5837731",
+      "name": "Haribo Happy Cherries 200g",
+      "category": [
+        "Fruchtgummi \u0026 Lakritze"
+      ],
+      "units": "1",
+      "price": "0.66",
+      "savingsPercent": "30.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "162644",
+      "name": "REWE Beste Wahl Pizza Classica Mozzarella 335g",
+      "category": [
+        "Pizza Mozzarella"
+      ],
+      "units": "1",
+      "price": "1.89",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "2161824",
+      "name": "REWE Beste Wahl Pizza Ziegenkäse 425g",
+      "category": [
+        "Pizza Käse-Vielfalt"
+      ],
+      "units": "1",
+      "price": "1.99",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    },
+    {
+      "id": "7579306",
+      "name": "Agrarfrost Knusper Frites 750g",
+      "category": [
+        "Fritteusen-Frites"
+      ],
+      "units": "1",
+      "price": "1.79",
+      "savingsPercent": "0.00",
+      "savingsAmount": "0.00"
+    }
+  ],
+  "basket": {
+    "totalProducts": 26,
+    "totalUnits": 31,
+    "totalNetValue": 50.0386,
+    "taxes": "",
+    "pfand": 0,
+    "totalBasketValue": 50.0386
+  },
+  "checkout": {
+    "country": "",
+    "city": "",
+    "postcode": "",
+    "paymentMethod": "",
+    "creditcardType": "",
+    "shipment": "HOME_DELIVERY",
+    "shipmentPrice": "",
+    "newsletter": "false",
+    "vocherCode": "",
+    "voucherValue": "",
+    "orderType": "standard"
+  }
+};
