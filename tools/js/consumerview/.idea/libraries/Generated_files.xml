@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/app/scripts/directives/receiptitem-compiled.js" />
+        <item url="file://$PROJECT_DIR$/app/scripts/app-compiled.js" />
+        <item url="file://$PROJECT_DIR$/app/scripts/controllers/receiptscrtl-compiled.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/scripts/directives/receiptitem-compiled.js" />
+      <root url="file://$PROJECT_DIR$/app/scripts/app-compiled.js" />
+      <root url="file://$PROJECT_DIR$/app/scripts/controllers/receiptscrtl-compiled.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
