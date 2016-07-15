@@ -1,4 +1,4 @@
-export class ConsumerviewAppPage {
+export class ConsumerviewPage {
   navigateTo() {
     return browser.get('/');
   }

@@ -1,7 +1,0 @@
-{
-  "jspm": {
-    "directories": {
-      "baseURL": "app"
-    }
-  }
-}

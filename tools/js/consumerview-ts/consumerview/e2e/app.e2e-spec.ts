@@ -1,10 +1,10 @@
-import { ConsumerviewAppPage } from './app.po';
+import { ConsumerviewPage } from './app.po';
 
-describe('consumerview-app App', function() {
-  let page: ConsumerviewAppPage;
+describe('consumerview App', function() {
+  let page: ConsumerviewPage;
 
   beforeEach(() => {
-    page = new ConsumerviewAppPage();
+    page = new ConsumerviewPage();
   });
 
   it('should display message saying app works', () => {
