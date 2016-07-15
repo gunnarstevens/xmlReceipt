@@ -1,0 +1,8 @@
+<ul class="receiptlist">
+  <li *ngFor="let receipt of receipts"
+      [class.selected]="receipt === selectedHero"
+      (click)="onSelect(hero)">
+      <img src="{{receipt.iconUrl}}" style="max-height:32px; max-width:32px; padding: 4px"/>{{receipt.name}}
+  </li>
+</ul>
+<div *ngIf="selectedHero">SELECTED {{receipt.id}}</div>

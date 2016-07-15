@@ -19,6 +19,11 @@
   "files": [
     "main.ts",
     "app/components/app.component.ts",
+    "app/services/receipts.service.ts",
+    "app/components/receipts/receipts.component.spec.ts",
+    "app/components/receipts/receipts.component.ts",
+    "app/components/receiptslist/receiptslist.component.spec.ts",
+    "app/components/receiptslist/receiptslist.component.ts",
     "typings.d.ts"
   ]
 }

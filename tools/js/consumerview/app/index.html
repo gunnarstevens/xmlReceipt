@@ -30,17 +30,15 @@
    The left menu sticks the page after you have scrolled a specified amount of pixels, and the links
    in the menu are automatically updated based on scroll position.
    -->
-    <header class="container-fluid" >
-      <h1>Verbrauchersicht</h1>
+    <header class="container-fluid" style="background-color: #00d6b2">
+      <h1>Verbrauchersicht 2</h1>
     </header>
 
     <div class="container">
-      <div class="row" ng-controller="ReceiptsCtrl">
-        <nav class="col-sm-2" id="myScrollspy">
+      <div class="row">
+        <nav class="col-sm-2" id="myScrollspy" style="background-color: #0b97c4">
           <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
-            <!-- TODO $index -->
-            <li ng-repeat="receipt in receipts"><a ng-href="#$index"><span ng-bind="receipt.xmlreceipt.seller.sellername"></span>
-              <span ng-bind="receipt.date"></span></a></li>
+            <li><a href="#$index">REWE</a></li>
           </ul>
         </nav>
         <div class="col-sm-10">
