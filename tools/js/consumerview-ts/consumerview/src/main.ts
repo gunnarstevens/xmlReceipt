@@ -8,3 +8,4 @@ if (environment.production) {
 
 bootstrap(AppComponent);
 
+console.clear();
