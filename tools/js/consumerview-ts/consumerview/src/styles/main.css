@@ -1,0 +1,121 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px; }
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5; }
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5; }
+  .jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px; }
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0; }
+  .marketing p + h4 {
+    margin-top: 28px; }
+
+body {
+  position: relative;
+  font-family: 'Roboto', Arial, serif;
+  font-weight: 400;
+  font-size: 12pt;
+  background-color: white; }
+
+.container-fluid {
+  height: 220px;
+  color: #c1e2b3;
+  background-color: #2b542c; }
+
+.affix {
+  top: 20px; }
+
+div.col-sm-12 div {
+  height: auto;
+  font-size: 12px;
+  color: black; }
+
+.header {
+  width: 100%;
+  background-color: #f2f4f6; }
+
+.header, .header-bg {
+  width: 102%;
+  height: 64pt;
+  margin-top: -1pt;
+  padding-top: 1pt;
+  margin-left: -1%;
+  padding-left: 2%;
+  margin-right: -1%;
+  padding-right: 2%; }
+
+.header {
+  position: fixed;
+  background-color: rgba(180, 180, 180, 0.85);
+  left: 0%;
+  top: 0%;
+  z-index: +1; }
+
+.header-logo {
+  width: 64pt;
+  height: 64pt;
+  float: left; }
+
+.header-menu, .header-menu-sel {
+  text-align: center;
+  vertical-align: text-bottom;
+  width: 10%;
+  height: 32pt;
+  margin-top: 32pt;
+  float: left; }
+
+.header-menu-sel {
+  font-size: 1.3em;
+  font-weight: 600; }
+
+.receipt-item {
+  background-color: white;
+  color: black; }
+
+.container {
+  background-color: white;
+  width: 100%; }
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px; }
+
+@media screen and (max-width: 940px) {
+  #section1, #section2, #section3, #section41, #section42 {
+    margin-left: 60px; } }
+
+/*# sourceMappingURL=main.css.map */

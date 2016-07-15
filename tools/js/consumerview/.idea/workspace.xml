@@ -2,62 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fd8d492-2f5e-40f8-b3b2-dae790ed548f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/.idea/consumerview2-ts.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/.idea/jsLibraryMappings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/.idea/typescript-compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/.idea/watcherTasks.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/angular-cli-build.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/angular-cli.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/config/environment.dev.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/config/environment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/config/environment.prod.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/config/karma-test-shim.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/config/karma.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/config/protractor.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/e2e/app.e2e-spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/e2e/app.po.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/e2e/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/e2e/typings.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/public/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/app/app.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/app/app.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/app/app.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/app/app.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/app/app.component.spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/app/app.component.spec.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/app/app.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/app/app.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/app/environment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/app/environment.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/app/environment.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/app/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/app/index.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/app/index.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/app/shared/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/app/shared/index.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/app/shared/index.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/index_debug.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/main.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/main.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/system-config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/system-config.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/system-config.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/tsconfig_debug.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/src/typings.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/tslint.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/consumerview-app/typings.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview2-ts/package.json" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/images/headerReceipt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/data/receipt1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/data/testdata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/styles/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/styles/main.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/styles/main.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/styles/main.scss.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/styles/main.scss.sav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/styles/main2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/styles/main2.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/styles/receiptitem.tpl.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/styles/receiptitem.tpl.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/styles/receiptitem.tpl.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/app.component.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/app.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/app.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/app.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/dist/app.component.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/dist/app.component.spec.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/dist/environment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/dist/environment.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/dist/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/dist/index.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/dist/shared/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/dist/shared/index.js.map" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/angular-cli-build.js" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/angular-cli-build.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/package.json" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/index.ts" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/index.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/index.html" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/system-config.js" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/system-config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/system-config.ts" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/system-config.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/tsconfig.json" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/tsconfig.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="consumerview.iws" />
@@ -84,18 +62,28 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
+            <state relative-caret-position="377">
               <caret line="41" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="56" column="42" selection-start-line="36" selection-start-column="1" selection-end-line="56" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -157,6 +145,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="474" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="833" />
@@ -205,13 +194,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="consumerview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="consumerview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="consumerview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="consumerview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="JavaScriptPreferStrict" value="true" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
@@ -220,7 +241,7 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="editor.config.accepted" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../consumerview-ts/consumerview" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
   </component>
   <component name="RecentsManager">
@@ -233,6 +254,9 @@
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/consumerview/app/index.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:4000/consumerview/app/index.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -288,12 +312,14 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -312,6 +338,7 @@
       <workItem from="1468348349622" duration="624000" />
       <workItem from="1468351213858" duration="1421000" />
       <workItem from="1468570402648" duration="690000" />
+      <workItem from="1468594355533" duration="1732000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1468339789150</created>
@@ -331,31 +358,31 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8319000" />
+    <option name="totallyTimeSpent" value="10051000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="833" extended-state="0" />
+    <frame x="474" y="23" width="1440" height="833" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39921466" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39921466" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -382,6 +409,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
@@ -533,13 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="86" column="50" selection-start-line="86" selection-start-column="50" selection-end-line="86" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -561,13 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/services/receiptsfactory.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -575,18 +604,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1845">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
+        <state relative-caret-position="377">
           <caret line="41" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+    <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="56" column="42" selection-start-line="36" selection-start-column="1" selection-end-line="56" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>

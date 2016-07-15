@@ -39,7 +39,8 @@ System.config({
         'rxjs': 'vendor/rxjs',
         'main': 'main.js',
         // manual injected
-        'jquery': 'vendor/jquery'
+        'jquery': 'vendor/jquery',
+        'bootstrap': 'vendor/bootstrap'
     },
     packages: cliSystemConfigPackages
 });

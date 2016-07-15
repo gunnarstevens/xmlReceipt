@@ -53,7 +53,8 @@ System.config({
     'main': 'main.js',
 
     // manual injected
-    'jquery': 'vendor/jquery'
+    'jquery': 'vendor/jquery',
+    'bootstrap': 'vendor/bootstrap'
   },
   packages: cliSystemConfigPackages
 });
