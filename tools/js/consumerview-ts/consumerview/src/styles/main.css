@@ -16,11 +16,15 @@
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px; }
 
+header .cvicon {
+  float: left; }
+
 /* Custom page footer */
 .footer {
-  padding-top: 19px;
+  padding-top: 50px;
   color: #777;
-  border-top: 1px solid #e5e5e5; }
+  border-top: 1px solid #e5e5e5;
+  text-align: right; }
 
 /* Main marketing message and sign up button */
 .jumbotron {

@@ -5,7 +5,7 @@ import { Receipt, ReceiptsService} from '../../services/receipts.service';
 
 @Component({
   moduleId: module.id,
-  selector: 'cw-receiptsoutlineview',
+  selector: 'cv-receiptsoutlineview',
   templateUrl: 'receiptsoutlineview.component.html',
   styleUrls: ['receiptsoutlineview.component.css'],
   providers: [ReceiptsService]

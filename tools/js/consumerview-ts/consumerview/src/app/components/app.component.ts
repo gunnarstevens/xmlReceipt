@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { ReceiptsOutlineViewComponent } from './receiptsoutlineview/receiptsoutlineview.component';
+import { TestfireComponent} from './testfire/testfire.component';
 
 @Component({
   moduleId: module.id,
-  selector: 'app-root',
+  selector: 'cv-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
-  directives: [ReceiptsOutlineViewComponent]
+  directives: [ReceiptsOutlineViewComponent, TestfireComponent]
 })
-export class AppComponent {
-  title = 'app works fine!';
-}
+export class AppComponent {}

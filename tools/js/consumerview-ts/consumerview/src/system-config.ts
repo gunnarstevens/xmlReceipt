@@ -78,6 +78,7 @@ const barrels:string[] = [
   'app/shared',
   'app/components/receipts',
   'app/components/receiptsoutlineview',
+  'app/testfire',
   /** @cli-barrel */
 ];
 

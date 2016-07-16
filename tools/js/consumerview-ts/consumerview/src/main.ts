@@ -29,10 +29,10 @@ bootstrap(AppComponent,
     FIREBASE_PROVIDERS,
   // Initialize Firebase app
     defaultFirebase({
-      apiKey: "<your-key>",
-      authDomain: "<your-project-authdomain>",
-      databaseURL: "<your-database-URL>",
-      storageBucket: "<your-storage-bucket>"
+      apiKey: "AIzaSyD5plOi9OhTJnLF-3sfbqLtcn94xcIcXa4",
+      authDomain: "consumerview.firebaseapp.com",
+      databaseURL: "https://consumerview.firebaseio.com",
+      storageBucket: "firebase-consumerview.appspot.com",
     })
   ]
 );
