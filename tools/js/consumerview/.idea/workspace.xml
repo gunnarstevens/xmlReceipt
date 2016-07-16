@@ -2,14 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fd8d492-2f5e-40f8-b3b2-dae790ed548f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/libhack/x2js-master/xml2json.min.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/components/receiptslist/index.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/components/receiptslist/receiptslist.component.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/components/receiptslist/receiptslist.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/components/receiptslist/receiptslist.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/components/receiptslist/receiptslist.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/tsconfig.json.sav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/typings/index.d.ts" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/README.md" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/angular-cli-build.js" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/angular-cli-build.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/package.json" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/components/app.component.html" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/components/app.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/components/app.component.spec.ts" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/components/app.component.spec.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/components/app.component.ts" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/components/app.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/components/receipts/receipts.component.spec.ts" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/components/receipts/receipts.component.spec.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/components/receipts/receipts.component.ts" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/components/receipts/receipts.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/index.ts" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/index.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/mocks/receipts.mock.ts" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/mocks/receipts.mock.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/services/receipts.service.spec.ts" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/services/receipts.service.spec.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/services/receipts.service.ts" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/app/services/receipts.service.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/index.html" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/main.ts" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/main.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/system-config.js.map" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/system-config.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/system-config.ts" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/system-config.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/tsconfig.json" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/src/tsconfig.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../consumerview-ts/consumerview/typings.json" afterPath="$PROJECT_DIR$/../consumerview-ts/consumerview/typings.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/receiptsfactory.js" afterPath="$PROJECT_DIR$/app/scripts/services/receiptsfactory.js" />
     </list>
     <ignored path="consumerview.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +55,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="495">
               <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -48,7 +68,7 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="885">
               <caret line="59" column="1" selection-start-line="53" selection-start-column="0" selection-end-line="59" selection-end-column="1" />
               <folding />
             </state>
@@ -58,18 +78,28 @@
       <file leaf-file-name="receiptitem.tpl.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/receiptitem.tpl.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
+            <state relative-caret-position="1110">
               <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="receiptitem.tpl.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="receiptitem.tpl.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/receiptitem.tpl.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
               <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="receiptsfactory.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/scripts/services/receiptsfactory.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="31" selection-start-line="21" selection-start-column="0" selection-end-line="32" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -110,6 +140,7 @@
         <option value="$PROJECT_DIR$/app/styles/main.scss" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/receiptscrtl.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/scripts/services/receiptsfactory.js" />
       </list>
     </option>
   </component>
@@ -160,6 +191,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -188,68 +220,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="consumerview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="consumerview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="consumerview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="consumerview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="receiptitem.tpl.scss" />
-              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="consumerview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="consumerview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
+              <option name="myItemId" value="bower_components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -360,7 +337,9 @@
       <workItem from="1468351213858" duration="1421000" />
       <workItem from="1468570402648" duration="690000" />
       <workItem from="1468594355533" duration="2956000" />
-      <workItem from="1468613498342" duration="734000" />
+      <workItem from="1468613498342" duration="1659000" />
+      <workItem from="1468675875646" duration="23000" />
+      <workItem from="1468693692105" duration="2028000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1468339789150</created>
@@ -380,10 +359,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12009000" />
+    <option name="totallyTimeSpent" value="14985000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="833" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="833" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -431,6 +410,76 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="1" selection-start-line="53" selection-start-column="0" selection-end-line="59" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/receiptitem.tpl.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/receiptitem.tpl.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="1" selection-start-line="53" selection-start-column="0" selection-end-line="59" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/receiptitem.tpl.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/receiptitem.tpl.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -612,13 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/receiptsfactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1845">
@@ -643,7 +685,7 @@
     <entry file="file://$PROJECT_DIR$/dist/index-18abdda1db.html" />
     <entry file="file://$PROJECT_DIR$/app/styles/receiptitem.tpl.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
+        <state relative-caret-position="1110">
           <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
           <folding />
         </state>
@@ -651,7 +693,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="495">
           <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -662,7 +704,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
+        <state relative-caret-position="885">
           <caret line="59" column="1" selection-start-line="53" selection-start-column="0" selection-end-line="59" selection-end-column="1" />
           <folding />
         </state>
@@ -672,6 +714,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/receiptsfactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="31" selection-start-line="21" selection-start-column="0" selection-end-line="32" selection-end-column="31" />
           <folding />
         </state>
       </provider>

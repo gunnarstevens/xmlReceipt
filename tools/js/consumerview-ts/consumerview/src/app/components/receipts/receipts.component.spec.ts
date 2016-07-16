@@ -15,7 +15,7 @@ import {
   async, inject
 } from '@angular/core/testing';
 
-
+/*
 describe('Component: Receipts', () => {
   it('should create an instance', () => {
     let component = new ReceiptsComponent(new ReceiptsService());
@@ -28,3 +28,4 @@ describe('Component: Receipts', () => {
     expect(component.getReceipts()).toEqual(RECEIPTS);
   });
 });
+*/

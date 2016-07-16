@@ -1,5 +1,6 @@
 /* tslint:disable:no-unused-variable */
 
+/*
 import {
   beforeEach, beforeEachProviders,
   describe, xdescribe,
@@ -21,3 +22,4 @@ describe('App: Consumerview', () => {
     expect(app.title).toEqual('app works!');
   }));
 });
+*/

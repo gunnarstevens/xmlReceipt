@@ -9,6 +9,20 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/route/class`.
 
+## Adding 3rd party libs
+at the moment, it is a mess. please do the steps described by arproudlock:
+https://github.com/dougludlow/ng2-bs3-modal/issues/31
+https://github.com/angular/angular-cli/issues/1031
+
+For firebase: https://github.com/angular/angularfire2
+
+
+libhack: 
+  this folder holds 3rd party libs that are manually installed 
+  they used by old javascript fashion include them in the index.html 
+  and make use of the typescript : any untyping style 
+
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.

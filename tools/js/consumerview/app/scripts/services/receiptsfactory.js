@@ -19,18 +19,18 @@ angular.module('consumerviewApp')
 
       //TODO load from database
       var promise = $http.get('./data/receipt1.xml').then(function(response)
-      {
-        var jsreceipt = x2js.xml_str2json(response.data);
+        {
+          var jsreceipt = x2js.xml_str2json(response.data);
 
-        //TODO maybe use a filter
-        var items = jsreceipt.xmlreceipt.itemlist.item;
-        for (var i = 0; i < items.length; i++) {
-          //TODO check that aspectname == "iconurl"
-          items[i].itemimage = items[i].aspect.aspectvalue;
-        }
+          //TODO maybe use a filter
+          var items = jsreceipt.xmlreceipt.itemlist.item;
+          for (var i = 0; i < items.length; i++) {
+            //TODO check that aspectname == "iconurl"
+            items[i].itemimage = items[i].aspect.aspectvalue;
+          }
 
 
-        return [ jsreceipt ];
+          return [ jsreceipt ];
       });
       return promise;
     }

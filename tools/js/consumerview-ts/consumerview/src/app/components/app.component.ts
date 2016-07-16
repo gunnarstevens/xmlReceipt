@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { ReceiptslistComponent } from './receiptslist/receiptslist.component';
+import { ReceiptsOutlineViewComponent } from './receiptsoutlineview/receiptsoutlineview.component';
 
 @Component({
   moduleId: module.id,
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
-  directives: [ReceiptslistComponent]
+  directives: [ReceiptsOutlineViewComponent]
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'app works fine!';
 }

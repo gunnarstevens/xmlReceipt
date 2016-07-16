@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ReceiptsService} from '../../services/receipts.service';
+import {ReceiptsService, Receipt} from '../../services/receipts.service';
 
 @Component({
   moduleId: module.id,
@@ -10,12 +10,12 @@ import { ReceiptsService} from '../../services/receipts.service';
 })
 export class ReceiptsComponent implements OnInit {
 
-  private receipts : String[];
+  private receipts : Receipt[];
 
   constructor(private receiptsService : ReceiptsService) {}
 
   ngOnInit() {
-      this.receipts = this.receiptsService.getReceipts();
+       this.receiptsService.getReceipts().then(response => this.receipts = response);
   }
 
   getReceipts() {
