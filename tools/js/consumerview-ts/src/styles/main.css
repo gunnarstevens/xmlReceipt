@@ -19,11 +19,14 @@
 header {
   background-image: url("../images/header-bg.png"); }
 
-.content, cv-root {
+.cv-root {
   background-image: url("../images/content-bg.png"); }
 
 header .cvicon {
   float: left; }
+
+header {
+  align: bottom; }
 
 /* Custom page footer */
 .footer {
@@ -54,9 +57,10 @@ body {
   background-color: white; }
 
 .container-fluid {
-  height: 220px;
+  height: 10em;
   color: #c1e2b3;
-  background-color: #2b542c; }
+  background-color: #2b542c;
+  vertical-align: bottom; }
 
 .affix {
   top: 20px; }

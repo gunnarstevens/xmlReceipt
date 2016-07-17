@@ -20,10 +20,12 @@ module.exports = function(defaults) {
       // manual additions
       'jquery/dist/**/*.js',
       'bootstrap/dist/**/**',
-
+      'ng2-uploader.js/bundles/ng2-uploader.js',
       //  AngularFire entries
       'angularfire2/**/*.js',
-      'firebase/*.js'
+      'firebase/*.js',
+      // workaround - copy source code in the project directly
+      // 'ng2-uploader/**/*.js'
     ]
   });
 };

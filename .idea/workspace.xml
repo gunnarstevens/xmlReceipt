@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4ea659f-c708-4912-b021-677dc05be826" name="Default" comment="create angular2 version">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/src/app/components/app.component.html" afterPath="$PROJECT_DIR$/tools/js/consumerview-ts/src/app/components/app.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/src/index.html" afterPath="$PROJECT_DIR$/tools/js/consumerview-ts/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/src/styles/main.css" afterPath="$PROJECT_DIR$/tools/js/consumerview-ts/src/styles/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/src/styles/main.css.map" afterPath="$PROJECT_DIR$/tools/js/consumerview-ts/src/styles/main.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/src/styles/main.scss" afterPath="$PROJECT_DIR$/tools/js/consumerview-ts/src/styles/main.scss" />
     </list>
     <ignored path="xmlReceipt.iws" />
     <ignored path=".idea/workspace.xml" />

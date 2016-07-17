@@ -40,6 +40,5 @@ export class ReceiptsService {
 
       return receipt;
     });
-
   }
 }

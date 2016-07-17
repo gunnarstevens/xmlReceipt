@@ -3,19 +3,6 @@
 // https://github.com/systemjs/systemjs/blob/master/docs/config-api.md
 
 /***********************************************************************************************
- * JSPM Configuration.
- **********************************************************************************************/
-
-const jspm_paths:any = {
-  "github:*": "jspm_packages/github/*",
-  "npm:*": "jspm_packages/npm/*"
-};
-
-const jspm_map:any = {
-};
-
-
-/***********************************************************************************************
  * User Configuration.
  **********************************************************************************************/
 /** Map relative paths to URLs. */
@@ -25,6 +12,9 @@ const map:any = {
   'xml2json': 'libhack/x2js-master',
   'firebase': 'vendor/firebase/firebase.js',
   'angularfire2': 'vendor/angularfire2'
+
+// workaround - copy source code in the project directly
+//  'ng2-uploader': 'vendor/ng2-uploader'
 };
 
 
@@ -48,7 +38,13 @@ const packages : any = {
   'angularfire2': {
     defaultExtension: 'js',
     main: 'angularfire2.js'
-  }
+  },
+
+  // workaround - copy source code in the project directly
+  // 'ng2-uploader': {
+  //   defaultExtension: 'js',
+  //   main: 'bundles/ng2-uploader.js'
+  // }
 
 };
 
@@ -72,6 +68,7 @@ const barrels:string[] = [
   'rxjs',
   'jquery',
   'bootstrap',
+//  'ng-uploader',
 
   // App specific barrels.
   'app',
@@ -103,10 +100,4 @@ System.config({
 // Apply the user's configuration.
 System.config({map, packages});
 
-// Apply the jspm configuration
-System.config({
-  defaultJSExtensions: true,
-  paths: jspm_paths,
-  map: jspm_map
-});
 
