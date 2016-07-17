@@ -1,89 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4ea659f-c708-4912-b021-677dc05be826" name="Default" comment="add consumerview">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview.sav.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview.sav2.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/angular-cli-build.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/angular-cli.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/config/environment.dev.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/config/environment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/config/environment.prod.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/config/karma-test-shim.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/config/karma.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/config/protractor.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/e2e/app.e2e-spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/e2e/app.po.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/e2e/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/e2e/typings.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/public/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/components/app.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/components/app.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/components/app.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/components/app.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/components/receipts/index.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/components/receipts/receipts.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/components/receipts/receipts.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/components/receipts/receipts.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/components/receipts/receipts.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/components/receiptsoutlineview/index.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/components/receiptsoutlineview/receiptsoutlineview.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/components/receiptsoutlineview/receiptsoutlineview.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/components/receiptsoutlineview/receiptsoutlineview.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/components/receiptsoutlineview/receiptsoutlineview.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/components/testfire/index.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/components/testfire/testfire.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/components/testfire/testfire.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/components/testfire/testfire.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/components/testfire/testfire.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/environment.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/index.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/mocks/receipts.mock.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/services/receipts.service.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/services/receipts.service.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/shared/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/shared/index.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/app/shared/index.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/data/receipt1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/data/testdata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/images/control.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/images/cv-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/images/headerReceipt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/images/inventory.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/images/overview.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/images/shopinglist.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/images/statistic.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/libhack/x2js-master/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/libhack/x2js-master/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/libhack/x2js-master/check_issues.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/libhack/x2js-master/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/libhack/x2js-master/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/libhack/x2js-master/samples.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/libhack/x2js-master/xml2json.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/libhack/x2js-master/xml2json.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/main.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/styles/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/styles/main.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/styles/main.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/styles/receiptitem.tpl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/styles/receiptitem.tpl.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/styles/receiptitem.tpl.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/system-config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/system-config.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/system-config.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/src/typings.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/tslint.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/consumerview/typings.json" afterPath="" />
+    <list default="true" id="b4ea659f-c708-4912-b021-677dc05be826" name="Default" comment="create angular2 version">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/js/consumerview-ts/.gitignore" afterPath="$PROJECT_DIR$/tools/js/consumerview-ts/.gitignore" />
     </list>
     <ignored path="xmlReceipt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1030,7 +949,14 @@
       <option name="project" value="LOCAL" />
       <updated>1468340110471</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="create angular2 version">
+      <created>1468715670443</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1468715670443</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1158,7 +1084,8 @@
     <MESSAGE value="Composer for REWE JSON Receipt Objects" />
     <MESSAGE value="Lookup Classes to retrieve information from the Website" />
     <MESSAGE value="add consumerview" />
-    <option name="LAST_COMMIT_MESSAGE" value="add consumerview" />
+    <MESSAGE value="create angular2 version" />
+    <option name="LAST_COMMIT_MESSAGE" value="create angular2 version" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
