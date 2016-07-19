@@ -1,0 +1,35 @@
+{
+  "name": "CostumerView",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This extension was created with the awesome extensionizr.com",
+  "homepage_url": "https://github.com/gunnarstevens/xmlReceipt/blob/master/README.md",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "page": "src/bg/background.html",
+    "persistent": false
+  },
+  "options_page": "src/options_custom/index.html",
+
+  "browser_action": {
+    "default_icon": "icons/icon16.png",
+    "default_title": "Verbrauchersicht"
+  },
+  "permissions": [
+    "activeTab",
+    "https://consumerview.firebaseio.com/*",
+    "https://shop.rewe.de/checkout/basket"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://shop.rewe.de/checkout/basket"],
+      "js" : ["js/jquery/jquery.min.js", "src/savebasket.js"],
+      "run_at" : "document_idle"
+    }
+  ]
+}
