@@ -1,4 +1,7 @@
 <ul class="receiptlist">
+
+  <!-- TODO use pipes to read the header: https://angular.io/docs/ts/latest/guide/pipes.html -->
+
   <li *ngFor="let receipt of receipts | async"
       [class.selected]="receipt === selectedHero"
       (click)="onSelect(hero)">
