@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ReceiptsService, Receipt} from '../../services/receipts.service';
+import {ReceiptsService} from '../../services/receipts.service';
+import {ReceiptHeader} from '../../model/receipt.model';
 
 @Component({
   moduleId: module.id,
@@ -10,7 +11,7 @@ import {ReceiptsService, Receipt} from '../../services/receipts.service';
 })
 export class ReceiptsComponent implements OnInit {
 
-  private receipts : Receipt[];
+  private receipts : ReceiptHeader[];
 
   constructor(private receiptsService : ReceiptsService) {}
 

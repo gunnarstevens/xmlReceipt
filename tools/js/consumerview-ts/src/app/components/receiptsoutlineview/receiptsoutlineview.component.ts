@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Receipt, ReceiptsService} from '../../services/receipts.service';
+import {ReceiptsService} from '../../services/receipts.service';
+import {ReceiptHeader} from '../../model/receipt.model';
 
 
 
@@ -12,8 +13,8 @@ import { Receipt, ReceiptsService} from '../../services/receipts.service';
 })
 export class ReceiptsOutlineViewComponent implements OnInit {
 
-  receipts : Receipt[];
-  selectedHero: Receipt;
+  receipts : ReceiptHeader[];
+  selectedReceipt: ReceiptHeader;
 
   constructor(private receiptsService : ReceiptsService) {}
 
@@ -28,5 +29,5 @@ export class ReceiptsOutlineViewComponent implements OnInit {
   }
 
 
-  onSelect(hero: Receipt) { this.selectedHero = hero; }
+  onSelect(receipt: ReceiptHeader) { this.selectedReceipt = receipt; }
 }

@@ -1,14 +1,14 @@
 import { Component, NgZone } from '@angular/core';
 import { ReceiptsOutlineViewComponent } from './receiptsoutlineview/receiptsoutlineview.component';
 import { TestfireComponent} from './testfire/testfire.component';
-import {UPLOAD_DIRECTIVES} from '../ng2-uploader';
+import { NgReceiptDrop} from '../directives/ng-receipt-drop';
 
 @Component({
   moduleId: module.id,
   selector: 'cv-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
-  directives: [ReceiptsOutlineViewComponent, TestfireComponent, UPLOAD_DIRECTIVES]
+  directives: [ReceiptsOutlineViewComponent, TestfireComponent, NgReceiptDrop]
 })
 export class AppComponent {
   zone: NgZone;

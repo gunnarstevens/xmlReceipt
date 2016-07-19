@@ -1,7 +1,10 @@
 import {Directive, ElementRef, EventEmitter} from '@angular/core';
 
-import {Receipt} from "../model/receipt.model";
-import {ReceiptsService} from "../services/receipts.service";
+import {AngularFire, FirebaseListObservable, FirebaseObjectObservable} from 'angularfire2';
+import {Observable} from "rxjs/Rx";
+
+
+import {Receipt} from "../model/Receipt";
 
 // TODO adapt class to check if a receipt file was drop and if so send it to the receipt-uploader service
 
@@ -16,12 +19,15 @@ export class NgReceiptDrop {
   onUpload: EventEmitter<any> = new EventEmitter();
 
   // scoping hack
-  private static receiptsService : ReceiptsService;
+  private static afObservable : FirebaseObjectObservable<any>;
 
-  constructor(public el: ElementRef, receiptsService: ReceiptsService) {
-    NgReceiptDrop.receiptsService = receiptsService;
+  constructor(public el: ElementRef, af: AngularFire) {
+    NgReceiptDrop.afObservable = af.database.object('/items');
 
     this.initEvents();
+  }
+
+  fileloaded(e : any) : void {
   }
 
   initEvents(): void {
@@ -39,9 +45,7 @@ export class NgReceiptDrop {
           var reader : any = new FileReader();
           reader.onload = function (e: any) {
             var receipt : Object = new X2JS().xml_str2json((<FileReader> e.target).result);
-            var content = new Receipt(receipt);
-
-             NgReceiptDrop.receiptsService.addReceipt(content);
+            NgReceiptDrop.afObservable.update(new Receipt(receipt));
           }
           reader.readAsText(files.item(0));        }
       } else {
