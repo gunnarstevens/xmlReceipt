@@ -4,7 +4,7 @@ import { Http } from '@angular/http';
 
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/toPromise';
-import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { AngularFire } from 'angularfire2';
 
 // own stuff
 import { RECEIPTSHEADER } from '../mocks/receipts.mock';
@@ -14,7 +14,9 @@ import {Receipt, ReceiptHeader} from '../model/receipt.model';
 @Injectable()
 export class ReceiptsService {
 
-  receiptsUrl : string = "../data/receipt1.xml";
+  // TODO retrieve uid of the user  var uid = this.af.auth.getAuth().uid and put it on the path
+  RECEIPTS_PATH  = "/anonymous/receipts";
+
 
   af : AngularFire;
   http: Http;
@@ -25,33 +27,30 @@ export class ReceiptsService {
   }
 
 
-  getReceipts() : Promise<ReceiptHeader[]> {
-    // TODO - get data from firebase
-    return this.http.get(this.receiptsUrl).toPromise().then(
-      res => {
-        return RECEIPTSHEADER;
-      }
-      );
+  getReceipts() : Observable<Receipt[]> {
+    // return this.http.get("../data/receipt1.xml").toPromise().then(
+    //  res => { return RECEIPTSHEADER; } );
+    return this.af.database.list(this.RECEIPTS_PATH);
   }
 
-  getReceipt(uri : string) : Promise<Receipt> {
-    return this.http.get(this.receiptsUrl).toPromise().then(res => {
-
-      var xml2js:IX2JS = new X2JS();
-      var xml = res.text();
-      var receipt : Object = xml2js.xml_str2json(xml);
-      console.log("ReceiptsService parse XML: " + receipt);
-      return receipt;
-    });
+  getReceipt(id : string) : Observable<Receipt> {
+    return this.af.database.object(this.RECEIPTS_PATH + "/" + id);
   }
 
   addReceipt(receipt: Receipt) {
-    // TODO put it also to the receiptheader
-    // TODO retrieve uid of the user  var uid = this.af.auth.getAuth().uid;
-    var receipts : any = this.af.database.list("/anonymous/receipts");
+    var receipts : any = this.af.database.list(this.RECEIPTS_PATH);
     var tmp = receipts.push();
     tmp.set(receipt);
     console.log("Receipt Service add: receipt: " + receipt + ", key: " + tmp.getKey());
-
   }
+
+
+  // foo() : Promise<any> {
+  //   return this.http.get(this.receiptsUrl).toPromise().then(res => {
+  //     var xml2js:IX2JS = new X2JS();
+  //     var xml = res.text();
+  //     var receipt:Object = xml2js.xml_str2json(xml);
+  //     console.log("ReceiptsService parse XML: " + receipt);
+  //   });
+  // }
 }

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {Observable} from 'rxjs/Observable';
+
 import {ReceiptsService} from '../../services/receipts.service';
-import {ReceiptHeader} from '../../model/receipt.model';
+import {Receipt} from '../../model/receipt.model';
 
 @Component({
   moduleId: module.id,
@@ -11,12 +13,15 @@ import {ReceiptHeader} from '../../model/receipt.model';
 })
 export class ReceiptsComponent implements OnInit {
 
-  private receipts : ReceiptHeader[];
+  receipts : Observable<Receipt[]>;
 
   constructor(private receiptsService : ReceiptsService) {}
 
   ngOnInit() {
-       this.receiptsService.getReceipts().then(response => this.receipts = response);
+      // this.receiptsService.getReceipts().then(response => this.receipts = response);
+    this.receipts = this.receiptsService.getReceipts();
+
+    var item : Receipt;
   }
 
   getReceipts() {
