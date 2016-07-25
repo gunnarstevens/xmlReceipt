@@ -1,6 +1,6 @@
 import { Component, NgZone } from '@angular/core';
 import { ReceiptsOutlineViewComponent } from './receiptsoutlineview/receiptsoutlineview.component';
-import { TestfireComponent} from './testfire/testfire.component';
+import { ReceiptsComponent} from './receipts/receipts.component';
 import { NgReceiptDrop} from '../directives/ng-receipt-drop';
 
 @Component({
@@ -8,7 +8,7 @@ import { NgReceiptDrop} from '../directives/ng-receipt-drop';
   selector: 'cv-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
-  directives: [ReceiptsOutlineViewComponent, TestfireComponent, NgReceiptDrop]
+  directives: [ReceiptsOutlineViewComponent, ReceiptsComponent, NgReceiptDrop]
 })
 export class AppComponent {
   zone: NgZone;

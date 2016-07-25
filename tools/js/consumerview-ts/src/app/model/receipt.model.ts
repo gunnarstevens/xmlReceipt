@@ -9,7 +9,7 @@ export class ReceiptHeader {
 /**
  *
  */
-export class Receipt {
+export class xmlreceipt {
 
   // primary identifier of the xml receipt
   key : String;
@@ -19,5 +19,6 @@ export class Receipt {
 
   constructor(xmlReceipt : Object) {
     this.xmlReceipt = xmlReceipt;
+    this.key = "key";
   }
 }

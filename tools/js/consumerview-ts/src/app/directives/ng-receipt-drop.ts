@@ -1,6 +1,6 @@
 import {Directive, ElementRef, EventEmitter} from '@angular/core';
 
-import {Receipt} from "../model/receipt.model";
+import {xmlreceipt} from "../model/receipt.model";
 import {ReceiptsService} from "../services/receipts.service";
 
 // TODO adapt class to check if a receipt file was drop and if so send it to the receipt-uploader service
@@ -39,7 +39,7 @@ export class NgReceiptDrop {
           var reader : any = new FileReader();
           reader.onload = function (e: any) {
             var receipt : Object = new X2JS().xml_str2json((<FileReader> e.target).result);
-            var content = new Receipt(receipt);
+            var content = new xmlreceipt(receipt);
 
              NgReceiptDrop.receiptsService.addReceipt(content);
           }

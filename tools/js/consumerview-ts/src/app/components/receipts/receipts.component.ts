@@ -2,18 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 
 import {ReceiptsService} from '../../services/receipts.service';
-import {Receipt} from '../../model/receipt.model';
+import {xmlreceipt} from '../../model/receipt.model';
 
 @Component({
   moduleId: module.id,
-  selector: 'app-receipts',
+  selector: 'cv-receipts',
   templateUrl: 'receipts.component.html',
   styleUrls: ['receipts.component.css'],
   providers: [ReceiptsService]
 })
 export class ReceiptsComponent implements OnInit {
 
-  receipts : Observable<Receipt[]>;
+  receipts : Observable<xmlreceipt[]>;
 
   constructor(private receiptsService : ReceiptsService) {}
 
@@ -21,7 +21,7 @@ export class ReceiptsComponent implements OnInit {
       // this.receiptsService.getReceipts().then(response => this.receipts = response);
     this.receipts = this.receiptsService.getReceipts();
 
-    var item : Receipt;
+    var item : xmlreceipt;
   }
 
   getReceipts() {

@@ -3,16 +3,17 @@
 //      "sample_setting": "This is how you use Store.js to remember values"
 // });
 
-// chrome.browserAction.setTitle('TITLE');
+var jsonReceipt = null;
 
-console.log("Start background.js");
+debugger;
+
 
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
+        debugger;
         chrome.browserAction.setIcon({path: '../../icons/logo32.png'});
+        jsonReceipt = request;
         console.log(sender.tab ?
         "from a content script:" + sender.tab.url :
             "from the extension");
-        if (request.greeting == "hello")
-        sendResponse({farewell: "goodbye"});
     });

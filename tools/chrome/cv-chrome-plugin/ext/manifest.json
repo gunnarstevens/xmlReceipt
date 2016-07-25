@@ -1,13 +1,11 @@
 {
-  "name": "CostumerView",
+  "name": "ConumerView",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "This extension was created with the awesome extensionizr.com",
+  "description": "View and store your online-shoppings (like REWE Online) in the ConsumerView Portal to get tailored, more consumer-friendly information",
   "homepage_url": "https://github.com/gunnarstevens/xmlReceipt/blob/master/README.md",
   "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
+    "32": "icons/logo32.png"
   },
   "default_locale": "en",
   "background": {
@@ -17,18 +15,27 @@
   "options_page": "src/options_custom/index.html",
 
   "browser_action": {
-    "default_icon": "icons/icon16.png",
-    "default_title": "Verbrauchersicht"
+    "default_icon": "icons/logo32.png",
+    "default_title": "Consumer View"
+    // "default_popup" : "src/bg/popup.html"
   },
+
   "permissions": [
     "activeTab",
-    "https://consumerview.firebaseio.com/*",
-    "https://shop.rewe.de/checkout/basket"
+    "tabs",
+    "https://*/*",
+    "https://shop.rewe.de/checkout/basket",
+    "notifications"
   ],
+
   "content_scripts": [
     {
       "matches": ["https://shop.rewe.de/checkout/basket"],
-      "js" : ["js/jquery/jquery.min.js", "src/savebasket.js"],
+      "js" : [
+        "js/jquery/jquery.min.js",
+        "js/consumerview/rewe.composer_em5.js",
+        "src/savebasket.js"
+      ],
       "run_at" : "document_idle"
     }
   ]

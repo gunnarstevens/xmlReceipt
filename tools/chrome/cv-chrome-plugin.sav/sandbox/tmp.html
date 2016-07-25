@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Firebase Test</title>
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+</head>
+<body>
+<script>
+    var obj = {
+        xmlreceipt: {
+            content: "inhalt"
+        }
+    };
+
+//    var param = {lastName: "Doe", firstName: "John"};
+//    $.ajax({
+////        url: 'https://consumerview.firebaseio.com/items.json?auth=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0Nzc1MjU5NjUsInYiOjAsImQiOnsidWlkIjoia2F0byJ9LCJpYXQiOjE0Njg5NzIzNjV9.aXZVqwtehTBR1Vc4Epq0kJJBWaMxpgYiQqCfq9er9_A',
+//        url: 'https://consumerview.firebaseio.com/test.json',
+//        type: "PUT",
+//        data: param,
+//        success: function () {
+//            console.log("success");
+//        },
+//        error: function () {
+//            console.log("error");
+//        }
+//    });
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "https://consumerview.firebaseio.com/anonymous/receipts.json", true);
+    xhr.send(JSON.stringify(obj));
+    xhr.addEventListener("load", reqListener);
+
+
+    function reqListener () {
+        console.log(this.responseText);
+    }
+</script>
+</body>

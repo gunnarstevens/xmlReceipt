@@ -1,3 +1,10 @@
-<p>
-  receipts works!
-</p>
+<div *ngFor="let receipt of receipts | async; let i = index">
+  <div class="receipt-header">
+    <img class="receipt-header-logo" src="http://locationinsider.de/wp-content/uploads/2016/02/Rewe-Lieferservice-Logo.jpg"/>
+    {{receipt.xmlreceipt.seller.sellername}} {{i}}
+  </div>
+  <p *ngFor="let it of receipt.xmlreceipt.itemlist.item">
+    {{it.itemname}}
+  </p>
+</div>
+

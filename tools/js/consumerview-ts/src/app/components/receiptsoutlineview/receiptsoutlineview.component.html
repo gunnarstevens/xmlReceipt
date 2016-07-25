@@ -2,10 +2,10 @@
 
   <!-- TODO use pipes to read the header: https://angular.io/docs/ts/latest/guide/pipes.html -->
 
-  <li *ngFor="let receipt of receipts | async"
+  <li *ngFor="let receipt of receipts | async; #i = index"
       [class.selected]="receipt === selectedHero"
       (click)="onSelect(hero)">
-      <img src="{{receipt.key}}" style="max-height:32px; max-width:32px; padding: 4px"/>{{receipt.key}}
+      <img src="http://locationinsider.de/wp-content/uploads/2016/02/Rewe-Lieferservice-Logo.jpg"  style="max-height:32px; max-width:32px; padding: 4px"/>{{receipt.xmlreceipt.seller.sellername}} {{i}}
   </li>
 </ul>
-<div *ngIf="selectedHero">SELECTED {{receipt.id}}</div>
+<div *ngIf="selectedHero">SELECTED {{i}}</div>

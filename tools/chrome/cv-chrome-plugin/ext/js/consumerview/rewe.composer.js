@@ -2,12 +2,12 @@
 var ReweComposer = (function () {
     function ReweComposer() {
     }
-    ReweComposer.prototype.getJsonReceipt = function (reweBasket) {
+    ReweComposer.getJsonReceipt = function (reweBasket) {
         var xmlreceipt = this.getTemplate();
         // 1. seller is set by default
         // 2. add item info into the receipt template
         for (var item in reweBasket.products) {
-            xmlreceipt.itemlist.item.push(this.getReceiptItem(item));
+            xmlreceipt.itemlist.item.push(this.getReceiptItem(reweBasket.products[item]));
         }
         // 3. add total cost
         xmlreceipt.total.purchasedate = this.format(new Date());
@@ -15,7 +15,7 @@ var ReweComposer = (function () {
         xmlreceipt.total.totalquantity = reweBasket.basket.totalUnits;
         return xmlreceipt;
     };
-    ReweComposer.prototype.getTemplate = function () {
+    ReweComposer.getTemplate = function () {
         var xmlreceipt = ({
             "seller": {
                 "selleraddress": "http://shop.rewe.de",
@@ -42,10 +42,10 @@ var ReweComposer = (function () {
         });
         return xmlreceipt;
     };
-    ReweComposer.prototype.format = function (d) {
+    ReweComposer.format = function (d) {
         return d.getUTCFullYear() + "-" + d.getMonth() + "-" + d.getDate() + "+" + d.getHours() + ":" + d.getMinutes();
     };
-    ReweComposer.prototype.getReceiptItem = function (basketItem) {
+    ReweComposer.getReceiptItem = function (basketItem) {
         var item = ({
             "itemid": {
                 "selleritemid": "<undefined>"
@@ -69,13 +69,15 @@ var ReweComposer = (function () {
         item.itemid.selleritemid = "rewe:" + basketItem.id;
         item.itemname = basketItem.name;
         item.itemgroup.sellercategory.classificationname = basketItem.category;
-        item.aspect.aspectvalue = this.getItemImage(basketItem.id);
+        item.aspect.aspectvalue = $('a[href="/PD' + basketItem.id + '"] img').attr("src");
         return item;
     };
-    ReweComposer.prototype.getItemImage = function (itemid) {
-        var result;
-        result = "TODO make some jQuery stuff";
-        return result;
+    ReweComposer.saveBasket = function (jsonReceipt, reqListener) {
+        var xhr = new XMLHttpRequest();
+        var dbobj = { "xmlreceipt": jsonReceipt };
+        xhr.open("POST", "https://consumerview.firebaseio.com/anonymous/receipts.json", true);
+        xhr.send(JSON.stringify(dbobj));
+        xhr.addEventListener("load", reqListener);
     };
     return ReweComposer;
 }());

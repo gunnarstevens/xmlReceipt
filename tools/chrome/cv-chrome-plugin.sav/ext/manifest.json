@@ -1,0 +1,48 @@
+{
+  "name": "CostumerView",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This extension was created with the awesome extensionizr.com",
+  "homepage_url": "https://github.com/gunnarstevens/xmlReceipt/blob/master/README.md",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "page": "src/bg/background.html",
+    "persistent": false
+  },
+  "options_page": "src/options_custom/index.html",
+
+  "browser_action": {
+    "default_icon": "icons/icon16.png",
+    "default_title": "Verbrauchersicht",
+    "default_popup" : "src/bg/popup.html"
+  },
+
+  // http://stackoverflow.com/questions/37764706/chrome-extension-auth-network-request-failed-when-communicating-with-firebase
+  // http://stackoverflow.com/questions/37487245/use-firebase-for-chrome-extention-authenticaiton
+  // https://groups.google.com/forum/#!topic/firebase-talk/HgntKvXHEcY
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "https://*/*",
+    "https://shop.rewe.de/checkout/basket",
+    "notifications"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://shop.rewe.de/checkout/basket"],
+      "js" : [
+        "js/jquery/jquery.min.js",
+        "js/consumerview/rewe.composer_em5.js",
+        "src/savebasket.js"
+      ],
+      "run_at" : "document_idle"
+    }
+  ]
+}

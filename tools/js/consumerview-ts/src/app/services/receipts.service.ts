@@ -8,7 +8,7 @@ import { AngularFire } from 'angularfire2';
 
 // own stuff
 import { RECEIPTSHEADER } from '../mocks/receipts.mock';
-import {Receipt, ReceiptHeader} from '../model/receipt.model';
+import {xmlreceipt, ReceiptHeader} from '../model/receipt.model';
 
 
 @Injectable()
@@ -27,21 +27,22 @@ export class ReceiptsService {
   }
 
 
-  getReceipts() : Observable<Receipt[]> {
+  getReceipts() : Observable<xmlreceipt[]> {
     // return this.http.get("../data/receipt1.xml").toPromise().then(
     //  res => { return RECEIPTSHEADER; } );
     return this.af.database.list(this.RECEIPTS_PATH);
   }
 
-  getReceipt(id : string) : Observable<Receipt> {
+  getReceipt(id : string) : Observable<xmlreceipt> {
     return this.af.database.object(this.RECEIPTS_PATH + "/" + id);
   }
 
-  addReceipt(receipt: Receipt) {
+
+  addReceipt(receipt: xmlreceipt) {
     var receipts : any = this.af.database.list(this.RECEIPTS_PATH);
     var tmp = receipts.push();
     tmp.set(receipt);
-    console.log("Receipt Service add: receipt: " + receipt + ", key: " + tmp.getKey());
+    console.log("xmlreceipt Service add: receipt: " + receipt + ", key: " + tmp.getKey());
   }
 
 

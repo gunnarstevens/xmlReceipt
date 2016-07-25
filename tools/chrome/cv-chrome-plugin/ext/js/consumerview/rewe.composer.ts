@@ -1,16 +1,14 @@
+declare var $;
+
 export class ReweComposer {
 
-
-    constructor() {}
-
-
-    getJsonReceipt(reweBasket: any) : any {
-        var xmlreceipt = this.getTemplate();
+    static getJsonReceipt(reweBasket: any) : any {
+        let xmlreceipt = this.getTemplate();
         // 1. seller is set by default
 
         // 2. add item info into the receipt template
-        for (var item in reweBasket.products) {
-            xmlreceipt.itemlist.item.push(this.getReceiptItem(item));
+        for (let item in reweBasket.products) {
+            xmlreceipt.itemlist.item.push(this.getReceiptItem(reweBasket.products[item]));
         }
 
         // 3. add total cost
@@ -21,8 +19,8 @@ export class ReweComposer {
         return xmlreceipt;
     }
 
-    getTemplate() : any {
-        var xmlreceipt = ( {
+    static getTemplate() : any {
+        let xmlreceipt = ( {
             "seller": {
                 "selleraddress": "http://shop.rewe.de",
                 "sellerid": {
@@ -49,12 +47,12 @@ export class ReweComposer {
         return xmlreceipt;
     }
 
-    format(d : Date) : string {
+    static format(d : Date) : string {
        return d.getUTCFullYear() + "-" + d.getMonth() + "-" + d.getDate() + "+" + d.getHours() + ":" + d.getMinutes();
     }
 
-    getReceiptItem(basketItem : any) : Object {
-        var item = ({
+    static getReceiptItem(basketItem : any) : Object {
+        let item = ({
                 "itemid" : {
                     "selleritemid" : "<undefined>"
                 },
@@ -78,14 +76,17 @@ export class ReweComposer {
         item.itemid.selleritemid = "rewe:" + basketItem.id;
         item.itemname = basketItem.name;
         item.itemgroup.sellercategory.classificationname = basketItem.category;
-        item.aspect.aspectvalue = this.getItemImage(basketItem.id);
+        item.aspect.aspectvalue = $('a[href="/PD' + basketItem.id +'"] img').attr("src");
 
         return item;
     }
 
-    getItemImage(itemid : string) : string {
-        var result : string;
-        result = "TODO make some jQuery stuff";
-        return result;
+    static saveBasket(jsonReceipt, reqListener) {
+        let xhr = new XMLHttpRequest();
+        let dbobj = {"xmlreceipt" : jsonReceipt}
+        xhr.open("POST", "https://consumerview.firebaseio.com/anonymous/receipts.json", true);
+        xhr.send(JSON.stringify(dbobj));
+        xhr.addEventListener("load", reqListener);
+
     }
 }
